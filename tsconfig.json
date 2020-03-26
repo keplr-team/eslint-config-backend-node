@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "es2019",
+    "lib": ["esnext"],
+    "module": "commonjs",
+    "esModuleInterop": false,
+    "strict": true,
+    "allowJs": true,
+    "checkJs": true,
+    "noEmit": true
+  },
+  "exclude": ["coverage"]
+}

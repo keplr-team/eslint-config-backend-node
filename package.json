@@ -1,0 +1,57 @@
+{
+  "name": "@keplr/eslint-config-backend-node",
+  "version": "1.1.0",
+  "description": "",
+  "homepage": "https://github.com/keplr-team/eslint-config-backend-node",
+  "repository": "git@github.com:keplr-team/eslint-config-backend-node.git",
+  "license": "MIT",
+  "main": "./lib/index.js",
+  "files": [
+    "lib",
+    "prettierrc.json"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint . --cache --fix --ext js,ts",
+    "test": "jest",
+    "coverage": "jest --coverage"
+  },
+  "keywords": [],
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.24.0",
+    "@typescript-eslint/parser": "^2.24.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jest": "^23.8.2",
+    "eslint-plugin-prettier": "^3.1.2",
+    "prettier": "^2.0.2"
+  },
+  "devDependencies": {
+    "@types/eslint": "^6.1.8",
+    "@types/jest": "^25.1.4",
+    "@types/lodash": "^4.14.149",
+    "@types/node": "^13.9.4",
+    "eslint": "^6.8.0",
+    "husky": "^4.2.3",
+    "jest": "^25.1.0",
+    "lint-staged": "^10.0.9",
+    "lodash": "^4.17.15",
+    "ts-jest": "^25.2.1",
+    "typescript": "^3.8.3"
+  },
+  "peerDependencies": {
+    "eslint": "^6.8.0",
+    "typescript": "^3.8.3"
+  },
+  "prettier": "./prettierrc.json",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts}": [
+      "eslint --fix"
+    ]
+  }
+}
