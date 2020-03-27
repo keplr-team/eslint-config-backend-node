@@ -425,7 +425,7 @@ Object {
       "off",
     ],
     "import/default": Array [
-      "error",
+      "off",
     ],
     "import/export": Array [
       "error",
@@ -1790,7 +1790,7 @@ Object {
       "off",
     ],
     "import/default": Array [
-      "error",
+      "off",
     ],
     "import/export": Array [
       "error",
@@ -3155,7 +3155,7 @@ Object {
       "off",
     ],
     "import/default": Array [
-      "error",
+      "off",
     ],
     "import/export": Array [
       "error",
@@ -4520,7 +4520,7 @@ Object {
       "off",
     ],
     "import/default": Array [
-      "error",
+      "off",
     ],
     "import/export": Array [
       "error",
@@ -5885,7 +5885,7 @@ Object {
       "off",
     ],
     "import/default": Array [
-      "error",
+      "off",
     ],
     "import/export": Array [
       "error",
@@ -7250,7 +7250,7 @@ Object {
       "off",
     ],
     "import/default": Array [
-      "error",
+      "off",
     ],
     "import/export": Array [
       "error",
