@@ -57,6 +57,9 @@ Object {
     "@typescript-eslint/camelcase": Array [
       "error",
     ],
+    "@typescript-eslint/class-literal-property-style": Array [
+      "error",
+    ],
     "@typescript-eslint/class-name-casing": Array [
       "error",
     ],
@@ -1413,6 +1416,9 @@ Object {
       "off",
     ],
     "@typescript-eslint/camelcase": Array [
+      "error",
+    ],
+    "@typescript-eslint/class-literal-property-style": Array [
       "error",
     ],
     "@typescript-eslint/class-name-casing": Array [
@@ -2773,6 +2779,9 @@ Object {
     "@typescript-eslint/camelcase": Array [
       "error",
     ],
+    "@typescript-eslint/class-literal-property-style": Array [
+      "error",
+    ],
     "@typescript-eslint/class-name-casing": Array [
       "error",
     ],
@@ -4129,6 +4138,9 @@ Object {
       "off",
     ],
     "@typescript-eslint/camelcase": Array [
+      "error",
+    ],
+    "@typescript-eslint/class-literal-property-style": Array [
       "error",
     ],
     "@typescript-eslint/class-name-casing": Array [
@@ -5489,6 +5501,9 @@ Object {
     "@typescript-eslint/camelcase": Array [
       "error",
     ],
+    "@typescript-eslint/class-literal-property-style": Array [
+      "error",
+    ],
     "@typescript-eslint/class-name-casing": Array [
       "error",
     ],
@@ -6845,6 +6860,9 @@ Object {
       "off",
     ],
     "@typescript-eslint/camelcase": Array [
+      "error",
+    ],
+    "@typescript-eslint/class-literal-property-style": Array [
       "error",
     ],
     "@typescript-eslint/class-name-casing": Array [
