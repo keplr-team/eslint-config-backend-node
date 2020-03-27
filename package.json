@@ -1,6 +1,6 @@
 {
   "name": "@keplr/eslint-config-backend-node",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "",
   "homepage": "https://github.com/keplr-team/eslint-config-backend-node",
   "repository": "git@github.com:keplr-team/eslint-config-backend-node.git",
