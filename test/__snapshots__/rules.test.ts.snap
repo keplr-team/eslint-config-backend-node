@@ -56,6 +56,16 @@ Object {
     ],
     "@typescript-eslint/camelcase": Array [
       "error",
+      Object {
+        "allow": Array [
+          "inner_hits",
+          "multi_match",
+          "match_all",
+          "doc_as_upsert",
+        ],
+        "ignoreDestructuring": false,
+        "ignoreImports": false,
+      },
     ],
     "@typescript-eslint/class-literal-property-style": Array [
       "error",
@@ -209,6 +219,9 @@ Object {
     ],
     "@typescript-eslint/no-unused-vars-experimental": Array [
       "error",
+      Object {
+        "ignoreArgsIfArgsAfterAreUsed": true,
+      },
     ],
     "@typescript-eslint/no-use-before-define": Array [
       "error",
@@ -335,16 +348,7 @@ Object {
       "error",
     ],
     "camelcase": Array [
-      "error",
-      Object {
-        "allow": Array [
-          "inner_hits",
-          "multi_match",
-          "match_all",
-        ],
-        "ignoreDestructuring": false,
-        "ignoreImports": false,
-      },
+      "off",
     ],
     "comma-dangle": Array [
       "off",
@@ -448,7 +452,7 @@ Object {
       "error",
     ],
     "import/no-named-as-default": Array [
-      "error",
+      "off",
     ],
     "import/no-named-as-default-member": Array [
       "error",
@@ -1417,6 +1421,16 @@ Object {
     ],
     "@typescript-eslint/camelcase": Array [
       "error",
+      Object {
+        "allow": Array [
+          "inner_hits",
+          "multi_match",
+          "match_all",
+          "doc_as_upsert",
+        ],
+        "ignoreDestructuring": false,
+        "ignoreImports": false,
+      },
     ],
     "@typescript-eslint/class-literal-property-style": Array [
       "error",
@@ -1570,6 +1584,9 @@ Object {
     ],
     "@typescript-eslint/no-unused-vars-experimental": Array [
       "error",
+      Object {
+        "ignoreArgsIfArgsAfterAreUsed": true,
+      },
     ],
     "@typescript-eslint/no-use-before-define": Array [
       "error",
@@ -1696,16 +1713,7 @@ Object {
       "error",
     ],
     "camelcase": Array [
-      "error",
-      Object {
-        "allow": Array [
-          "inner_hits",
-          "multi_match",
-          "match_all",
-        ],
-        "ignoreDestructuring": false,
-        "ignoreImports": false,
-      },
+      "off",
     ],
     "comma-dangle": Array [
       "off",
@@ -1809,7 +1817,7 @@ Object {
       "error",
     ],
     "import/no-named-as-default": Array [
-      "error",
+      "off",
     ],
     "import/no-named-as-default-member": Array [
       "error",
@@ -2778,6 +2786,16 @@ Object {
     ],
     "@typescript-eslint/camelcase": Array [
       "error",
+      Object {
+        "allow": Array [
+          "inner_hits",
+          "multi_match",
+          "match_all",
+          "doc_as_upsert",
+        ],
+        "ignoreDestructuring": false,
+        "ignoreImports": false,
+      },
     ],
     "@typescript-eslint/class-literal-property-style": Array [
       "error",
@@ -2931,6 +2949,9 @@ Object {
     ],
     "@typescript-eslint/no-unused-vars-experimental": Array [
       "error",
+      Object {
+        "ignoreArgsIfArgsAfterAreUsed": true,
+      },
     ],
     "@typescript-eslint/no-use-before-define": Array [
       "error",
@@ -3057,16 +3078,7 @@ Object {
       "error",
     ],
     "camelcase": Array [
-      "error",
-      Object {
-        "allow": Array [
-          "inner_hits",
-          "multi_match",
-          "match_all",
-        ],
-        "ignoreDestructuring": false,
-        "ignoreImports": false,
-      },
+      "off",
     ],
     "comma-dangle": Array [
       "off",
@@ -3170,7 +3182,7 @@ Object {
       "error",
     ],
     "import/no-named-as-default": Array [
-      "error",
+      "off",
     ],
     "import/no-named-as-default-member": Array [
       "error",
@@ -4139,6 +4151,16 @@ Object {
     ],
     "@typescript-eslint/camelcase": Array [
       "error",
+      Object {
+        "allow": Array [
+          "inner_hits",
+          "multi_match",
+          "match_all",
+          "doc_as_upsert",
+        ],
+        "ignoreDestructuring": false,
+        "ignoreImports": false,
+      },
     ],
     "@typescript-eslint/class-literal-property-style": Array [
       "error",
@@ -4292,6 +4314,9 @@ Object {
     ],
     "@typescript-eslint/no-unused-vars-experimental": Array [
       "error",
+      Object {
+        "ignoreArgsIfArgsAfterAreUsed": true,
+      },
     ],
     "@typescript-eslint/no-use-before-define": Array [
       "error",
@@ -4418,16 +4443,7 @@ Object {
       "error",
     ],
     "camelcase": Array [
-      "error",
-      Object {
-        "allow": Array [
-          "inner_hits",
-          "multi_match",
-          "match_all",
-        ],
-        "ignoreDestructuring": false,
-        "ignoreImports": false,
-      },
+      "off",
     ],
     "comma-dangle": Array [
       "off",
@@ -4531,7 +4547,7 @@ Object {
       "error",
     ],
     "import/no-named-as-default": Array [
-      "error",
+      "off",
     ],
     "import/no-named-as-default-member": Array [
       "error",
@@ -5500,6 +5516,16 @@ Object {
     ],
     "@typescript-eslint/camelcase": Array [
       "error",
+      Object {
+        "allow": Array [
+          "inner_hits",
+          "multi_match",
+          "match_all",
+          "doc_as_upsert",
+        ],
+        "ignoreDestructuring": false,
+        "ignoreImports": false,
+      },
     ],
     "@typescript-eslint/class-literal-property-style": Array [
       "error",
@@ -5653,6 +5679,9 @@ Object {
     ],
     "@typescript-eslint/no-unused-vars-experimental": Array [
       "error",
+      Object {
+        "ignoreArgsIfArgsAfterAreUsed": true,
+      },
     ],
     "@typescript-eslint/no-use-before-define": Array [
       "error",
@@ -5779,16 +5808,7 @@ Object {
       "error",
     ],
     "camelcase": Array [
-      "error",
-      Object {
-        "allow": Array [
-          "inner_hits",
-          "multi_match",
-          "match_all",
-        ],
-        "ignoreDestructuring": false,
-        "ignoreImports": false,
-      },
+      "off",
     ],
     "comma-dangle": Array [
       "off",
@@ -5892,7 +5912,7 @@ Object {
       "error",
     ],
     "import/no-named-as-default": Array [
-      "error",
+      "off",
     ],
     "import/no-named-as-default-member": Array [
       "error",
@@ -6861,6 +6881,16 @@ Object {
     ],
     "@typescript-eslint/camelcase": Array [
       "error",
+      Object {
+        "allow": Array [
+          "inner_hits",
+          "multi_match",
+          "match_all",
+          "doc_as_upsert",
+        ],
+        "ignoreDestructuring": false,
+        "ignoreImports": false,
+      },
     ],
     "@typescript-eslint/class-literal-property-style": Array [
       "error",
@@ -7014,6 +7044,9 @@ Object {
     ],
     "@typescript-eslint/no-unused-vars-experimental": Array [
       "error",
+      Object {
+        "ignoreArgsIfArgsAfterAreUsed": true,
+      },
     ],
     "@typescript-eslint/no-use-before-define": Array [
       "error",
@@ -7140,16 +7173,7 @@ Object {
       "error",
     ],
     "camelcase": Array [
-      "error",
-      Object {
-        "allow": Array [
-          "inner_hits",
-          "multi_match",
-          "match_all",
-        ],
-        "ignoreDestructuring": false,
-        "ignoreImports": false,
-      },
+      "off",
     ],
     "comma-dangle": Array [
       "off",
@@ -7253,7 +7277,7 @@ Object {
       "error",
     ],
     "import/no-named-as-default": Array [
-      "error",
+      "off",
     ],
     "import/no-named-as-default-member": Array [
       "error",
