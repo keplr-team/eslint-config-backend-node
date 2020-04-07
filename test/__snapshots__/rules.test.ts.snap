@@ -103,6 +103,10 @@ Object {
     "@typescript-eslint/member-ordering": Array [
       "error",
     ],
+    "@typescript-eslint/method-signature-style": Array [
+      "error",
+      "property",
+    ],
     "@typescript-eslint/naming-convention": Array [
       "error",
     ],
@@ -1304,7 +1308,6 @@ Array [
   "@typescript-eslint/explicit-module-boundary-types",
   "@typescript-eslint/generic-type-naming",
   "@typescript-eslint/member-naming",
-  "@typescript-eslint/method-signature-style",
   "@typescript-eslint/no-magic-numbers",
   "@typescript-eslint/no-parameter-properties",
   "@typescript-eslint/no-untyped-public-signature",
@@ -1468,6 +1471,10 @@ Object {
     ],
     "@typescript-eslint/member-ordering": Array [
       "error",
+    ],
+    "@typescript-eslint/method-signature-style": Array [
+      "error",
+      "property",
     ],
     "@typescript-eslint/naming-convention": Array [
       "error",
@@ -2670,7 +2677,6 @@ Array [
   "@typescript-eslint/explicit-module-boundary-types",
   "@typescript-eslint/generic-type-naming",
   "@typescript-eslint/member-naming",
-  "@typescript-eslint/method-signature-style",
   "@typescript-eslint/no-magic-numbers",
   "@typescript-eslint/no-parameter-properties",
   "@typescript-eslint/no-untyped-public-signature",
@@ -2834,6 +2840,10 @@ Object {
     ],
     "@typescript-eslint/member-ordering": Array [
       "error",
+    ],
+    "@typescript-eslint/method-signature-style": Array [
+      "error",
+      "property",
     ],
     "@typescript-eslint/naming-convention": Array [
       "error",
@@ -4036,7 +4046,6 @@ Array [
   "@typescript-eslint/explicit-module-boundary-types",
   "@typescript-eslint/generic-type-naming",
   "@typescript-eslint/member-naming",
-  "@typescript-eslint/method-signature-style",
   "@typescript-eslint/no-magic-numbers",
   "@typescript-eslint/no-parameter-properties",
   "@typescript-eslint/no-untyped-public-signature",
@@ -4200,6 +4209,10 @@ Object {
     ],
     "@typescript-eslint/member-ordering": Array [
       "error",
+    ],
+    "@typescript-eslint/method-signature-style": Array [
+      "error",
+      "property",
     ],
     "@typescript-eslint/naming-convention": Array [
       "error",
@@ -5402,7 +5415,6 @@ Array [
   "@typescript-eslint/explicit-module-boundary-types",
   "@typescript-eslint/generic-type-naming",
   "@typescript-eslint/member-naming",
-  "@typescript-eslint/method-signature-style",
   "@typescript-eslint/no-magic-numbers",
   "@typescript-eslint/no-parameter-properties",
   "@typescript-eslint/no-untyped-public-signature",
@@ -5566,6 +5578,10 @@ Object {
     ],
     "@typescript-eslint/member-ordering": Array [
       "error",
+    ],
+    "@typescript-eslint/method-signature-style": Array [
+      "error",
+      "property",
     ],
     "@typescript-eslint/naming-convention": Array [
       "error",
@@ -6768,7 +6784,6 @@ Array [
   "@typescript-eslint/explicit-module-boundary-types",
   "@typescript-eslint/generic-type-naming",
   "@typescript-eslint/member-naming",
-  "@typescript-eslint/method-signature-style",
   "@typescript-eslint/no-magic-numbers",
   "@typescript-eslint/no-parameter-properties",
   "@typescript-eslint/no-untyped-public-signature",
@@ -6932,6 +6947,10 @@ Object {
     ],
     "@typescript-eslint/member-ordering": Array [
       "error",
+    ],
+    "@typescript-eslint/method-signature-style": Array [
+      "error",
+      "property",
     ],
     "@typescript-eslint/naming-convention": Array [
       "error",
@@ -8134,7 +8153,6 @@ Array [
   "@typescript-eslint/explicit-module-boundary-types",
   "@typescript-eslint/generic-type-naming",
   "@typescript-eslint/member-naming",
-  "@typescript-eslint/method-signature-style",
   "@typescript-eslint/no-magic-numbers",
   "@typescript-eslint/no-parameter-properties",
   "@typescript-eslint/no-untyped-public-signature",
