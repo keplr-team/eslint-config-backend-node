@@ -977,12 +977,7 @@ Object {
       "error",
     ],
     "no-unused-expressions": Array [
-      "error",
-      Object {
-        "allowShortCircuit": false,
-        "allowTaggedTemplates": false,
-        "allowTernary": false,
-      },
+      "off",
     ],
     "no-unused-labels": Array [
       "error",
@@ -2346,12 +2341,7 @@ Object {
       "error",
     ],
     "no-unused-expressions": Array [
-      "error",
-      Object {
-        "allowShortCircuit": false,
-        "allowTaggedTemplates": false,
-        "allowTernary": false,
-      },
+      "off",
     ],
     "no-unused-labels": Array [
       "error",
@@ -3715,12 +3705,7 @@ Object {
       "error",
     ],
     "no-unused-expressions": Array [
-      "error",
-      Object {
-        "allowShortCircuit": false,
-        "allowTaggedTemplates": false,
-        "allowTernary": false,
-      },
+      "off",
     ],
     "no-unused-labels": Array [
       "error",
@@ -5084,12 +5069,7 @@ Object {
       "error",
     ],
     "no-unused-expressions": Array [
-      "error",
-      Object {
-        "allowShortCircuit": false,
-        "allowTaggedTemplates": false,
-        "allowTernary": false,
-      },
+      "off",
     ],
     "no-unused-labels": Array [
       "error",
@@ -6453,12 +6433,7 @@ Object {
       "error",
     ],
     "no-unused-expressions": Array [
-      "error",
-      Object {
-        "allowShortCircuit": false,
-        "allowTaggedTemplates": false,
-        "allowTernary": false,
-      },
+      "off",
     ],
     "no-unused-labels": Array [
       "error",
@@ -7822,12 +7797,7 @@ Object {
       "error",
     ],
     "no-unused-expressions": Array [
-      "error",
-      Object {
-        "allowShortCircuit": false,
-        "allowTaggedTemplates": false,
-        "allowTernary": false,
-      },
+      "off",
     ],
     "no-unused-labels": Array [
       "error",
