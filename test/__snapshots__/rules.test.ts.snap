@@ -986,11 +986,7 @@ Object {
       "off",
     ],
     "no-use-before-define": Array [
-      "error",
-      Object {
-        "classes": true,
-        "variables": true,
-      },
+      "off",
     ],
     "no-useless-call": Array [
       "error",
@@ -2350,11 +2346,7 @@ Object {
       "off",
     ],
     "no-use-before-define": Array [
-      "error",
-      Object {
-        "classes": true,
-        "variables": true,
-      },
+      "off",
     ],
     "no-useless-call": Array [
       "error",
@@ -3714,11 +3706,7 @@ Object {
       "off",
     ],
     "no-use-before-define": Array [
-      "error",
-      Object {
-        "classes": true,
-        "variables": true,
-      },
+      "off",
     ],
     "no-useless-call": Array [
       "error",
@@ -5078,11 +5066,7 @@ Object {
       "off",
     ],
     "no-use-before-define": Array [
-      "error",
-      Object {
-        "classes": true,
-        "variables": true,
-      },
+      "off",
     ],
     "no-useless-call": Array [
       "error",
@@ -6442,11 +6426,7 @@ Object {
       "off",
     ],
     "no-use-before-define": Array [
-      "error",
-      Object {
-        "classes": true,
-        "variables": true,
-      },
+      "off",
     ],
     "no-useless-call": Array [
       "error",
@@ -7806,11 +7786,7 @@ Object {
       "off",
     ],
     "no-use-before-define": Array [
-      "error",
-      Object {
-        "classes": true,
-        "variables": true,
-      },
+      "off",
     ],
     "no-useless-call": Array [
       "error",
