@@ -124,6 +124,13 @@ Object {
     ],
     "@typescript-eslint/no-empty-function": Array [
       "off",
+      Object {
+        "allow": Array [
+          "arrowFunctions",
+          "functions",
+          "methods",
+        ],
+      },
     ],
     "@typescript-eslint/no-empty-interface": Array [
       "error",
@@ -655,14 +662,7 @@ Object {
       "error",
     ],
     "no-empty-function": Array [
-      "error",
-      Object {
-        "allow": Array [
-          "arrowFunctions",
-          "functions",
-          "methods",
-        ],
-      },
+      "off",
     ],
     "no-empty-pattern": Array [
       "error",
@@ -1493,6 +1493,13 @@ Object {
     ],
     "@typescript-eslint/no-empty-function": Array [
       "off",
+      Object {
+        "allow": Array [
+          "arrowFunctions",
+          "functions",
+          "methods",
+        ],
+      },
     ],
     "@typescript-eslint/no-empty-interface": Array [
       "error",
@@ -2024,14 +2031,7 @@ Object {
       "error",
     ],
     "no-empty-function": Array [
-      "error",
-      Object {
-        "allow": Array [
-          "arrowFunctions",
-          "functions",
-          "methods",
-        ],
-      },
+      "off",
     ],
     "no-empty-pattern": Array [
       "error",
@@ -2861,7 +2861,14 @@ Object {
       "error",
     ],
     "@typescript-eslint/no-empty-function": Array [
-      "off",
+      "error",
+      Object {
+        "allow": Array [
+          "arrowFunctions",
+          "functions",
+          "methods",
+        ],
+      },
     ],
     "@typescript-eslint/no-empty-interface": Array [
       "error",
@@ -3393,14 +3400,7 @@ Object {
       "error",
     ],
     "no-empty-function": Array [
-      "error",
-      Object {
-        "allow": Array [
-          "arrowFunctions",
-          "functions",
-          "methods",
-        ],
-      },
+      "off",
     ],
     "no-empty-pattern": Array [
       "error",
@@ -4231,6 +4231,13 @@ Object {
     ],
     "@typescript-eslint/no-empty-function": Array [
       "off",
+      Object {
+        "allow": Array [
+          "arrowFunctions",
+          "functions",
+          "methods",
+        ],
+      },
     ],
     "@typescript-eslint/no-empty-interface": Array [
       "error",
@@ -4762,14 +4769,7 @@ Object {
       "error",
     ],
     "no-empty-function": Array [
-      "error",
-      Object {
-        "allow": Array [
-          "arrowFunctions",
-          "functions",
-          "methods",
-        ],
-      },
+      "off",
     ],
     "no-empty-pattern": Array [
       "error",
@@ -5600,6 +5600,13 @@ Object {
     ],
     "@typescript-eslint/no-empty-function": Array [
       "off",
+      Object {
+        "allow": Array [
+          "arrowFunctions",
+          "functions",
+          "methods",
+        ],
+      },
     ],
     "@typescript-eslint/no-empty-interface": Array [
       "error",
@@ -6131,14 +6138,7 @@ Object {
       "error",
     ],
     "no-empty-function": Array [
-      "error",
-      Object {
-        "allow": Array [
-          "arrowFunctions",
-          "functions",
-          "methods",
-        ],
-      },
+      "off",
     ],
     "no-empty-pattern": Array [
       "error",
@@ -6968,7 +6968,14 @@ Object {
       "error",
     ],
     "@typescript-eslint/no-empty-function": Array [
-      "off",
+      "error",
+      Object {
+        "allow": Array [
+          "arrowFunctions",
+          "functions",
+          "methods",
+        ],
+      },
     ],
     "@typescript-eslint/no-empty-interface": Array [
       "error",
@@ -7500,14 +7507,7 @@ Object {
       "error",
     ],
     "no-empty-function": Array [
-      "error",
-      Object {
-        "allow": Array [
-          "arrowFunctions",
-          "functions",
-          "methods",
-        ],
-      },
+      "off",
     ],
     "no-empty-pattern": Array [
       "error",
