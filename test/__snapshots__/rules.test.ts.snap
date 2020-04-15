@@ -213,6 +213,9 @@ Object {
     "@typescript-eslint/no-unnecessary-type-assertion": Array [
       "error",
     ],
+    "@typescript-eslint/no-unsafe-assignment": Array [
+      "off",
+    ],
     "@typescript-eslint/no-unsafe-call": Array [
       "error",
     ],
@@ -271,11 +274,17 @@ Object {
     "@typescript-eslint/prefer-readonly": Array [
       "error",
     ],
+    "@typescript-eslint/prefer-reduce-type-parameter": Array [
+      "error",
+    ],
     "@typescript-eslint/prefer-regexp-exec": Array [
       "error",
     ],
     "@typescript-eslint/prefer-string-starts-ends-with": Array [
       "error",
+    ],
+    "@typescript-eslint/prefer-ts-expect-error": Array [
+      "off",
     ],
     "@typescript-eslint/promise-function-async": Array [
       "off",
@@ -1573,6 +1582,9 @@ Object {
     "@typescript-eslint/no-unnecessary-type-assertion": Array [
       "error",
     ],
+    "@typescript-eslint/no-unsafe-assignment": Array [
+      "off",
+    ],
     "@typescript-eslint/no-unsafe-call": Array [
       "error",
     ],
@@ -1631,11 +1643,17 @@ Object {
     "@typescript-eslint/prefer-readonly": Array [
       "error",
     ],
+    "@typescript-eslint/prefer-reduce-type-parameter": Array [
+      "error",
+    ],
     "@typescript-eslint/prefer-regexp-exec": Array [
       "error",
     ],
     "@typescript-eslint/prefer-string-starts-ends-with": Array [
       "error",
+    ],
+    "@typescript-eslint/prefer-ts-expect-error": Array [
+      "off",
     ],
     "@typescript-eslint/promise-function-async": Array [
       "off",
@@ -2933,6 +2951,9 @@ Object {
     "@typescript-eslint/no-unnecessary-type-assertion": Array [
       "error",
     ],
+    "@typescript-eslint/no-unsafe-assignment": Array [
+      "error",
+    ],
     "@typescript-eslint/no-unsafe-call": Array [
       "error",
     ],
@@ -2991,11 +3012,17 @@ Object {
     "@typescript-eslint/prefer-readonly": Array [
       "error",
     ],
+    "@typescript-eslint/prefer-reduce-type-parameter": Array [
+      "error",
+    ],
     "@typescript-eslint/prefer-regexp-exec": Array [
       "error",
     ],
     "@typescript-eslint/prefer-string-starts-ends-with": Array [
       "error",
+    ],
+    "@typescript-eslint/prefer-ts-expect-error": Array [
+      "off",
     ],
     "@typescript-eslint/promise-function-async": Array [
       "off",
@@ -4293,6 +4320,9 @@ Object {
     "@typescript-eslint/no-unnecessary-type-assertion": Array [
       "error",
     ],
+    "@typescript-eslint/no-unsafe-assignment": Array [
+      "off",
+    ],
     "@typescript-eslint/no-unsafe-call": Array [
       "error",
     ],
@@ -4351,11 +4381,17 @@ Object {
     "@typescript-eslint/prefer-readonly": Array [
       "error",
     ],
+    "@typescript-eslint/prefer-reduce-type-parameter": Array [
+      "error",
+    ],
     "@typescript-eslint/prefer-regexp-exec": Array [
       "error",
     ],
     "@typescript-eslint/prefer-string-starts-ends-with": Array [
       "error",
+    ],
+    "@typescript-eslint/prefer-ts-expect-error": Array [
+      "off",
     ],
     "@typescript-eslint/promise-function-async": Array [
       "off",
@@ -5653,6 +5689,9 @@ Object {
     "@typescript-eslint/no-unnecessary-type-assertion": Array [
       "error",
     ],
+    "@typescript-eslint/no-unsafe-assignment": Array [
+      "off",
+    ],
     "@typescript-eslint/no-unsafe-call": Array [
       "error",
     ],
@@ -5711,11 +5750,17 @@ Object {
     "@typescript-eslint/prefer-readonly": Array [
       "error",
     ],
+    "@typescript-eslint/prefer-reduce-type-parameter": Array [
+      "error",
+    ],
     "@typescript-eslint/prefer-regexp-exec": Array [
       "error",
     ],
     "@typescript-eslint/prefer-string-starts-ends-with": Array [
       "error",
+    ],
+    "@typescript-eslint/prefer-ts-expect-error": Array [
+      "off",
     ],
     "@typescript-eslint/promise-function-async": Array [
       "off",
@@ -7013,6 +7058,9 @@ Object {
     "@typescript-eslint/no-unnecessary-type-assertion": Array [
       "error",
     ],
+    "@typescript-eslint/no-unsafe-assignment": Array [
+      "error",
+    ],
     "@typescript-eslint/no-unsafe-call": Array [
       "error",
     ],
@@ -7071,11 +7119,17 @@ Object {
     "@typescript-eslint/prefer-readonly": Array [
       "error",
     ],
+    "@typescript-eslint/prefer-reduce-type-parameter": Array [
+      "error",
+    ],
     "@typescript-eslint/prefer-regexp-exec": Array [
       "error",
     ],
     "@typescript-eslint/prefer-string-starts-ends-with": Array [
       "error",
+    ],
+    "@typescript-eslint/prefer-ts-expect-error": Array [
+      "off",
     ],
     "@typescript-eslint/promise-function-async": Array [
       "off",
