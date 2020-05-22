@@ -85,6 +85,14 @@ Object {
     "@typescript-eslint/default-param-last": Array [
       "error",
     ],
+    "@typescript-eslint/dot-notation": Array [
+      "error",
+      Object {
+        "allowKeywords": true,
+        "allowPattern": "",
+        "allowPrivateClassPropertyAccess": false,
+      },
+    ],
     "@typescript-eslint/explicit-function-return-type": Array [
       "off",
     ],
@@ -95,6 +103,12 @@ Object {
       "off",
     ],
     "@typescript-eslint/interface-name-prefix": Array [
+      "error",
+    ],
+    "@typescript-eslint/keyword-spacing": Array [
+      "off",
+    ],
+    "@typescript-eslint/lines-between-class-members": Array [
       "error",
     ],
     "@typescript-eslint/member-delimiter-style": Array [
@@ -161,6 +175,12 @@ Object {
     ],
     "@typescript-eslint/no-inferrable-types": Array [
       "error",
+    ],
+    "@typescript-eslint/no-invalid-void-type": Array [
+      "error",
+      Object {
+        "allowInGenericTypeArguments": true,
+      },
     ],
     "@typescript-eslint/no-misused-new": Array [
       "error",
@@ -406,7 +426,7 @@ Object {
       "property",
     ],
     "dot-notation": Array [
-      "error",
+      "off",
     ],
     "eol-last": Array [
       "off",
@@ -510,6 +530,9 @@ Object {
     ],
     "jest/no-commented-out-tests": Array [
       "warn",
+    ],
+    "jest/no-deprecated-functions": Array [
+      "error",
     ],
     "jest/no-disabled-tests": Array [
       "warn",
@@ -1307,7 +1330,9 @@ Array [
   "@typescript-eslint/explicit-member-accessibility",
   "@typescript-eslint/explicit-module-boundary-types",
   "@typescript-eslint/generic-type-naming",
+  "@typescript-eslint/init-declarations",
   "@typescript-eslint/member-naming",
+  "@typescript-eslint/no-invalid-this",
   "@typescript-eslint/no-magic-numbers",
   "@typescript-eslint/no-parameter-properties",
   "@typescript-eslint/no-untyped-public-signature",
@@ -1350,6 +1375,7 @@ Array [
   "jest/no-hooks",
   "jest/no-if",
   "jest/no-large-snapshots",
+  "jest/no-restricted-matchers",
   "jest/no-test-return-statement",
   "jest/no-truthy-falsy",
   "jest/prefer-called-with",
@@ -1454,6 +1480,14 @@ Object {
     "@typescript-eslint/default-param-last": Array [
       "error",
     ],
+    "@typescript-eslint/dot-notation": Array [
+      "error",
+      Object {
+        "allowKeywords": true,
+        "allowPattern": "",
+        "allowPrivateClassPropertyAccess": false,
+      },
+    ],
     "@typescript-eslint/explicit-function-return-type": Array [
       "off",
     ],
@@ -1464,6 +1498,12 @@ Object {
       "off",
     ],
     "@typescript-eslint/interface-name-prefix": Array [
+      "error",
+    ],
+    "@typescript-eslint/keyword-spacing": Array [
+      "off",
+    ],
+    "@typescript-eslint/lines-between-class-members": Array [
       "error",
     ],
     "@typescript-eslint/member-delimiter-style": Array [
@@ -1530,6 +1570,12 @@ Object {
     ],
     "@typescript-eslint/no-inferrable-types": Array [
       "error",
+    ],
+    "@typescript-eslint/no-invalid-void-type": Array [
+      "error",
+      Object {
+        "allowInGenericTypeArguments": true,
+      },
     ],
     "@typescript-eslint/no-misused-new": Array [
       "error",
@@ -1775,7 +1821,7 @@ Object {
       "property",
     ],
     "dot-notation": Array [
-      "error",
+      "off",
     ],
     "eol-last": Array [
       "off",
@@ -1879,6 +1925,9 @@ Object {
     ],
     "jest/no-commented-out-tests": Array [
       "warn",
+    ],
+    "jest/no-deprecated-functions": Array [
+      "error",
     ],
     "jest/no-disabled-tests": Array [
       "warn",
@@ -2676,7 +2725,9 @@ Array [
   "@typescript-eslint/explicit-member-accessibility",
   "@typescript-eslint/explicit-module-boundary-types",
   "@typescript-eslint/generic-type-naming",
+  "@typescript-eslint/init-declarations",
   "@typescript-eslint/member-naming",
+  "@typescript-eslint/no-invalid-this",
   "@typescript-eslint/no-magic-numbers",
   "@typescript-eslint/no-parameter-properties",
   "@typescript-eslint/no-untyped-public-signature",
@@ -2719,6 +2770,7 @@ Array [
   "jest/no-hooks",
   "jest/no-if",
   "jest/no-large-snapshots",
+  "jest/no-restricted-matchers",
   "jest/no-test-return-statement",
   "jest/no-truthy-falsy",
   "jest/prefer-called-with",
@@ -2823,6 +2875,14 @@ Object {
     "@typescript-eslint/default-param-last": Array [
       "error",
     ],
+    "@typescript-eslint/dot-notation": Array [
+      "error",
+      Object {
+        "allowKeywords": true,
+        "allowPattern": "",
+        "allowPrivateClassPropertyAccess": false,
+      },
+    ],
     "@typescript-eslint/explicit-function-return-type": Array [
       "off",
     ],
@@ -2833,6 +2893,12 @@ Object {
       "off",
     ],
     "@typescript-eslint/interface-name-prefix": Array [
+      "error",
+    ],
+    "@typescript-eslint/keyword-spacing": Array [
+      "off",
+    ],
+    "@typescript-eslint/lines-between-class-members": Array [
       "error",
     ],
     "@typescript-eslint/member-delimiter-style": Array [
@@ -2899,6 +2965,12 @@ Object {
     ],
     "@typescript-eslint/no-inferrable-types": Array [
       "error",
+    ],
+    "@typescript-eslint/no-invalid-void-type": Array [
+      "error",
+      Object {
+        "allowInGenericTypeArguments": true,
+      },
     ],
     "@typescript-eslint/no-misused-new": Array [
       "error",
@@ -3144,7 +3216,7 @@ Object {
       "property",
     ],
     "dot-notation": Array [
-      "error",
+      "off",
     ],
     "eol-last": Array [
       "off",
@@ -3248,6 +3320,9 @@ Object {
     ],
     "jest/no-commented-out-tests": Array [
       "warn",
+    ],
+    "jest/no-deprecated-functions": Array [
+      "error",
     ],
     "jest/no-disabled-tests": Array [
       "warn",
@@ -4045,7 +4120,9 @@ Array [
   "@typescript-eslint/explicit-member-accessibility",
   "@typescript-eslint/explicit-module-boundary-types",
   "@typescript-eslint/generic-type-naming",
+  "@typescript-eslint/init-declarations",
   "@typescript-eslint/member-naming",
+  "@typescript-eslint/no-invalid-this",
   "@typescript-eslint/no-magic-numbers",
   "@typescript-eslint/no-parameter-properties",
   "@typescript-eslint/no-untyped-public-signature",
@@ -4088,6 +4165,7 @@ Array [
   "jest/no-hooks",
   "jest/no-if",
   "jest/no-large-snapshots",
+  "jest/no-restricted-matchers",
   "jest/no-test-return-statement",
   "jest/no-truthy-falsy",
   "jest/prefer-called-with",
@@ -4192,6 +4270,14 @@ Object {
     "@typescript-eslint/default-param-last": Array [
       "error",
     ],
+    "@typescript-eslint/dot-notation": Array [
+      "error",
+      Object {
+        "allowKeywords": true,
+        "allowPattern": "",
+        "allowPrivateClassPropertyAccess": false,
+      },
+    ],
     "@typescript-eslint/explicit-function-return-type": Array [
       "off",
     ],
@@ -4202,6 +4288,12 @@ Object {
       "off",
     ],
     "@typescript-eslint/interface-name-prefix": Array [
+      "error",
+    ],
+    "@typescript-eslint/keyword-spacing": Array [
+      "off",
+    ],
+    "@typescript-eslint/lines-between-class-members": Array [
       "error",
     ],
     "@typescript-eslint/member-delimiter-style": Array [
@@ -4268,6 +4360,12 @@ Object {
     ],
     "@typescript-eslint/no-inferrable-types": Array [
       "error",
+    ],
+    "@typescript-eslint/no-invalid-void-type": Array [
+      "error",
+      Object {
+        "allowInGenericTypeArguments": true,
+      },
     ],
     "@typescript-eslint/no-misused-new": Array [
       "error",
@@ -4513,7 +4611,7 @@ Object {
       "property",
     ],
     "dot-notation": Array [
-      "error",
+      "off",
     ],
     "eol-last": Array [
       "off",
@@ -4617,6 +4715,9 @@ Object {
     ],
     "jest/no-commented-out-tests": Array [
       "warn",
+    ],
+    "jest/no-deprecated-functions": Array [
+      "error",
     ],
     "jest/no-disabled-tests": Array [
       "warn",
@@ -5414,7 +5515,9 @@ Array [
   "@typescript-eslint/explicit-member-accessibility",
   "@typescript-eslint/explicit-module-boundary-types",
   "@typescript-eslint/generic-type-naming",
+  "@typescript-eslint/init-declarations",
   "@typescript-eslint/member-naming",
+  "@typescript-eslint/no-invalid-this",
   "@typescript-eslint/no-magic-numbers",
   "@typescript-eslint/no-parameter-properties",
   "@typescript-eslint/no-untyped-public-signature",
@@ -5457,6 +5560,7 @@ Array [
   "jest/no-hooks",
   "jest/no-if",
   "jest/no-large-snapshots",
+  "jest/no-restricted-matchers",
   "jest/no-test-return-statement",
   "jest/no-truthy-falsy",
   "jest/prefer-called-with",
@@ -5561,6 +5665,14 @@ Object {
     "@typescript-eslint/default-param-last": Array [
       "error",
     ],
+    "@typescript-eslint/dot-notation": Array [
+      "error",
+      Object {
+        "allowKeywords": true,
+        "allowPattern": "",
+        "allowPrivateClassPropertyAccess": false,
+      },
+    ],
     "@typescript-eslint/explicit-function-return-type": Array [
       "off",
     ],
@@ -5571,6 +5683,12 @@ Object {
       "off",
     ],
     "@typescript-eslint/interface-name-prefix": Array [
+      "error",
+    ],
+    "@typescript-eslint/keyword-spacing": Array [
+      "off",
+    ],
+    "@typescript-eslint/lines-between-class-members": Array [
       "error",
     ],
     "@typescript-eslint/member-delimiter-style": Array [
@@ -5637,6 +5755,12 @@ Object {
     ],
     "@typescript-eslint/no-inferrable-types": Array [
       "error",
+    ],
+    "@typescript-eslint/no-invalid-void-type": Array [
+      "error",
+      Object {
+        "allowInGenericTypeArguments": true,
+      },
     ],
     "@typescript-eslint/no-misused-new": Array [
       "error",
@@ -5882,7 +6006,7 @@ Object {
       "property",
     ],
     "dot-notation": Array [
-      "error",
+      "off",
     ],
     "eol-last": Array [
       "off",
@@ -5986,6 +6110,9 @@ Object {
     ],
     "jest/no-commented-out-tests": Array [
       "warn",
+    ],
+    "jest/no-deprecated-functions": Array [
+      "error",
     ],
     "jest/no-disabled-tests": Array [
       "warn",
@@ -6783,7 +6910,9 @@ Array [
   "@typescript-eslint/explicit-member-accessibility",
   "@typescript-eslint/explicit-module-boundary-types",
   "@typescript-eslint/generic-type-naming",
+  "@typescript-eslint/init-declarations",
   "@typescript-eslint/member-naming",
+  "@typescript-eslint/no-invalid-this",
   "@typescript-eslint/no-magic-numbers",
   "@typescript-eslint/no-parameter-properties",
   "@typescript-eslint/no-untyped-public-signature",
@@ -6826,6 +6955,7 @@ Array [
   "jest/no-hooks",
   "jest/no-if",
   "jest/no-large-snapshots",
+  "jest/no-restricted-matchers",
   "jest/no-test-return-statement",
   "jest/no-truthy-falsy",
   "jest/prefer-called-with",
@@ -6930,6 +7060,14 @@ Object {
     "@typescript-eslint/default-param-last": Array [
       "error",
     ],
+    "@typescript-eslint/dot-notation": Array [
+      "error",
+      Object {
+        "allowKeywords": true,
+        "allowPattern": "",
+        "allowPrivateClassPropertyAccess": false,
+      },
+    ],
     "@typescript-eslint/explicit-function-return-type": Array [
       "off",
     ],
@@ -6940,6 +7078,12 @@ Object {
       "off",
     ],
     "@typescript-eslint/interface-name-prefix": Array [
+      "error",
+    ],
+    "@typescript-eslint/keyword-spacing": Array [
+      "off",
+    ],
+    "@typescript-eslint/lines-between-class-members": Array [
       "error",
     ],
     "@typescript-eslint/member-delimiter-style": Array [
@@ -7006,6 +7150,12 @@ Object {
     ],
     "@typescript-eslint/no-inferrable-types": Array [
       "error",
+    ],
+    "@typescript-eslint/no-invalid-void-type": Array [
+      "error",
+      Object {
+        "allowInGenericTypeArguments": true,
+      },
     ],
     "@typescript-eslint/no-misused-new": Array [
       "error",
@@ -7251,7 +7401,7 @@ Object {
       "property",
     ],
     "dot-notation": Array [
-      "error",
+      "off",
     ],
     "eol-last": Array [
       "off",
@@ -7355,6 +7505,9 @@ Object {
     ],
     "jest/no-commented-out-tests": Array [
       "warn",
+    ],
+    "jest/no-deprecated-functions": Array [
+      "error",
     ],
     "jest/no-disabled-tests": Array [
       "warn",
@@ -8152,7 +8305,9 @@ Array [
   "@typescript-eslint/explicit-member-accessibility",
   "@typescript-eslint/explicit-module-boundary-types",
   "@typescript-eslint/generic-type-naming",
+  "@typescript-eslint/init-declarations",
   "@typescript-eslint/member-naming",
+  "@typescript-eslint/no-invalid-this",
   "@typescript-eslint/no-magic-numbers",
   "@typescript-eslint/no-parameter-properties",
   "@typescript-eslint/no-untyped-public-signature",
@@ -8195,6 +8350,7 @@ Array [
   "jest/no-hooks",
   "jest/no-if",
   "jest/no-large-snapshots",
+  "jest/no-restricted-matchers",
   "jest/no-test-return-statement",
   "jest/no-truthy-falsy",
   "jest/prefer-called-with",
