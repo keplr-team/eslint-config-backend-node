@@ -13,7 +13,7 @@ describe('ESLint rules', () => {
       expect(fileConfig).toMatchSnapshot(
         {
           parser: expect.stringMatching(
-            'node_modules/@typescript-eslint/parser/dist/parser.js',
+            'node_modules/@typescript-eslint/parser/dist/index.js',
           ),
         },
         'Applied rules',
