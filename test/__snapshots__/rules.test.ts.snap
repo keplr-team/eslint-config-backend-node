@@ -103,7 +103,7 @@ Object {
       "property",
     ],
     "@typescript-eslint/naming-convention": Array [
-      "error",
+      "off",
     ],
     "@typescript-eslint/no-array-constructor": Array [
       "error",
@@ -1486,7 +1486,7 @@ Object {
       "property",
     ],
     "@typescript-eslint/naming-convention": Array [
-      "error",
+      "off",
     ],
     "@typescript-eslint/no-array-constructor": Array [
       "error",
@@ -2869,7 +2869,7 @@ Object {
       "property",
     ],
     "@typescript-eslint/naming-convention": Array [
-      "error",
+      "off",
     ],
     "@typescript-eslint/no-array-constructor": Array [
       "error",
@@ -4252,7 +4252,7 @@ Object {
       "property",
     ],
     "@typescript-eslint/naming-convention": Array [
-      "error",
+      "off",
     ],
     "@typescript-eslint/no-array-constructor": Array [
       "error",
@@ -5635,7 +5635,7 @@ Object {
       "property",
     ],
     "@typescript-eslint/naming-convention": Array [
-      "error",
+      "off",
     ],
     "@typescript-eslint/no-array-constructor": Array [
       "error",
@@ -7018,7 +7018,7 @@ Object {
       "property",
     ],
     "@typescript-eslint/naming-convention": Array [
-      "error",
+      "off",
     ],
     "@typescript-eslint/no-array-constructor": Array [
       "error",
