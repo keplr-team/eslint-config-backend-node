@@ -435,7 +435,7 @@ Object {
       "off",
     ],
     "generator-star-spacing": Array [
-      "error",
+      "off",
     ],
     "getter-return": Array [
       "error",
@@ -1818,7 +1818,7 @@ Object {
       "off",
     ],
     "generator-star-spacing": Array [
-      "error",
+      "off",
     ],
     "getter-return": Array [
       "off",
@@ -3201,7 +3201,7 @@ Object {
       "off",
     ],
     "generator-star-spacing": Array [
-      "error",
+      "off",
     ],
     "getter-return": Array [
       "error",
@@ -4584,7 +4584,7 @@ Object {
       "off",
     ],
     "generator-star-spacing": Array [
-      "error",
+      "off",
     ],
     "getter-return": Array [
       "error",
@@ -5967,7 +5967,7 @@ Object {
       "off",
     ],
     "generator-star-spacing": Array [
-      "error",
+      "off",
     ],
     "getter-return": Array [
       "off",
@@ -7350,7 +7350,7 @@ Object {
       "off",
     ],
     "generator-star-spacing": Array [
-      "error",
+      "off",
     ],
     "getter-return": Array [
       "off",
