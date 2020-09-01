@@ -45,6 +45,9 @@ Object {
     "@typescript-eslint/ban-ts-comment": Array [
       "off",
     ],
+    "@typescript-eslint/ban-tslint-comment": Array [
+      "error",
+    ],
     "@typescript-eslint/ban-types": Array [
       "error",
     ],
@@ -111,6 +114,9 @@ Object {
     "@typescript-eslint/no-base-to-string": Array [
       "error",
     ],
+    "@typescript-eslint/no-confusing-non-null-assertion": Array [
+      "error",
+    ],
     "@typescript-eslint/no-dupe-class-members": Array [
       "error",
     ],
@@ -151,6 +157,9 @@ Object {
     "@typescript-eslint/no-for-in-array": Array [
       "error",
     ],
+    "@typescript-eslint/no-implicit-any-catch": Array [
+      "off",
+    ],
     "@typescript-eslint/no-implied-eval": Array [
       "error",
     ],
@@ -162,6 +171,9 @@ Object {
       Object {
         "allowInGenericTypeArguments": true,
       },
+    ],
+    "@typescript-eslint/no-loss-of-precision": Array [
+      "off",
     ],
     "@typescript-eslint/no-misused-new": Array [
       "error",
@@ -254,6 +266,9 @@ Object {
     "@typescript-eslint/prefer-as-const": Array [
       "error",
     ],
+    "@typescript-eslint/prefer-enum-initializers": Array [
+      "error",
+    ],
     "@typescript-eslint/prefer-for-of": Array [
       "error",
     ],
@@ -261,6 +276,9 @@ Object {
       "error",
     ],
     "@typescript-eslint/prefer-includes": Array [
+      "error",
+    ],
+    "@typescript-eslint/prefer-literal-enum-member": Array [
       "error",
     ],
     "@typescript-eslint/prefer-namespace-keyword": Array [
@@ -446,6 +464,9 @@ Object {
     "handle-callback-err": Array [
       "error",
     ],
+    "id-denylist": Array [
+      "off",
+    ],
     "implicit-arrow-linebreak": Array [
       "off",
     ],
@@ -459,7 +480,7 @@ Object {
       "error",
     ],
     "import/named": Array [
-      "error",
+      "off",
     ],
     "import/namespace": Array [
       "error",
@@ -516,6 +537,9 @@ Object {
     "jest/no-commented-out-tests": Array [
       "warn",
     ],
+    "jest/no-conditional-expect": Array [
+      "error",
+    ],
     "jest/no-deprecated-functions": Array [
       "error",
     ],
@@ -529,6 +553,9 @@ Object {
       "error",
     ],
     "jest/no-identical-title": Array [
+      "error",
+    ],
+    "jest/no-interpolation-in-snapshots": Array [
       "error",
     ],
     "jest/no-jasmine-globals": Array [
@@ -813,6 +840,9 @@ Object {
     "no-process-env": Array [
       "error",
     ],
+    "no-promise-executor-return": Array [
+      "error",
+    ],
     "no-proto": Array [
       "error",
     ],
@@ -978,6 +1008,7 @@ Object {
         "allowAfterSuper": false,
         "allowAfterThis": false,
         "allowAfterThisConstructor": false,
+        "allowFunctionParams": true,
         "enforceInMethodNames": false,
       },
     ],
@@ -988,6 +1019,9 @@ Object {
       "error",
     ],
     "no-unreachable": Array [
+      "error",
+    ],
+    "no-unreachable-loop": Array [
       "error",
     ],
     "no-unsafe-finally": Array [
@@ -1428,6 +1462,9 @@ Object {
     "@typescript-eslint/ban-ts-comment": Array [
       "off",
     ],
+    "@typescript-eslint/ban-tslint-comment": Array [
+      "error",
+    ],
     "@typescript-eslint/ban-types": Array [
       "error",
     ],
@@ -1494,6 +1531,9 @@ Object {
     "@typescript-eslint/no-base-to-string": Array [
       "error",
     ],
+    "@typescript-eslint/no-confusing-non-null-assertion": Array [
+      "error",
+    ],
     "@typescript-eslint/no-dupe-class-members": Array [
       "error",
     ],
@@ -1534,6 +1574,9 @@ Object {
     "@typescript-eslint/no-for-in-array": Array [
       "error",
     ],
+    "@typescript-eslint/no-implicit-any-catch": Array [
+      "off",
+    ],
     "@typescript-eslint/no-implied-eval": Array [
       "error",
     ],
@@ -1545,6 +1588,9 @@ Object {
       Object {
         "allowInGenericTypeArguments": true,
       },
+    ],
+    "@typescript-eslint/no-loss-of-precision": Array [
+      "off",
     ],
     "@typescript-eslint/no-misused-new": Array [
       "error",
@@ -1637,6 +1683,9 @@ Object {
     "@typescript-eslint/prefer-as-const": Array [
       "error",
     ],
+    "@typescript-eslint/prefer-enum-initializers": Array [
+      "error",
+    ],
     "@typescript-eslint/prefer-for-of": Array [
       "error",
     ],
@@ -1644,6 +1693,9 @@ Object {
       "error",
     ],
     "@typescript-eslint/prefer-includes": Array [
+      "error",
+    ],
+    "@typescript-eslint/prefer-literal-enum-member": Array [
       "error",
     ],
     "@typescript-eslint/prefer-namespace-keyword": Array [
@@ -1829,6 +1881,9 @@ Object {
     "handle-callback-err": Array [
       "error",
     ],
+    "id-denylist": Array [
+      "off",
+    ],
     "implicit-arrow-linebreak": Array [
       "off",
     ],
@@ -1842,7 +1897,7 @@ Object {
       "error",
     ],
     "import/named": Array [
-      "error",
+      "off",
     ],
     "import/namespace": Array [
       "error",
@@ -1899,6 +1954,9 @@ Object {
     "jest/no-commented-out-tests": Array [
       "warn",
     ],
+    "jest/no-conditional-expect": Array [
+      "error",
+    ],
     "jest/no-deprecated-functions": Array [
       "error",
     ],
@@ -1912,6 +1970,9 @@ Object {
       "error",
     ],
     "jest/no-identical-title": Array [
+      "error",
+    ],
+    "jest/no-interpolation-in-snapshots": Array [
       "error",
     ],
     "jest/no-jasmine-globals": Array [
@@ -2196,6 +2257,9 @@ Object {
     "no-process-env": Array [
       "error",
     ],
+    "no-promise-executor-return": Array [
+      "error",
+    ],
     "no-proto": Array [
       "error",
     ],
@@ -2361,6 +2425,7 @@ Object {
         "allowAfterSuper": false,
         "allowAfterThis": false,
         "allowAfterThisConstructor": false,
+        "allowFunctionParams": true,
         "enforceInMethodNames": false,
       },
     ],
@@ -2372,6 +2437,9 @@ Object {
     ],
     "no-unreachable": Array [
       "off",
+    ],
+    "no-unreachable-loop": Array [
+      "error",
     ],
     "no-unsafe-finally": Array [
       "error",
@@ -2811,6 +2879,9 @@ Object {
     "@typescript-eslint/ban-ts-comment": Array [
       "error",
     ],
+    "@typescript-eslint/ban-tslint-comment": Array [
+      "error",
+    ],
     "@typescript-eslint/ban-types": Array [
       "error",
     ],
@@ -2877,6 +2948,9 @@ Object {
     "@typescript-eslint/no-base-to-string": Array [
       "error",
     ],
+    "@typescript-eslint/no-confusing-non-null-assertion": Array [
+      "error",
+    ],
     "@typescript-eslint/no-dupe-class-members": Array [
       "error",
     ],
@@ -2917,6 +2991,9 @@ Object {
     "@typescript-eslint/no-for-in-array": Array [
       "error",
     ],
+    "@typescript-eslint/no-implicit-any-catch": Array [
+      "off",
+    ],
     "@typescript-eslint/no-implied-eval": Array [
       "error",
     ],
@@ -2928,6 +3005,9 @@ Object {
       Object {
         "allowInGenericTypeArguments": true,
       },
+    ],
+    "@typescript-eslint/no-loss-of-precision": Array [
+      "off",
     ],
     "@typescript-eslint/no-misused-new": Array [
       "error",
@@ -3020,6 +3100,9 @@ Object {
     "@typescript-eslint/prefer-as-const": Array [
       "error",
     ],
+    "@typescript-eslint/prefer-enum-initializers": Array [
+      "error",
+    ],
     "@typescript-eslint/prefer-for-of": Array [
       "error",
     ],
@@ -3027,6 +3110,9 @@ Object {
       "error",
     ],
     "@typescript-eslint/prefer-includes": Array [
+      "error",
+    ],
+    "@typescript-eslint/prefer-literal-enum-member": Array [
       "error",
     ],
     "@typescript-eslint/prefer-namespace-keyword": Array [
@@ -3212,6 +3298,9 @@ Object {
     "handle-callback-err": Array [
       "error",
     ],
+    "id-denylist": Array [
+      "off",
+    ],
     "implicit-arrow-linebreak": Array [
       "off",
     ],
@@ -3225,7 +3314,7 @@ Object {
       "error",
     ],
     "import/named": Array [
-      "error",
+      "off",
     ],
     "import/namespace": Array [
       "error",
@@ -3282,6 +3371,9 @@ Object {
     "jest/no-commented-out-tests": Array [
       "warn",
     ],
+    "jest/no-conditional-expect": Array [
+      "error",
+    ],
     "jest/no-deprecated-functions": Array [
       "error",
     ],
@@ -3295,6 +3387,9 @@ Object {
       "error",
     ],
     "jest/no-identical-title": Array [
+      "error",
+    ],
+    "jest/no-interpolation-in-snapshots": Array [
       "error",
     ],
     "jest/no-jasmine-globals": Array [
@@ -3579,6 +3674,9 @@ Object {
     "no-process-env": Array [
       "error",
     ],
+    "no-promise-executor-return": Array [
+      "error",
+    ],
     "no-proto": Array [
       "error",
     ],
@@ -3744,6 +3842,7 @@ Object {
         "allowAfterSuper": false,
         "allowAfterThis": false,
         "allowAfterThisConstructor": false,
+        "allowFunctionParams": true,
         "enforceInMethodNames": false,
       },
     ],
@@ -3754,6 +3853,9 @@ Object {
       "error",
     ],
     "no-unreachable": Array [
+      "error",
+    ],
+    "no-unreachable-loop": Array [
       "error",
     ],
     "no-unsafe-finally": Array [
@@ -4194,6 +4296,9 @@ Object {
     "@typescript-eslint/ban-ts-comment": Array [
       "off",
     ],
+    "@typescript-eslint/ban-tslint-comment": Array [
+      "error",
+    ],
     "@typescript-eslint/ban-types": Array [
       "error",
     ],
@@ -4260,6 +4365,9 @@ Object {
     "@typescript-eslint/no-base-to-string": Array [
       "error",
     ],
+    "@typescript-eslint/no-confusing-non-null-assertion": Array [
+      "error",
+    ],
     "@typescript-eslint/no-dupe-class-members": Array [
       "error",
     ],
@@ -4300,6 +4408,9 @@ Object {
     "@typescript-eslint/no-for-in-array": Array [
       "error",
     ],
+    "@typescript-eslint/no-implicit-any-catch": Array [
+      "off",
+    ],
     "@typescript-eslint/no-implied-eval": Array [
       "error",
     ],
@@ -4311,6 +4422,9 @@ Object {
       Object {
         "allowInGenericTypeArguments": true,
       },
+    ],
+    "@typescript-eslint/no-loss-of-precision": Array [
+      "off",
     ],
     "@typescript-eslint/no-misused-new": Array [
       "error",
@@ -4403,6 +4517,9 @@ Object {
     "@typescript-eslint/prefer-as-const": Array [
       "error",
     ],
+    "@typescript-eslint/prefer-enum-initializers": Array [
+      "error",
+    ],
     "@typescript-eslint/prefer-for-of": Array [
       "error",
     ],
@@ -4410,6 +4527,9 @@ Object {
       "error",
     ],
     "@typescript-eslint/prefer-includes": Array [
+      "error",
+    ],
+    "@typescript-eslint/prefer-literal-enum-member": Array [
       "error",
     ],
     "@typescript-eslint/prefer-namespace-keyword": Array [
@@ -4595,6 +4715,9 @@ Object {
     "handle-callback-err": Array [
       "error",
     ],
+    "id-denylist": Array [
+      "off",
+    ],
     "implicit-arrow-linebreak": Array [
       "off",
     ],
@@ -4608,7 +4731,7 @@ Object {
       "error",
     ],
     "import/named": Array [
-      "error",
+      "off",
     ],
     "import/namespace": Array [
       "error",
@@ -4665,6 +4788,9 @@ Object {
     "jest/no-commented-out-tests": Array [
       "warn",
     ],
+    "jest/no-conditional-expect": Array [
+      "error",
+    ],
     "jest/no-deprecated-functions": Array [
       "error",
     ],
@@ -4678,6 +4804,9 @@ Object {
       "error",
     ],
     "jest/no-identical-title": Array [
+      "error",
+    ],
+    "jest/no-interpolation-in-snapshots": Array [
       "error",
     ],
     "jest/no-jasmine-globals": Array [
@@ -4962,6 +5091,9 @@ Object {
     "no-process-env": Array [
       "error",
     ],
+    "no-promise-executor-return": Array [
+      "error",
+    ],
     "no-proto": Array [
       "error",
     ],
@@ -5127,6 +5259,7 @@ Object {
         "allowAfterSuper": false,
         "allowAfterThis": false,
         "allowAfterThisConstructor": false,
+        "allowFunctionParams": true,
         "enforceInMethodNames": false,
       },
     ],
@@ -5137,6 +5270,9 @@ Object {
       "error",
     ],
     "no-unreachable": Array [
+      "error",
+    ],
+    "no-unreachable-loop": Array [
       "error",
     ],
     "no-unsafe-finally": Array [
@@ -5577,6 +5713,9 @@ Object {
     "@typescript-eslint/ban-ts-comment": Array [
       "off",
     ],
+    "@typescript-eslint/ban-tslint-comment": Array [
+      "error",
+    ],
     "@typescript-eslint/ban-types": Array [
       "error",
     ],
@@ -5643,6 +5782,9 @@ Object {
     "@typescript-eslint/no-base-to-string": Array [
       "error",
     ],
+    "@typescript-eslint/no-confusing-non-null-assertion": Array [
+      "error",
+    ],
     "@typescript-eslint/no-dupe-class-members": Array [
       "error",
     ],
@@ -5683,6 +5825,9 @@ Object {
     "@typescript-eslint/no-for-in-array": Array [
       "error",
     ],
+    "@typescript-eslint/no-implicit-any-catch": Array [
+      "off",
+    ],
     "@typescript-eslint/no-implied-eval": Array [
       "error",
     ],
@@ -5694,6 +5839,9 @@ Object {
       Object {
         "allowInGenericTypeArguments": true,
       },
+    ],
+    "@typescript-eslint/no-loss-of-precision": Array [
+      "off",
     ],
     "@typescript-eslint/no-misused-new": Array [
       "error",
@@ -5786,6 +5934,9 @@ Object {
     "@typescript-eslint/prefer-as-const": Array [
       "error",
     ],
+    "@typescript-eslint/prefer-enum-initializers": Array [
+      "error",
+    ],
     "@typescript-eslint/prefer-for-of": Array [
       "error",
     ],
@@ -5793,6 +5944,9 @@ Object {
       "error",
     ],
     "@typescript-eslint/prefer-includes": Array [
+      "error",
+    ],
+    "@typescript-eslint/prefer-literal-enum-member": Array [
       "error",
     ],
     "@typescript-eslint/prefer-namespace-keyword": Array [
@@ -5978,6 +6132,9 @@ Object {
     "handle-callback-err": Array [
       "error",
     ],
+    "id-denylist": Array [
+      "off",
+    ],
     "implicit-arrow-linebreak": Array [
       "off",
     ],
@@ -5991,7 +6148,7 @@ Object {
       "error",
     ],
     "import/named": Array [
-      "error",
+      "off",
     ],
     "import/namespace": Array [
       "error",
@@ -6048,6 +6205,9 @@ Object {
     "jest/no-commented-out-tests": Array [
       "warn",
     ],
+    "jest/no-conditional-expect": Array [
+      "error",
+    ],
     "jest/no-deprecated-functions": Array [
       "error",
     ],
@@ -6061,6 +6221,9 @@ Object {
       "error",
     ],
     "jest/no-identical-title": Array [
+      "error",
+    ],
+    "jest/no-interpolation-in-snapshots": Array [
       "error",
     ],
     "jest/no-jasmine-globals": Array [
@@ -6345,6 +6508,9 @@ Object {
     "no-process-env": Array [
       "error",
     ],
+    "no-promise-executor-return": Array [
+      "error",
+    ],
     "no-proto": Array [
       "error",
     ],
@@ -6510,6 +6676,7 @@ Object {
         "allowAfterSuper": false,
         "allowAfterThis": false,
         "allowAfterThisConstructor": false,
+        "allowFunctionParams": true,
         "enforceInMethodNames": false,
       },
     ],
@@ -6521,6 +6688,9 @@ Object {
     ],
     "no-unreachable": Array [
       "off",
+    ],
+    "no-unreachable-loop": Array [
+      "error",
     ],
     "no-unsafe-finally": Array [
       "error",
@@ -6960,6 +7130,9 @@ Object {
     "@typescript-eslint/ban-ts-comment": Array [
       "error",
     ],
+    "@typescript-eslint/ban-tslint-comment": Array [
+      "error",
+    ],
     "@typescript-eslint/ban-types": Array [
       "error",
     ],
@@ -7026,6 +7199,9 @@ Object {
     "@typescript-eslint/no-base-to-string": Array [
       "error",
     ],
+    "@typescript-eslint/no-confusing-non-null-assertion": Array [
+      "error",
+    ],
     "@typescript-eslint/no-dupe-class-members": Array [
       "error",
     ],
@@ -7066,6 +7242,9 @@ Object {
     "@typescript-eslint/no-for-in-array": Array [
       "error",
     ],
+    "@typescript-eslint/no-implicit-any-catch": Array [
+      "off",
+    ],
     "@typescript-eslint/no-implied-eval": Array [
       "error",
     ],
@@ -7077,6 +7256,9 @@ Object {
       Object {
         "allowInGenericTypeArguments": true,
       },
+    ],
+    "@typescript-eslint/no-loss-of-precision": Array [
+      "off",
     ],
     "@typescript-eslint/no-misused-new": Array [
       "error",
@@ -7169,6 +7351,9 @@ Object {
     "@typescript-eslint/prefer-as-const": Array [
       "error",
     ],
+    "@typescript-eslint/prefer-enum-initializers": Array [
+      "error",
+    ],
     "@typescript-eslint/prefer-for-of": Array [
       "error",
     ],
@@ -7176,6 +7361,9 @@ Object {
       "error",
     ],
     "@typescript-eslint/prefer-includes": Array [
+      "error",
+    ],
+    "@typescript-eslint/prefer-literal-enum-member": Array [
       "error",
     ],
     "@typescript-eslint/prefer-namespace-keyword": Array [
@@ -7361,6 +7549,9 @@ Object {
     "handle-callback-err": Array [
       "error",
     ],
+    "id-denylist": Array [
+      "off",
+    ],
     "implicit-arrow-linebreak": Array [
       "off",
     ],
@@ -7374,7 +7565,7 @@ Object {
       "error",
     ],
     "import/named": Array [
-      "error",
+      "off",
     ],
     "import/namespace": Array [
       "error",
@@ -7431,6 +7622,9 @@ Object {
     "jest/no-commented-out-tests": Array [
       "warn",
     ],
+    "jest/no-conditional-expect": Array [
+      "error",
+    ],
     "jest/no-deprecated-functions": Array [
       "error",
     ],
@@ -7444,6 +7638,9 @@ Object {
       "error",
     ],
     "jest/no-identical-title": Array [
+      "error",
+    ],
+    "jest/no-interpolation-in-snapshots": Array [
       "error",
     ],
     "jest/no-jasmine-globals": Array [
@@ -7728,6 +7925,9 @@ Object {
     "no-process-env": Array [
       "error",
     ],
+    "no-promise-executor-return": Array [
+      "error",
+    ],
     "no-proto": Array [
       "error",
     ],
@@ -7893,6 +8093,7 @@ Object {
         "allowAfterSuper": false,
         "allowAfterThis": false,
         "allowAfterThisConstructor": false,
+        "allowFunctionParams": true,
         "enforceInMethodNames": false,
       },
     ],
@@ -7904,6 +8105,9 @@ Object {
     ],
     "no-unreachable": Array [
       "off",
+    ],
+    "no-unreachable-loop": Array [
+      "error",
     ],
     "no-unsafe-finally": Array [
       "error",
