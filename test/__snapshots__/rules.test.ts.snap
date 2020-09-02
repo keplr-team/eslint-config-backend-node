@@ -66,6 +66,9 @@ Object {
     "@typescript-eslint/consistent-type-definitions": Array [
       "error",
     ],
+    "@typescript-eslint/consistent-type-imports": Array [
+      "error",
+    ],
     "@typescript-eslint/default-param-last": Array [
       "error",
     ],
@@ -190,7 +193,16 @@ Object {
     "@typescript-eslint/no-non-null-assertion": Array [
       "off",
     ],
+    "@typescript-eslint/no-redeclare": Array [
+      "error",
+      Object {
+        "ignoreDeclarationMerge": false,
+      },
+    ],
     "@typescript-eslint/no-require-imports": Array [
+      "error",
+    ],
+    "@typescript-eslint/no-shadow": Array [
       "error",
     ],
     "@typescript-eslint/no-this-alias": Array [
@@ -954,7 +966,7 @@ Object {
       "error",
     ],
     "no-shadow": Array [
-      "error",
+      "off",
     ],
     "no-shadow-restricted-names": Array [
       "error",
@@ -1483,6 +1495,9 @@ Object {
     "@typescript-eslint/consistent-type-definitions": Array [
       "error",
     ],
+    "@typescript-eslint/consistent-type-imports": Array [
+      "error",
+    ],
     "@typescript-eslint/default-param-last": Array [
       "error",
     ],
@@ -1607,7 +1622,16 @@ Object {
     "@typescript-eslint/no-non-null-assertion": Array [
       "off",
     ],
+    "@typescript-eslint/no-redeclare": Array [
+      "error",
+      Object {
+        "ignoreDeclarationMerge": false,
+      },
+    ],
     "@typescript-eslint/no-require-imports": Array [
+      "error",
+    ],
+    "@typescript-eslint/no-shadow": Array [
       "error",
     ],
     "@typescript-eslint/no-this-alias": Array [
@@ -2371,7 +2395,7 @@ Object {
       "error",
     ],
     "no-shadow": Array [
-      "error",
+      "off",
     ],
     "no-shadow-restricted-names": Array [
       "error",
@@ -2900,6 +2924,9 @@ Object {
     "@typescript-eslint/consistent-type-definitions": Array [
       "error",
     ],
+    "@typescript-eslint/consistent-type-imports": Array [
+      "error",
+    ],
     "@typescript-eslint/default-param-last": Array [
       "error",
     ],
@@ -3024,7 +3051,16 @@ Object {
     "@typescript-eslint/no-non-null-assertion": Array [
       "error",
     ],
+    "@typescript-eslint/no-redeclare": Array [
+      "error",
+      Object {
+        "ignoreDeclarationMerge": false,
+      },
+    ],
     "@typescript-eslint/no-require-imports": Array [
+      "error",
+    ],
+    "@typescript-eslint/no-shadow": Array [
       "error",
     ],
     "@typescript-eslint/no-this-alias": Array [
@@ -3788,7 +3824,7 @@ Object {
       "error",
     ],
     "no-shadow": Array [
-      "error",
+      "off",
     ],
     "no-shadow-restricted-names": Array [
       "error",
@@ -4317,6 +4353,9 @@ Object {
     "@typescript-eslint/consistent-type-definitions": Array [
       "error",
     ],
+    "@typescript-eslint/consistent-type-imports": Array [
+      "error",
+    ],
     "@typescript-eslint/default-param-last": Array [
       "error",
     ],
@@ -4441,7 +4480,16 @@ Object {
     "@typescript-eslint/no-non-null-assertion": Array [
       "off",
     ],
+    "@typescript-eslint/no-redeclare": Array [
+      "error",
+      Object {
+        "ignoreDeclarationMerge": false,
+      },
+    ],
     "@typescript-eslint/no-require-imports": Array [
+      "error",
+    ],
+    "@typescript-eslint/no-shadow": Array [
       "error",
     ],
     "@typescript-eslint/no-this-alias": Array [
@@ -5205,7 +5253,7 @@ Object {
       "error",
     ],
     "no-shadow": Array [
-      "error",
+      "off",
     ],
     "no-shadow-restricted-names": Array [
       "error",
@@ -5734,6 +5782,9 @@ Object {
     "@typescript-eslint/consistent-type-definitions": Array [
       "error",
     ],
+    "@typescript-eslint/consistent-type-imports": Array [
+      "error",
+    ],
     "@typescript-eslint/default-param-last": Array [
       "error",
     ],
@@ -5858,7 +5909,16 @@ Object {
     "@typescript-eslint/no-non-null-assertion": Array [
       "off",
     ],
+    "@typescript-eslint/no-redeclare": Array [
+      "error",
+      Object {
+        "ignoreDeclarationMerge": false,
+      },
+    ],
     "@typescript-eslint/no-require-imports": Array [
+      "error",
+    ],
+    "@typescript-eslint/no-shadow": Array [
       "error",
     ],
     "@typescript-eslint/no-this-alias": Array [
@@ -6622,7 +6682,7 @@ Object {
       "error",
     ],
     "no-shadow": Array [
-      "error",
+      "off",
     ],
     "no-shadow-restricted-names": Array [
       "error",
@@ -7151,6 +7211,9 @@ Object {
     "@typescript-eslint/consistent-type-definitions": Array [
       "error",
     ],
+    "@typescript-eslint/consistent-type-imports": Array [
+      "error",
+    ],
     "@typescript-eslint/default-param-last": Array [
       "error",
     ],
@@ -7275,7 +7338,16 @@ Object {
     "@typescript-eslint/no-non-null-assertion": Array [
       "error",
     ],
+    "@typescript-eslint/no-redeclare": Array [
+      "error",
+      Object {
+        "ignoreDeclarationMerge": false,
+      },
+    ],
     "@typescript-eslint/no-require-imports": Array [
+      "error",
+    ],
+    "@typescript-eslint/no-shadow": Array [
       "error",
     ],
     "@typescript-eslint/no-this-alias": Array [
@@ -8039,7 +8111,7 @@ Object {
       "error",
     ],
     "no-shadow": Array [
-      "error",
+      "off",
     ],
     "no-shadow-restricted-names": Array [
       "error",
