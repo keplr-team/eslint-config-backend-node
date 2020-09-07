@@ -67,7 +67,7 @@ Object {
       "error",
     ],
     "@typescript-eslint/consistent-type-imports": Array [
-      "error",
+      "off",
     ],
     "@typescript-eslint/default-param-last": Array [
       "error",
@@ -1496,7 +1496,7 @@ Object {
       "error",
     ],
     "@typescript-eslint/consistent-type-imports": Array [
-      "error",
+      "off",
     ],
     "@typescript-eslint/default-param-last": Array [
       "error",
@@ -2925,7 +2925,7 @@ Object {
       "error",
     ],
     "@typescript-eslint/consistent-type-imports": Array [
-      "error",
+      "off",
     ],
     "@typescript-eslint/default-param-last": Array [
       "error",
@@ -4354,7 +4354,7 @@ Object {
       "error",
     ],
     "@typescript-eslint/consistent-type-imports": Array [
-      "error",
+      "off",
     ],
     "@typescript-eslint/default-param-last": Array [
       "error",
@@ -5783,7 +5783,7 @@ Object {
       "error",
     ],
     "@typescript-eslint/consistent-type-imports": Array [
-      "error",
+      "off",
     ],
     "@typescript-eslint/default-param-last": Array [
       "error",
@@ -7212,7 +7212,7 @@ Object {
       "error",
     ],
     "@typescript-eslint/consistent-type-imports": Array [
-      "error",
+      "off",
     ],
     "@typescript-eslint/default-param-last": Array [
       "error",
