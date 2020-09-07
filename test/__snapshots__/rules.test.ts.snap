@@ -194,10 +194,7 @@ Object {
       "off",
     ],
     "@typescript-eslint/no-redeclare": Array [
-      "error",
-      Object {
-        "ignoreDeclarationMerge": false,
-      },
+      "off",
     ],
     "@typescript-eslint/no-require-imports": Array [
       "error",
@@ -1623,10 +1620,7 @@ Object {
       "off",
     ],
     "@typescript-eslint/no-redeclare": Array [
-      "error",
-      Object {
-        "ignoreDeclarationMerge": false,
-      },
+      "off",
     ],
     "@typescript-eslint/no-require-imports": Array [
       "error",
@@ -3052,10 +3046,7 @@ Object {
       "error",
     ],
     "@typescript-eslint/no-redeclare": Array [
-      "error",
-      Object {
-        "ignoreDeclarationMerge": false,
-      },
+      "off",
     ],
     "@typescript-eslint/no-require-imports": Array [
       "error",
@@ -4481,10 +4472,7 @@ Object {
       "off",
     ],
     "@typescript-eslint/no-redeclare": Array [
-      "error",
-      Object {
-        "ignoreDeclarationMerge": false,
-      },
+      "off",
     ],
     "@typescript-eslint/no-require-imports": Array [
       "error",
@@ -5910,10 +5898,7 @@ Object {
       "off",
     ],
     "@typescript-eslint/no-redeclare": Array [
-      "error",
-      Object {
-        "ignoreDeclarationMerge": false,
-      },
+      "off",
     ],
     "@typescript-eslint/no-require-imports": Array [
       "error",
@@ -7339,10 +7324,7 @@ Object {
       "error",
     ],
     "@typescript-eslint/no-redeclare": Array [
-      "error",
-      Object {
-        "ignoreDeclarationMerge": false,
-      },
+      "off",
     ],
     "@typescript-eslint/no-require-imports": Array [
       "error",
