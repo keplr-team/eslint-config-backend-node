@@ -175,6 +175,9 @@ Object {
         "allowInGenericTypeArguments": true,
       },
     ],
+    "@typescript-eslint/no-loop-func": Array [
+      "error",
+    ],
     "@typescript-eslint/no-loss-of-precision": Array [
       "off",
     ],
@@ -790,7 +793,7 @@ Object {
       "error",
     ],
     "no-loop-func": Array [
-      "error",
+      "off",
     ],
     "no-loss-of-precision": Array [
       "error",
@@ -1601,6 +1604,9 @@ Object {
         "allowInGenericTypeArguments": true,
       },
     ],
+    "@typescript-eslint/no-loop-func": Array [
+      "error",
+    ],
     "@typescript-eslint/no-loss-of-precision": Array [
       "off",
     ],
@@ -2216,7 +2222,7 @@ Object {
       "error",
     ],
     "no-loop-func": Array [
-      "error",
+      "off",
     ],
     "no-loss-of-precision": Array [
       "error",
@@ -3027,6 +3033,9 @@ Object {
         "allowInGenericTypeArguments": true,
       },
     ],
+    "@typescript-eslint/no-loop-func": Array [
+      "error",
+    ],
     "@typescript-eslint/no-loss-of-precision": Array [
       "off",
     ],
@@ -3642,7 +3651,7 @@ Object {
       "error",
     ],
     "no-loop-func": Array [
-      "error",
+      "off",
     ],
     "no-loss-of-precision": Array [
       "error",
@@ -4453,6 +4462,9 @@ Object {
         "allowInGenericTypeArguments": true,
       },
     ],
+    "@typescript-eslint/no-loop-func": Array [
+      "error",
+    ],
     "@typescript-eslint/no-loss-of-precision": Array [
       "off",
     ],
@@ -5068,7 +5080,7 @@ Object {
       "error",
     ],
     "no-loop-func": Array [
-      "error",
+      "off",
     ],
     "no-loss-of-precision": Array [
       "error",
@@ -5879,6 +5891,9 @@ Object {
         "allowInGenericTypeArguments": true,
       },
     ],
+    "@typescript-eslint/no-loop-func": Array [
+      "error",
+    ],
     "@typescript-eslint/no-loss-of-precision": Array [
       "off",
     ],
@@ -6494,7 +6509,7 @@ Object {
       "error",
     ],
     "no-loop-func": Array [
-      "error",
+      "off",
     ],
     "no-loss-of-precision": Array [
       "error",
@@ -7305,6 +7320,9 @@ Object {
         "allowInGenericTypeArguments": true,
       },
     ],
+    "@typescript-eslint/no-loop-func": Array [
+      "error",
+    ],
     "@typescript-eslint/no-loss-of-precision": Array [
       "off",
     ],
@@ -7920,7 +7938,7 @@ Object {
       "error",
     ],
     "no-loop-func": Array [
-      "error",
+      "off",
     ],
     "no-loss-of-precision": Array [
       "error",
