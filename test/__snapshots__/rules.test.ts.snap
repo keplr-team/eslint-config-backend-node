@@ -57,6 +57,9 @@ Object {
     "@typescript-eslint/class-literal-property-style": Array [
       "error",
     ],
+    "@typescript-eslint/comma-dangle": Array [
+      "off",
+    ],
     "@typescript-eslint/comma-spacing": Array [
       "off",
     ],
@@ -78,6 +81,7 @@ Object {
         "allowKeywords": true,
         "allowPattern": "",
         "allowPrivateClassPropertyAccess": false,
+        "allowProtectedClassPropertyAccess": false,
       },
     ],
     "@typescript-eslint/explicit-function-return-type": Array [
@@ -120,7 +124,13 @@ Object {
     "@typescript-eslint/no-confusing-non-null-assertion": Array [
       "error",
     ],
+    "@typescript-eslint/no-confusing-void-expression": Array [
+      "error",
+    ],
     "@typescript-eslint/no-dupe-class-members": Array [
+      "error",
+    ],
+    "@typescript-eslint/no-duplicate-imports": Array [
       "error",
     ],
     "@typescript-eslint/no-dynamic-delete": Array [
@@ -238,6 +248,9 @@ Object {
     "@typescript-eslint/no-unnecessary-type-assertion": Array [
       "error",
     ],
+    "@typescript-eslint/no-unnecessary-type-constraint": Array [
+      "error",
+    ],
     "@typescript-eslint/no-unsafe-assignment": Array [
       "off",
     ],
@@ -343,6 +356,9 @@ Object {
       "always",
     ],
     "@typescript-eslint/space-before-function-paren": Array [
+      "off",
+    ],
+    "@typescript-eslint/space-infix-ops": Array [
       "off",
     ],
     "@typescript-eslint/switch-exhaustiveness-check": Array [
@@ -703,7 +719,7 @@ Object {
       "error",
     ],
     "no-duplicate-imports": Array [
-      "error",
+      "off",
     ],
     "no-else-return": Array [
       "error",
@@ -832,6 +848,9 @@ Object {
       "error",
     ],
     "no-new-wrappers": Array [
+      "error",
+    ],
+    "no-nonoctal-decimal-escape": Array [
       "error",
     ],
     "no-obj-calls": Array [
@@ -1368,6 +1387,7 @@ Array [
   "sort-vars",
   "spaced-comment",
   "valid-jsdoc",
+  "@typescript-eslint/consistent-indexed-object-style",
   "@typescript-eslint/explicit-member-accessibility",
   "@typescript-eslint/init-declarations",
   "@typescript-eslint/no-invalid-this",
@@ -1489,6 +1509,9 @@ Object {
     "@typescript-eslint/class-literal-property-style": Array [
       "error",
     ],
+    "@typescript-eslint/comma-dangle": Array [
+      "off",
+    ],
     "@typescript-eslint/comma-spacing": Array [
       "off",
     ],
@@ -1510,6 +1533,7 @@ Object {
         "allowKeywords": true,
         "allowPattern": "",
         "allowPrivateClassPropertyAccess": false,
+        "allowProtectedClassPropertyAccess": false,
       },
     ],
     "@typescript-eslint/explicit-function-return-type": Array [
@@ -1552,7 +1576,13 @@ Object {
     "@typescript-eslint/no-confusing-non-null-assertion": Array [
       "error",
     ],
+    "@typescript-eslint/no-confusing-void-expression": Array [
+      "error",
+    ],
     "@typescript-eslint/no-dupe-class-members": Array [
+      "error",
+    ],
+    "@typescript-eslint/no-duplicate-imports": Array [
       "error",
     ],
     "@typescript-eslint/no-dynamic-delete": Array [
@@ -1670,6 +1700,9 @@ Object {
     "@typescript-eslint/no-unnecessary-type-assertion": Array [
       "error",
     ],
+    "@typescript-eslint/no-unnecessary-type-constraint": Array [
+      "error",
+    ],
     "@typescript-eslint/no-unsafe-assignment": Array [
       "off",
     ],
@@ -1775,6 +1808,9 @@ Object {
       "always",
     ],
     "@typescript-eslint/space-before-function-paren": Array [
+      "off",
+    ],
+    "@typescript-eslint/space-infix-ops": Array [
       "off",
     ],
     "@typescript-eslint/switch-exhaustiveness-check": Array [
@@ -2135,7 +2171,7 @@ Object {
       "error",
     ],
     "no-duplicate-imports": Array [
-      "error",
+      "off",
     ],
     "no-else-return": Array [
       "error",
@@ -2264,6 +2300,9 @@ Object {
       "off",
     ],
     "no-new-wrappers": Array [
+      "error",
+    ],
+    "no-nonoctal-decimal-escape": Array [
       "error",
     ],
     "no-obj-calls": Array [
@@ -2800,6 +2839,7 @@ Array [
   "sort-vars",
   "spaced-comment",
   "valid-jsdoc",
+  "@typescript-eslint/consistent-indexed-object-style",
   "@typescript-eslint/explicit-member-accessibility",
   "@typescript-eslint/init-declarations",
   "@typescript-eslint/no-invalid-this",
@@ -2921,6 +2961,9 @@ Object {
     "@typescript-eslint/class-literal-property-style": Array [
       "error",
     ],
+    "@typescript-eslint/comma-dangle": Array [
+      "off",
+    ],
     "@typescript-eslint/comma-spacing": Array [
       "off",
     ],
@@ -2942,6 +2985,7 @@ Object {
         "allowKeywords": true,
         "allowPattern": "",
         "allowPrivateClassPropertyAccess": false,
+        "allowProtectedClassPropertyAccess": false,
       },
     ],
     "@typescript-eslint/explicit-function-return-type": Array [
@@ -2984,7 +3028,13 @@ Object {
     "@typescript-eslint/no-confusing-non-null-assertion": Array [
       "error",
     ],
+    "@typescript-eslint/no-confusing-void-expression": Array [
+      "error",
+    ],
     "@typescript-eslint/no-dupe-class-members": Array [
+      "error",
+    ],
+    "@typescript-eslint/no-duplicate-imports": Array [
       "error",
     ],
     "@typescript-eslint/no-dynamic-delete": Array [
@@ -3102,6 +3152,9 @@ Object {
     "@typescript-eslint/no-unnecessary-type-assertion": Array [
       "error",
     ],
+    "@typescript-eslint/no-unnecessary-type-constraint": Array [
+      "error",
+    ],
     "@typescript-eslint/no-unsafe-assignment": Array [
       "error",
     ],
@@ -3207,6 +3260,9 @@ Object {
       "always",
     ],
     "@typescript-eslint/space-before-function-paren": Array [
+      "off",
+    ],
+    "@typescript-eslint/space-infix-ops": Array [
       "off",
     ],
     "@typescript-eslint/switch-exhaustiveness-check": Array [
@@ -3567,7 +3623,7 @@ Object {
       "error",
     ],
     "no-duplicate-imports": Array [
-      "error",
+      "off",
     ],
     "no-else-return": Array [
       "error",
@@ -3696,6 +3752,9 @@ Object {
       "error",
     ],
     "no-new-wrappers": Array [
+      "error",
+    ],
+    "no-nonoctal-decimal-escape": Array [
       "error",
     ],
     "no-obj-calls": Array [
@@ -4232,6 +4291,7 @@ Array [
   "sort-vars",
   "spaced-comment",
   "valid-jsdoc",
+  "@typescript-eslint/consistent-indexed-object-style",
   "@typescript-eslint/explicit-member-accessibility",
   "@typescript-eslint/init-declarations",
   "@typescript-eslint/no-invalid-this",
@@ -4353,6 +4413,9 @@ Object {
     "@typescript-eslint/class-literal-property-style": Array [
       "error",
     ],
+    "@typescript-eslint/comma-dangle": Array [
+      "off",
+    ],
     "@typescript-eslint/comma-spacing": Array [
       "off",
     ],
@@ -4374,6 +4437,7 @@ Object {
         "allowKeywords": true,
         "allowPattern": "",
         "allowPrivateClassPropertyAccess": false,
+        "allowProtectedClassPropertyAccess": false,
       },
     ],
     "@typescript-eslint/explicit-function-return-type": Array [
@@ -4416,7 +4480,13 @@ Object {
     "@typescript-eslint/no-confusing-non-null-assertion": Array [
       "error",
     ],
+    "@typescript-eslint/no-confusing-void-expression": Array [
+      "error",
+    ],
     "@typescript-eslint/no-dupe-class-members": Array [
+      "error",
+    ],
+    "@typescript-eslint/no-duplicate-imports": Array [
       "error",
     ],
     "@typescript-eslint/no-dynamic-delete": Array [
@@ -4534,6 +4604,9 @@ Object {
     "@typescript-eslint/no-unnecessary-type-assertion": Array [
       "error",
     ],
+    "@typescript-eslint/no-unnecessary-type-constraint": Array [
+      "error",
+    ],
     "@typescript-eslint/no-unsafe-assignment": Array [
       "off",
     ],
@@ -4639,6 +4712,9 @@ Object {
       "always",
     ],
     "@typescript-eslint/space-before-function-paren": Array [
+      "off",
+    ],
+    "@typescript-eslint/space-infix-ops": Array [
       "off",
     ],
     "@typescript-eslint/switch-exhaustiveness-check": Array [
@@ -4999,7 +5075,7 @@ Object {
       "error",
     ],
     "no-duplicate-imports": Array [
-      "error",
+      "off",
     ],
     "no-else-return": Array [
       "error",
@@ -5128,6 +5204,9 @@ Object {
       "error",
     ],
     "no-new-wrappers": Array [
+      "error",
+    ],
+    "no-nonoctal-decimal-escape": Array [
       "error",
     ],
     "no-obj-calls": Array [
@@ -5664,6 +5743,7 @@ Array [
   "sort-vars",
   "spaced-comment",
   "valid-jsdoc",
+  "@typescript-eslint/consistent-indexed-object-style",
   "@typescript-eslint/explicit-member-accessibility",
   "@typescript-eslint/init-declarations",
   "@typescript-eslint/no-invalid-this",
@@ -5785,6 +5865,9 @@ Object {
     "@typescript-eslint/class-literal-property-style": Array [
       "error",
     ],
+    "@typescript-eslint/comma-dangle": Array [
+      "off",
+    ],
     "@typescript-eslint/comma-spacing": Array [
       "off",
     ],
@@ -5806,6 +5889,7 @@ Object {
         "allowKeywords": true,
         "allowPattern": "",
         "allowPrivateClassPropertyAccess": false,
+        "allowProtectedClassPropertyAccess": false,
       },
     ],
     "@typescript-eslint/explicit-function-return-type": Array [
@@ -5848,7 +5932,13 @@ Object {
     "@typescript-eslint/no-confusing-non-null-assertion": Array [
       "error",
     ],
+    "@typescript-eslint/no-confusing-void-expression": Array [
+      "error",
+    ],
     "@typescript-eslint/no-dupe-class-members": Array [
+      "error",
+    ],
+    "@typescript-eslint/no-duplicate-imports": Array [
       "error",
     ],
     "@typescript-eslint/no-dynamic-delete": Array [
@@ -5966,6 +6056,9 @@ Object {
     "@typescript-eslint/no-unnecessary-type-assertion": Array [
       "error",
     ],
+    "@typescript-eslint/no-unnecessary-type-constraint": Array [
+      "error",
+    ],
     "@typescript-eslint/no-unsafe-assignment": Array [
       "off",
     ],
@@ -6071,6 +6164,9 @@ Object {
       "always",
     ],
     "@typescript-eslint/space-before-function-paren": Array [
+      "off",
+    ],
+    "@typescript-eslint/space-infix-ops": Array [
       "off",
     ],
     "@typescript-eslint/switch-exhaustiveness-check": Array [
@@ -6431,7 +6527,7 @@ Object {
       "error",
     ],
     "no-duplicate-imports": Array [
-      "error",
+      "off",
     ],
     "no-else-return": Array [
       "error",
@@ -6560,6 +6656,9 @@ Object {
       "off",
     ],
     "no-new-wrappers": Array [
+      "error",
+    ],
+    "no-nonoctal-decimal-escape": Array [
       "error",
     ],
     "no-obj-calls": Array [
@@ -7096,6 +7195,7 @@ Array [
   "sort-vars",
   "spaced-comment",
   "valid-jsdoc",
+  "@typescript-eslint/consistent-indexed-object-style",
   "@typescript-eslint/explicit-member-accessibility",
   "@typescript-eslint/init-declarations",
   "@typescript-eslint/no-invalid-this",
@@ -7217,6 +7317,9 @@ Object {
     "@typescript-eslint/class-literal-property-style": Array [
       "error",
     ],
+    "@typescript-eslint/comma-dangle": Array [
+      "off",
+    ],
     "@typescript-eslint/comma-spacing": Array [
       "off",
     ],
@@ -7238,6 +7341,7 @@ Object {
         "allowKeywords": true,
         "allowPattern": "",
         "allowPrivateClassPropertyAccess": false,
+        "allowProtectedClassPropertyAccess": false,
       },
     ],
     "@typescript-eslint/explicit-function-return-type": Array [
@@ -7280,7 +7384,13 @@ Object {
     "@typescript-eslint/no-confusing-non-null-assertion": Array [
       "error",
     ],
+    "@typescript-eslint/no-confusing-void-expression": Array [
+      "error",
+    ],
     "@typescript-eslint/no-dupe-class-members": Array [
+      "error",
+    ],
+    "@typescript-eslint/no-duplicate-imports": Array [
       "error",
     ],
     "@typescript-eslint/no-dynamic-delete": Array [
@@ -7398,6 +7508,9 @@ Object {
     "@typescript-eslint/no-unnecessary-type-assertion": Array [
       "error",
     ],
+    "@typescript-eslint/no-unnecessary-type-constraint": Array [
+      "error",
+    ],
     "@typescript-eslint/no-unsafe-assignment": Array [
       "error",
     ],
@@ -7503,6 +7616,9 @@ Object {
       "always",
     ],
     "@typescript-eslint/space-before-function-paren": Array [
+      "off",
+    ],
+    "@typescript-eslint/space-infix-ops": Array [
       "off",
     ],
     "@typescript-eslint/switch-exhaustiveness-check": Array [
@@ -7863,7 +7979,7 @@ Object {
       "error",
     ],
     "no-duplicate-imports": Array [
-      "error",
+      "off",
     ],
     "no-else-return": Array [
       "error",
@@ -7992,6 +8108,9 @@ Object {
       "off",
     ],
     "no-new-wrappers": Array [
+      "error",
+    ],
+    "no-nonoctal-decimal-escape": Array [
       "error",
     ],
     "no-obj-calls": Array [
@@ -8528,6 +8647,7 @@ Array [
   "sort-vars",
   "spaced-comment",
   "valid-jsdoc",
+  "@typescript-eslint/consistent-indexed-object-style",
   "@typescript-eslint/explicit-member-accessibility",
   "@typescript-eslint/init-declarations",
   "@typescript-eslint/no-invalid-this",
