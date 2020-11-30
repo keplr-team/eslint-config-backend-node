@@ -3,7 +3,7 @@ version: 2.1
 jobs:
   deps-n-test:
     docker:
-    - image: keplr/node-ci:12
+    - image: keplr/node-ci:13
     steps:
     - checkout
     - restore_cache:
@@ -24,7 +24,7 @@ jobs:
 
   deploy-to-npm:
       docker:
-      - image: keplr/node-ci:12
+      - image: keplr/node-ci:13
       steps:
       - attach_workspace:
           at: .
