@@ -574,6 +574,9 @@ Object {
     "jest/no-disabled-tests": Array [
       "warn",
     ],
+    "jest/no-done-callback": Array [
+      "error",
+    ],
     "jest/no-export": Array [
       "error",
     ],
@@ -587,7 +590,7 @@ Object {
       "error",
     ],
     "jest/no-jasmine-globals": Array [
-      "warn",
+      "error",
     ],
     "jest/no-jest-import": Array [
       "error",
@@ -596,9 +599,6 @@ Object {
       "error",
     ],
     "jest/no-standalone-expect": Array [
-      "error",
-    ],
-    "jest/no-test-callback": Array [
       "error",
     ],
     "jest/no-test-prefixes": Array [
@@ -614,6 +614,9 @@ Object {
       "error",
     ],
     "jest/valid-expect-in-promise": Array [
+      "error",
+    ],
+    "jest/valid-title": Array [
       "error",
     ],
     "jsx-quotes": Array [
@@ -1448,7 +1451,6 @@ Array [
   "jest/prefer-todo",
   "jest/require-to-throw-message",
   "jest/require-top-level-describe",
-  "jest/valid-title",
 ]
 `;
 
@@ -2026,6 +2028,9 @@ Object {
     "jest/no-disabled-tests": Array [
       "warn",
     ],
+    "jest/no-done-callback": Array [
+      "error",
+    ],
     "jest/no-export": Array [
       "error",
     ],
@@ -2039,7 +2044,7 @@ Object {
       "error",
     ],
     "jest/no-jasmine-globals": Array [
-      "warn",
+      "error",
     ],
     "jest/no-jest-import": Array [
       "error",
@@ -2048,9 +2053,6 @@ Object {
       "error",
     ],
     "jest/no-standalone-expect": Array [
-      "error",
-    ],
-    "jest/no-test-callback": Array [
       "error",
     ],
     "jest/no-test-prefixes": Array [
@@ -2066,6 +2068,9 @@ Object {
       "error",
     ],
     "jest/valid-expect-in-promise": Array [
+      "error",
+    ],
+    "jest/valid-title": Array [
       "error",
     ],
     "jsx-quotes": Array [
@@ -2900,7 +2905,6 @@ Array [
   "jest/prefer-todo",
   "jest/require-to-throw-message",
   "jest/require-top-level-describe",
-  "jest/valid-title",
 ]
 `;
 
@@ -3478,6 +3482,9 @@ Object {
     "jest/no-disabled-tests": Array [
       "warn",
     ],
+    "jest/no-done-callback": Array [
+      "error",
+    ],
     "jest/no-export": Array [
       "error",
     ],
@@ -3491,7 +3498,7 @@ Object {
       "error",
     ],
     "jest/no-jasmine-globals": Array [
-      "warn",
+      "error",
     ],
     "jest/no-jest-import": Array [
       "error",
@@ -3500,9 +3507,6 @@ Object {
       "error",
     ],
     "jest/no-standalone-expect": Array [
-      "error",
-    ],
-    "jest/no-test-callback": Array [
       "error",
     ],
     "jest/no-test-prefixes": Array [
@@ -3518,6 +3522,9 @@ Object {
       "error",
     ],
     "jest/valid-expect-in-promise": Array [
+      "error",
+    ],
+    "jest/valid-title": Array [
       "error",
     ],
     "jsx-quotes": Array [
@@ -4352,7 +4359,6 @@ Array [
   "jest/prefer-todo",
   "jest/require-to-throw-message",
   "jest/require-top-level-describe",
-  "jest/valid-title",
 ]
 `;
 
@@ -4930,6 +4936,9 @@ Object {
     "jest/no-disabled-tests": Array [
       "warn",
     ],
+    "jest/no-done-callback": Array [
+      "error",
+    ],
     "jest/no-export": Array [
       "error",
     ],
@@ -4943,7 +4952,7 @@ Object {
       "error",
     ],
     "jest/no-jasmine-globals": Array [
-      "warn",
+      "error",
     ],
     "jest/no-jest-import": Array [
       "error",
@@ -4952,9 +4961,6 @@ Object {
       "error",
     ],
     "jest/no-standalone-expect": Array [
-      "error",
-    ],
-    "jest/no-test-callback": Array [
       "error",
     ],
     "jest/no-test-prefixes": Array [
@@ -4970,6 +4976,9 @@ Object {
       "error",
     ],
     "jest/valid-expect-in-promise": Array [
+      "error",
+    ],
+    "jest/valid-title": Array [
       "error",
     ],
     "jsx-quotes": Array [
@@ -5804,7 +5813,6 @@ Array [
   "jest/prefer-todo",
   "jest/require-to-throw-message",
   "jest/require-top-level-describe",
-  "jest/valid-title",
 ]
 `;
 
@@ -6382,6 +6390,9 @@ Object {
     "jest/no-disabled-tests": Array [
       "warn",
     ],
+    "jest/no-done-callback": Array [
+      "error",
+    ],
     "jest/no-export": Array [
       "error",
     ],
@@ -6395,7 +6406,7 @@ Object {
       "error",
     ],
     "jest/no-jasmine-globals": Array [
-      "warn",
+      "error",
     ],
     "jest/no-jest-import": Array [
       "error",
@@ -6404,9 +6415,6 @@ Object {
       "error",
     ],
     "jest/no-standalone-expect": Array [
-      "error",
-    ],
-    "jest/no-test-callback": Array [
       "error",
     ],
     "jest/no-test-prefixes": Array [
@@ -6422,6 +6430,9 @@ Object {
       "error",
     ],
     "jest/valid-expect-in-promise": Array [
+      "error",
+    ],
+    "jest/valid-title": Array [
       "error",
     ],
     "jsx-quotes": Array [
@@ -7256,7 +7267,6 @@ Array [
   "jest/prefer-todo",
   "jest/require-to-throw-message",
   "jest/require-top-level-describe",
-  "jest/valid-title",
 ]
 `;
 
@@ -7834,6 +7844,9 @@ Object {
     "jest/no-disabled-tests": Array [
       "warn",
     ],
+    "jest/no-done-callback": Array [
+      "error",
+    ],
     "jest/no-export": Array [
       "error",
     ],
@@ -7847,7 +7860,7 @@ Object {
       "error",
     ],
     "jest/no-jasmine-globals": Array [
-      "warn",
+      "error",
     ],
     "jest/no-jest-import": Array [
       "error",
@@ -7856,9 +7869,6 @@ Object {
       "error",
     ],
     "jest/no-standalone-expect": Array [
-      "error",
-    ],
-    "jest/no-test-callback": Array [
       "error",
     ],
     "jest/no-test-prefixes": Array [
@@ -7874,6 +7884,9 @@ Object {
       "error",
     ],
     "jest/valid-expect-in-promise": Array [
+      "error",
+    ],
+    "jest/valid-title": Array [
       "error",
     ],
     "jsx-quotes": Array [
@@ -8708,6 +8721,5 @@ Array [
   "jest/prefer-todo",
   "jest/require-to-throw-message",
   "jest/require-top-level-describe",
-  "jest/valid-title",
 ]
 `;
