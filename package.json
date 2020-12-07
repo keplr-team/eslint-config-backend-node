@@ -27,8 +27,8 @@
     "prettier": "^2.2.1"
   },
   "devDependencies": {
-    "@types/eslint": "^7.2.5",
-    "@types/jest": "^26.0.15",
+    "@types/eslint": "^7.2.6",
+    "@types/jest": "^26.0.16",
     "@types/lodash": "^4.14.165",
     "@types/node": "^14.14.10",
     "eslint": "^7.14.0",
