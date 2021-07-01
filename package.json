@@ -27,9 +27,9 @@
     "prettier": "2.3.0"
   },
   "devDependencies": {
-    "@types/eslint": "^7.2.10",
+    "@types/eslint": "7.2.13",
     "@types/jest": "^26.0.23",
-    "@types/lodash": "^4.14.168",
+    "@types/lodash": "4.14.170",
     "@types/node": "^15.0.2",
     "eslint": "7.27.0",
     "husky": "^6.0.0",
