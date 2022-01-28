@@ -15,7 +15,7 @@ jobs:
         key: v1-dependencies-{{ checksum "package-lock.json" }}
     - run: npm run lint -- --no-fix
     - run: npm run build
-    - run: npm test
+    # - run: npm test
     - store_artifacts:
         path: coverage
     - persist_to_workspace:
