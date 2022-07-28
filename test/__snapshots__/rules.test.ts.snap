@@ -12,6 +12,7 @@ Object {
     "SharedArrayBuffer": "readonly",
   },
   "ignorePatterns": Array [
+    "//**/node_modules/*",
     "node_modules/",
   ],
   "noInlineConfig": undefined,
@@ -69,11 +70,24 @@ Object {
     "@typescript-eslint/comma-spacing": Array [
       "off",
     ],
+    "@typescript-eslint/consistent-generic-constructors": Array [
+      "error",
+      "constructor",
+    ],
     "@typescript-eslint/consistent-type-assertions": Array [
       "error",
+      Object {
+        "assertionStyle": "never",
+      },
     ],
     "@typescript-eslint/consistent-type-definitions": Array [
       "error",
+    ],
+    "@typescript-eslint/consistent-type-exports": Array [
+      "error",
+      Object {
+        "fixMixedExportsWithInlineTypeSpecifier": true,
+      },
     ],
     "@typescript-eslint/consistent-type-imports": Array [
       "off",
@@ -84,6 +98,7 @@ Object {
     "@typescript-eslint/dot-notation": Array [
       "error",
       Object {
+        "allowIndexSignaturePropertyAccess": false,
         "allowKeywords": true,
         "allowPattern": "",
         "allowPrivateClassPropertyAccess": false,
@@ -134,6 +149,9 @@ Object {
       "error",
     ],
     "@typescript-eslint/no-dupe-class-members": Array [
+      "error",
+    ],
+    "@typescript-eslint/no-duplicate-enum-values": Array [
       "error",
     ],
     "@typescript-eslint/no-duplicate-imports": Array [
@@ -196,6 +214,9 @@ Object {
     ],
     "@typescript-eslint/no-loss-of-precision": Array [
       "off",
+    ],
+    "@typescript-eslint/no-meaningless-void-operator": Array [
+      "error",
     ],
     "@typescript-eslint/no-misused-new": Array [
       "error",
@@ -277,12 +298,6 @@ Object {
     ],
     "@typescript-eslint/no-unused-vars": Array [
       "error",
-    ],
-    "@typescript-eslint/no-unused-vars-experimental": Array [
-      "error",
-      Object {
-        "ignoreArgsIfArgsAfterAreUsed": true,
-      },
     ],
     "@typescript-eslint/no-use-before-define": Array [
       "error",
@@ -371,6 +386,9 @@ Object {
       "always",
     ],
     "@typescript-eslint/sort-type-union-intersection-members": Array [
+      "off",
+    ],
+    "@typescript-eslint/space-before-blocks": Array [
       "off",
     ],
     "@typescript-eslint/space-before-function-paren": Array [
@@ -605,6 +623,7 @@ Object {
           ],
         ],
         "newlines-between": "always",
+        "warnOnUnassignedImports": false,
       },
     ],
     "import/prefer-default-export": Array [
@@ -661,13 +680,10 @@ Object {
     "jest/no-test-prefixes": Array [
       "error",
     ],
-    "jest/no-try-expect": Array [
-      "error",
-    ],
     "jest/unbound-method": Array [
       "off",
     ],
-    "jest/valid-describe": Array [
+    "jest/valid-describe-callback": Array [
       "error",
     ],
     "jest/valid-expect": Array [
@@ -1103,6 +1119,7 @@ Object {
         "allowAfterThis": false,
         "allowAfterThisConstructor": false,
         "allowFunctionParams": true,
+        "enforceInClassFields": false,
         "enforceInMethodNames": false,
       },
     ],
@@ -1122,6 +1139,9 @@ Object {
       "error",
     ],
     "no-unsafe-negation": Array [
+      "error",
+    ],
+    "no-unsafe-optional-chaining": Array [
       "error",
     ],
     "no-unused-expressions": Array [
@@ -1483,6 +1503,9 @@ Object {
     "vue/operator-linebreak": Array [
       "off",
     ],
+    "vue/quote-props": Array [
+      "off",
+    ],
     "vue/script-indent": Array [
       "off",
     ],
@@ -1523,7 +1546,6 @@ Object {
     "import/extensions": Array [
       ".ts",
       ".tsx",
-      ".d.ts",
       ".js",
       ".jsx",
     ],
@@ -1538,7 +1560,6 @@ Object {
       "@typescript-eslint/parser": Array [
         ".ts",
         ".tsx",
-        ".d.ts",
       ],
     },
     "import/resolver": Object {
@@ -1546,7 +1567,6 @@ Object {
         "extensions": Array [
           ".ts",
           ".tsx",
-          ".d.ts",
           ".js",
           ".jsx",
         ],
@@ -1590,6 +1610,7 @@ Array [
   "no-await-in-loop",
   "no-bitwise",
   "no-catch-shadow",
+  "no-constant-binary-expression",
   "no-continue",
   "no-implicit-globals",
   "no-inline-comments",
@@ -1608,7 +1629,7 @@ Array [
   "no-restricted-syntax",
   "no-ternary",
   "no-unneeded-ternary",
-  "no-unsafe-optional-chaining",
+  "no-unused-private-class-members",
   "no-useless-constructor",
   "no-warning-comments",
   "one-var",
@@ -1616,6 +1637,7 @@ Array [
   "prefer-destructuring",
   "prefer-exponentiation-operator",
   "prefer-named-capture-group",
+  "prefer-object-has-own",
   "prefer-object-spread",
   "prefer-reflect",
   "require-await",
@@ -1630,8 +1652,15 @@ Array [
   "@typescript-eslint/init-declarations",
   "@typescript-eslint/no-invalid-this",
   "@typescript-eslint/no-magic-numbers",
+  "@typescript-eslint/no-non-null-asserted-nullish-coalescing",
   "@typescript-eslint/no-parameter-properties",
+  "@typescript-eslint/no-redundant-type-constituents",
+  "@typescript-eslint/no-restricted-imports",
+  "@typescript-eslint/no-useless-empty-export",
+  "@typescript-eslint/padding-line-between-statements",
+  "@typescript-eslint/parameter-properties",
   "@typescript-eslint/prefer-readonly-parameter-types",
+  "@typescript-eslint/prefer-return-this-type",
   "@typescript-eslint/require-array-sort-compare",
   "@typescript-eslint/strict-boolean-expressions",
   "@typescript-eslint/typedef",
@@ -1640,6 +1669,7 @@ Array [
   "import/no-restricted-paths",
   "import/no-internal-modules",
   "import/group-exports",
+  "import/no-relative-packages",
   "import/no-relative-parent-imports",
   "import/no-self-import",
   "import/no-named-default",
@@ -1659,31 +1689,37 @@ Array [
   "import/no-unassigned-import",
   "import/no-useless-path-segments",
   "import/dynamic-import-chunkname",
+  "import/no-import-module-exports",
   "import/exports-last",
   "import/no-deprecated",
   "import/imports-first",
   "jest/consistent-test-it",
-  "jest/lowercase-name",
+  "jest/max-expects",
+  "jest/max-nested-describe",
   "jest/no-alias-methods",
+  "jest/no-conditional-in-test",
   "jest/no-duplicate-hooks",
-  "jest/no-expect-resolves",
   "jest/no-hooks",
   "jest/no-if",
   "jest/no-large-snapshots",
   "jest/no-restricted-matchers",
   "jest/no-test-return-statement",
-  "jest/no-truthy-falsy",
   "jest/prefer-called-with",
+  "jest/prefer-comparison-matcher",
+  "jest/prefer-equality-matcher",
   "jest/prefer-expect-assertions",
+  "jest/prefer-expect-resolves",
+  "jest/prefer-hooks-in-order",
   "jest/prefer-hooks-on-top",
-  "jest/prefer-inline-snapshots",
+  "jest/prefer-lowercase-title",
+  "jest/prefer-snapshot-hint",
   "jest/prefer-spy-on",
   "jest/prefer-strict-equal",
-  "jest/prefer-to-be-null",
-  "jest/prefer-to-be-undefined",
+  "jest/prefer-to-be",
   "jest/prefer-to-contain",
   "jest/prefer-to-have-length",
   "jest/prefer-todo",
+  "jest/require-hook",
   "jest/require-to-throw-message",
   "jest/require-top-level-describe",
 ]
@@ -1701,6 +1737,7 @@ Object {
     "SharedArrayBuffer": "readonly",
   },
   "ignorePatterns": Array [
+    "//**/node_modules/*",
     "node_modules/",
   ],
   "noInlineConfig": undefined,
@@ -1758,11 +1795,24 @@ Object {
     "@typescript-eslint/comma-spacing": Array [
       "off",
     ],
+    "@typescript-eslint/consistent-generic-constructors": Array [
+      "error",
+      "constructor",
+    ],
     "@typescript-eslint/consistent-type-assertions": Array [
       "error",
+      Object {
+        "assertionStyle": "never",
+      },
     ],
     "@typescript-eslint/consistent-type-definitions": Array [
       "error",
+    ],
+    "@typescript-eslint/consistent-type-exports": Array [
+      "error",
+      Object {
+        "fixMixedExportsWithInlineTypeSpecifier": true,
+      },
     ],
     "@typescript-eslint/consistent-type-imports": Array [
       "off",
@@ -1773,6 +1823,7 @@ Object {
     "@typescript-eslint/dot-notation": Array [
       "error",
       Object {
+        "allowIndexSignaturePropertyAccess": false,
         "allowKeywords": true,
         "allowPattern": "",
         "allowPrivateClassPropertyAccess": false,
@@ -1823,6 +1874,9 @@ Object {
       "error",
     ],
     "@typescript-eslint/no-dupe-class-members": Array [
+      "error",
+    ],
+    "@typescript-eslint/no-duplicate-enum-values": Array [
       "error",
     ],
     "@typescript-eslint/no-duplicate-imports": Array [
@@ -1885,6 +1939,9 @@ Object {
     ],
     "@typescript-eslint/no-loss-of-precision": Array [
       "off",
+    ],
+    "@typescript-eslint/no-meaningless-void-operator": Array [
+      "error",
     ],
     "@typescript-eslint/no-misused-new": Array [
       "error",
@@ -1966,12 +2023,6 @@ Object {
     ],
     "@typescript-eslint/no-unused-vars": Array [
       "error",
-    ],
-    "@typescript-eslint/no-unused-vars-experimental": Array [
-      "error",
-      Object {
-        "ignoreArgsIfArgsAfterAreUsed": true,
-      },
     ],
     "@typescript-eslint/no-use-before-define": Array [
       "error",
@@ -2060,6 +2111,9 @@ Object {
       "always",
     ],
     "@typescript-eslint/sort-type-union-intersection-members": Array [
+      "off",
+    ],
+    "@typescript-eslint/space-before-blocks": Array [
       "off",
     ],
     "@typescript-eslint/space-before-function-paren": Array [
@@ -2294,6 +2348,7 @@ Object {
           ],
         ],
         "newlines-between": "always",
+        "warnOnUnassignedImports": false,
       },
     ],
     "import/prefer-default-export": Array [
@@ -2350,13 +2405,10 @@ Object {
     "jest/no-test-prefixes": Array [
       "error",
     ],
-    "jest/no-try-expect": Array [
-      "error",
-    ],
     "jest/unbound-method": Array [
       "off",
     ],
-    "jest/valid-describe": Array [
+    "jest/valid-describe-callback": Array [
       "error",
     ],
     "jest/valid-expect": Array [
@@ -2792,6 +2844,7 @@ Object {
         "allowAfterThis": false,
         "allowAfterThisConstructor": false,
         "allowFunctionParams": true,
+        "enforceInClassFields": false,
         "enforceInMethodNames": false,
       },
     ],
@@ -2812,6 +2865,9 @@ Object {
     ],
     "no-unsafe-negation": Array [
       "off",
+    ],
+    "no-unsafe-optional-chaining": Array [
+      "error",
     ],
     "no-unused-expressions": Array [
       "off",
@@ -3172,6 +3228,9 @@ Object {
     "vue/operator-linebreak": Array [
       "off",
     ],
+    "vue/quote-props": Array [
+      "off",
+    ],
     "vue/script-indent": Array [
       "off",
     ],
@@ -3212,7 +3271,6 @@ Object {
     "import/extensions": Array [
       ".ts",
       ".tsx",
-      ".d.ts",
       ".js",
       ".jsx",
     ],
@@ -3227,7 +3285,6 @@ Object {
       "@typescript-eslint/parser": Array [
         ".ts",
         ".tsx",
-        ".d.ts",
       ],
     },
     "import/resolver": Object {
@@ -3235,7 +3292,6 @@ Object {
         "extensions": Array [
           ".ts",
           ".tsx",
-          ".d.ts",
           ".js",
           ".jsx",
         ],
@@ -3279,6 +3335,7 @@ Array [
   "no-await-in-loop",
   "no-bitwise",
   "no-catch-shadow",
+  "no-constant-binary-expression",
   "no-continue",
   "no-implicit-globals",
   "no-inline-comments",
@@ -3297,7 +3354,7 @@ Array [
   "no-restricted-syntax",
   "no-ternary",
   "no-unneeded-ternary",
-  "no-unsafe-optional-chaining",
+  "no-unused-private-class-members",
   "no-useless-constructor",
   "no-warning-comments",
   "one-var",
@@ -3305,6 +3362,7 @@ Array [
   "prefer-destructuring",
   "prefer-exponentiation-operator",
   "prefer-named-capture-group",
+  "prefer-object-has-own",
   "prefer-object-spread",
   "prefer-reflect",
   "require-await",
@@ -3319,8 +3377,15 @@ Array [
   "@typescript-eslint/init-declarations",
   "@typescript-eslint/no-invalid-this",
   "@typescript-eslint/no-magic-numbers",
+  "@typescript-eslint/no-non-null-asserted-nullish-coalescing",
   "@typescript-eslint/no-parameter-properties",
+  "@typescript-eslint/no-redundant-type-constituents",
+  "@typescript-eslint/no-restricted-imports",
+  "@typescript-eslint/no-useless-empty-export",
+  "@typescript-eslint/padding-line-between-statements",
+  "@typescript-eslint/parameter-properties",
   "@typescript-eslint/prefer-readonly-parameter-types",
+  "@typescript-eslint/prefer-return-this-type",
   "@typescript-eslint/require-array-sort-compare",
   "@typescript-eslint/strict-boolean-expressions",
   "@typescript-eslint/typedef",
@@ -3329,6 +3394,7 @@ Array [
   "import/no-restricted-paths",
   "import/no-internal-modules",
   "import/group-exports",
+  "import/no-relative-packages",
   "import/no-relative-parent-imports",
   "import/no-self-import",
   "import/no-named-default",
@@ -3348,31 +3414,37 @@ Array [
   "import/no-unassigned-import",
   "import/no-useless-path-segments",
   "import/dynamic-import-chunkname",
+  "import/no-import-module-exports",
   "import/exports-last",
   "import/no-deprecated",
   "import/imports-first",
   "jest/consistent-test-it",
-  "jest/lowercase-name",
+  "jest/max-expects",
+  "jest/max-nested-describe",
   "jest/no-alias-methods",
+  "jest/no-conditional-in-test",
   "jest/no-duplicate-hooks",
-  "jest/no-expect-resolves",
   "jest/no-hooks",
   "jest/no-if",
   "jest/no-large-snapshots",
   "jest/no-restricted-matchers",
   "jest/no-test-return-statement",
-  "jest/no-truthy-falsy",
   "jest/prefer-called-with",
+  "jest/prefer-comparison-matcher",
+  "jest/prefer-equality-matcher",
   "jest/prefer-expect-assertions",
+  "jest/prefer-expect-resolves",
+  "jest/prefer-hooks-in-order",
   "jest/prefer-hooks-on-top",
-  "jest/prefer-inline-snapshots",
+  "jest/prefer-lowercase-title",
+  "jest/prefer-snapshot-hint",
   "jest/prefer-spy-on",
   "jest/prefer-strict-equal",
-  "jest/prefer-to-be-null",
-  "jest/prefer-to-be-undefined",
+  "jest/prefer-to-be",
   "jest/prefer-to-contain",
   "jest/prefer-to-have-length",
   "jest/prefer-todo",
+  "jest/require-hook",
   "jest/require-to-throw-message",
   "jest/require-top-level-describe",
 ]
@@ -3390,6 +3462,7 @@ Object {
     "SharedArrayBuffer": "readonly",
   },
   "ignorePatterns": Array [
+    "//**/node_modules/*",
     "node_modules/",
   ],
   "noInlineConfig": undefined,
@@ -3447,11 +3520,24 @@ Object {
     "@typescript-eslint/comma-spacing": Array [
       "off",
     ],
+    "@typescript-eslint/consistent-generic-constructors": Array [
+      "error",
+      "constructor",
+    ],
     "@typescript-eslint/consistent-type-assertions": Array [
       "error",
+      Object {
+        "assertionStyle": "never",
+      },
     ],
     "@typescript-eslint/consistent-type-definitions": Array [
       "error",
+    ],
+    "@typescript-eslint/consistent-type-exports": Array [
+      "error",
+      Object {
+        "fixMixedExportsWithInlineTypeSpecifier": true,
+      },
     ],
     "@typescript-eslint/consistent-type-imports": Array [
       "off",
@@ -3462,6 +3548,7 @@ Object {
     "@typescript-eslint/dot-notation": Array [
       "error",
       Object {
+        "allowIndexSignaturePropertyAccess": false,
         "allowKeywords": true,
         "allowPattern": "",
         "allowPrivateClassPropertyAccess": false,
@@ -3512,6 +3599,9 @@ Object {
       "error",
     ],
     "@typescript-eslint/no-dupe-class-members": Array [
+      "error",
+    ],
+    "@typescript-eslint/no-duplicate-enum-values": Array [
       "error",
     ],
     "@typescript-eslint/no-duplicate-imports": Array [
@@ -3574,6 +3664,9 @@ Object {
     ],
     "@typescript-eslint/no-loss-of-precision": Array [
       "off",
+    ],
+    "@typescript-eslint/no-meaningless-void-operator": Array [
+      "error",
     ],
     "@typescript-eslint/no-misused-new": Array [
       "error",
@@ -3655,12 +3748,6 @@ Object {
     ],
     "@typescript-eslint/no-unused-vars": Array [
       "error",
-    ],
-    "@typescript-eslint/no-unused-vars-experimental": Array [
-      "error",
-      Object {
-        "ignoreArgsIfArgsAfterAreUsed": true,
-      },
     ],
     "@typescript-eslint/no-use-before-define": Array [
       "error",
@@ -3749,6 +3836,9 @@ Object {
       "always",
     ],
     "@typescript-eslint/sort-type-union-intersection-members": Array [
+      "off",
+    ],
+    "@typescript-eslint/space-before-blocks": Array [
       "off",
     ],
     "@typescript-eslint/space-before-function-paren": Array [
@@ -3983,6 +4073,7 @@ Object {
           ],
         ],
         "newlines-between": "always",
+        "warnOnUnassignedImports": false,
       },
     ],
     "import/prefer-default-export": Array [
@@ -4039,13 +4130,10 @@ Object {
     "jest/no-test-prefixes": Array [
       "error",
     ],
-    "jest/no-try-expect": Array [
-      "error",
-    ],
     "jest/unbound-method": Array [
       "off",
     ],
-    "jest/valid-describe": Array [
+    "jest/valid-describe-callback": Array [
       "error",
     ],
     "jest/valid-expect": Array [
@@ -4481,6 +4569,7 @@ Object {
         "allowAfterThis": false,
         "allowAfterThisConstructor": false,
         "allowFunctionParams": true,
+        "enforceInClassFields": false,
         "enforceInMethodNames": false,
       },
     ],
@@ -4500,6 +4589,9 @@ Object {
       "error",
     ],
     "no-unsafe-negation": Array [
+      "error",
+    ],
+    "no-unsafe-optional-chaining": Array [
       "error",
     ],
     "no-unused-expressions": Array [
@@ -4861,6 +4953,9 @@ Object {
     "vue/operator-linebreak": Array [
       "off",
     ],
+    "vue/quote-props": Array [
+      "off",
+    ],
     "vue/script-indent": Array [
       "off",
     ],
@@ -4901,7 +4996,6 @@ Object {
     "import/extensions": Array [
       ".ts",
       ".tsx",
-      ".d.ts",
       ".js",
       ".jsx",
     ],
@@ -4916,7 +5010,6 @@ Object {
       "@typescript-eslint/parser": Array [
         ".ts",
         ".tsx",
-        ".d.ts",
       ],
     },
     "import/resolver": Object {
@@ -4924,7 +5017,6 @@ Object {
         "extensions": Array [
           ".ts",
           ".tsx",
-          ".d.ts",
           ".js",
           ".jsx",
         ],
@@ -4968,6 +5060,7 @@ Array [
   "no-await-in-loop",
   "no-bitwise",
   "no-catch-shadow",
+  "no-constant-binary-expression",
   "no-continue",
   "no-implicit-globals",
   "no-inline-comments",
@@ -4986,7 +5079,7 @@ Array [
   "no-restricted-syntax",
   "no-ternary",
   "no-unneeded-ternary",
-  "no-unsafe-optional-chaining",
+  "no-unused-private-class-members",
   "no-useless-constructor",
   "no-warning-comments",
   "one-var",
@@ -4994,6 +5087,7 @@ Array [
   "prefer-destructuring",
   "prefer-exponentiation-operator",
   "prefer-named-capture-group",
+  "prefer-object-has-own",
   "prefer-object-spread",
   "prefer-reflect",
   "require-await",
@@ -5008,8 +5102,15 @@ Array [
   "@typescript-eslint/init-declarations",
   "@typescript-eslint/no-invalid-this",
   "@typescript-eslint/no-magic-numbers",
+  "@typescript-eslint/no-non-null-asserted-nullish-coalescing",
   "@typescript-eslint/no-parameter-properties",
+  "@typescript-eslint/no-redundant-type-constituents",
+  "@typescript-eslint/no-restricted-imports",
+  "@typescript-eslint/no-useless-empty-export",
+  "@typescript-eslint/padding-line-between-statements",
+  "@typescript-eslint/parameter-properties",
   "@typescript-eslint/prefer-readonly-parameter-types",
+  "@typescript-eslint/prefer-return-this-type",
   "@typescript-eslint/require-array-sort-compare",
   "@typescript-eslint/strict-boolean-expressions",
   "@typescript-eslint/typedef",
@@ -5018,6 +5119,7 @@ Array [
   "import/no-restricted-paths",
   "import/no-internal-modules",
   "import/group-exports",
+  "import/no-relative-packages",
   "import/no-relative-parent-imports",
   "import/no-self-import",
   "import/no-named-default",
@@ -5037,31 +5139,37 @@ Array [
   "import/no-unassigned-import",
   "import/no-useless-path-segments",
   "import/dynamic-import-chunkname",
+  "import/no-import-module-exports",
   "import/exports-last",
   "import/no-deprecated",
   "import/imports-first",
   "jest/consistent-test-it",
-  "jest/lowercase-name",
+  "jest/max-expects",
+  "jest/max-nested-describe",
   "jest/no-alias-methods",
+  "jest/no-conditional-in-test",
   "jest/no-duplicate-hooks",
-  "jest/no-expect-resolves",
   "jest/no-hooks",
   "jest/no-if",
   "jest/no-large-snapshots",
   "jest/no-restricted-matchers",
   "jest/no-test-return-statement",
-  "jest/no-truthy-falsy",
   "jest/prefer-called-with",
+  "jest/prefer-comparison-matcher",
+  "jest/prefer-equality-matcher",
   "jest/prefer-expect-assertions",
+  "jest/prefer-expect-resolves",
+  "jest/prefer-hooks-in-order",
   "jest/prefer-hooks-on-top",
-  "jest/prefer-inline-snapshots",
+  "jest/prefer-lowercase-title",
+  "jest/prefer-snapshot-hint",
   "jest/prefer-spy-on",
   "jest/prefer-strict-equal",
-  "jest/prefer-to-be-null",
-  "jest/prefer-to-be-undefined",
+  "jest/prefer-to-be",
   "jest/prefer-to-contain",
   "jest/prefer-to-have-length",
   "jest/prefer-todo",
+  "jest/require-hook",
   "jest/require-to-throw-message",
   "jest/require-top-level-describe",
 ]
@@ -5079,6 +5187,7 @@ Object {
     "SharedArrayBuffer": "readonly",
   },
   "ignorePatterns": Array [
+    "//**/node_modules/*",
     "node_modules/",
   ],
   "noInlineConfig": undefined,
@@ -5136,11 +5245,24 @@ Object {
     "@typescript-eslint/comma-spacing": Array [
       "off",
     ],
+    "@typescript-eslint/consistent-generic-constructors": Array [
+      "error",
+      "constructor",
+    ],
     "@typescript-eslint/consistent-type-assertions": Array [
       "error",
+      Object {
+        "assertionStyle": "never",
+      },
     ],
     "@typescript-eslint/consistent-type-definitions": Array [
       "error",
+    ],
+    "@typescript-eslint/consistent-type-exports": Array [
+      "error",
+      Object {
+        "fixMixedExportsWithInlineTypeSpecifier": true,
+      },
     ],
     "@typescript-eslint/consistent-type-imports": Array [
       "off",
@@ -5151,6 +5273,7 @@ Object {
     "@typescript-eslint/dot-notation": Array [
       "error",
       Object {
+        "allowIndexSignaturePropertyAccess": false,
         "allowKeywords": true,
         "allowPattern": "",
         "allowPrivateClassPropertyAccess": false,
@@ -5201,6 +5324,9 @@ Object {
       "error",
     ],
     "@typescript-eslint/no-dupe-class-members": Array [
+      "error",
+    ],
+    "@typescript-eslint/no-duplicate-enum-values": Array [
       "error",
     ],
     "@typescript-eslint/no-duplicate-imports": Array [
@@ -5263,6 +5389,9 @@ Object {
     ],
     "@typescript-eslint/no-loss-of-precision": Array [
       "off",
+    ],
+    "@typescript-eslint/no-meaningless-void-operator": Array [
+      "error",
     ],
     "@typescript-eslint/no-misused-new": Array [
       "error",
@@ -5344,12 +5473,6 @@ Object {
     ],
     "@typescript-eslint/no-unused-vars": Array [
       "error",
-    ],
-    "@typescript-eslint/no-unused-vars-experimental": Array [
-      "error",
-      Object {
-        "ignoreArgsIfArgsAfterAreUsed": true,
-      },
     ],
     "@typescript-eslint/no-use-before-define": Array [
       "error",
@@ -5438,6 +5561,9 @@ Object {
       "always",
     ],
     "@typescript-eslint/sort-type-union-intersection-members": Array [
+      "off",
+    ],
+    "@typescript-eslint/space-before-blocks": Array [
       "off",
     ],
     "@typescript-eslint/space-before-function-paren": Array [
@@ -5672,6 +5798,7 @@ Object {
           ],
         ],
         "newlines-between": "always",
+        "warnOnUnassignedImports": false,
       },
     ],
     "import/prefer-default-export": Array [
@@ -5728,13 +5855,10 @@ Object {
     "jest/no-test-prefixes": Array [
       "error",
     ],
-    "jest/no-try-expect": Array [
-      "error",
-    ],
     "jest/unbound-method": Array [
       "off",
     ],
-    "jest/valid-describe": Array [
+    "jest/valid-describe-callback": Array [
       "error",
     ],
     "jest/valid-expect": Array [
@@ -6170,6 +6294,7 @@ Object {
         "allowAfterThis": false,
         "allowAfterThisConstructor": false,
         "allowFunctionParams": true,
+        "enforceInClassFields": false,
         "enforceInMethodNames": false,
       },
     ],
@@ -6189,6 +6314,9 @@ Object {
       "error",
     ],
     "no-unsafe-negation": Array [
+      "error",
+    ],
+    "no-unsafe-optional-chaining": Array [
       "error",
     ],
     "no-unused-expressions": Array [
@@ -6550,6 +6678,9 @@ Object {
     "vue/operator-linebreak": Array [
       "off",
     ],
+    "vue/quote-props": Array [
+      "off",
+    ],
     "vue/script-indent": Array [
       "off",
     ],
@@ -6590,7 +6721,6 @@ Object {
     "import/extensions": Array [
       ".ts",
       ".tsx",
-      ".d.ts",
       ".js",
       ".jsx",
     ],
@@ -6605,7 +6735,6 @@ Object {
       "@typescript-eslint/parser": Array [
         ".ts",
         ".tsx",
-        ".d.ts",
       ],
     },
     "import/resolver": Object {
@@ -6613,7 +6742,6 @@ Object {
         "extensions": Array [
           ".ts",
           ".tsx",
-          ".d.ts",
           ".js",
           ".jsx",
         ],
@@ -6657,6 +6785,7 @@ Array [
   "no-await-in-loop",
   "no-bitwise",
   "no-catch-shadow",
+  "no-constant-binary-expression",
   "no-continue",
   "no-implicit-globals",
   "no-inline-comments",
@@ -6675,7 +6804,7 @@ Array [
   "no-restricted-syntax",
   "no-ternary",
   "no-unneeded-ternary",
-  "no-unsafe-optional-chaining",
+  "no-unused-private-class-members",
   "no-useless-constructor",
   "no-warning-comments",
   "one-var",
@@ -6683,6 +6812,7 @@ Array [
   "prefer-destructuring",
   "prefer-exponentiation-operator",
   "prefer-named-capture-group",
+  "prefer-object-has-own",
   "prefer-object-spread",
   "prefer-reflect",
   "require-await",
@@ -6697,8 +6827,15 @@ Array [
   "@typescript-eslint/init-declarations",
   "@typescript-eslint/no-invalid-this",
   "@typescript-eslint/no-magic-numbers",
+  "@typescript-eslint/no-non-null-asserted-nullish-coalescing",
   "@typescript-eslint/no-parameter-properties",
+  "@typescript-eslint/no-redundant-type-constituents",
+  "@typescript-eslint/no-restricted-imports",
+  "@typescript-eslint/no-useless-empty-export",
+  "@typescript-eslint/padding-line-between-statements",
+  "@typescript-eslint/parameter-properties",
   "@typescript-eslint/prefer-readonly-parameter-types",
+  "@typescript-eslint/prefer-return-this-type",
   "@typescript-eslint/require-array-sort-compare",
   "@typescript-eslint/strict-boolean-expressions",
   "@typescript-eslint/typedef",
@@ -6707,6 +6844,7 @@ Array [
   "import/no-restricted-paths",
   "import/no-internal-modules",
   "import/group-exports",
+  "import/no-relative-packages",
   "import/no-relative-parent-imports",
   "import/no-self-import",
   "import/no-named-default",
@@ -6726,31 +6864,37 @@ Array [
   "import/no-unassigned-import",
   "import/no-useless-path-segments",
   "import/dynamic-import-chunkname",
+  "import/no-import-module-exports",
   "import/exports-last",
   "import/no-deprecated",
   "import/imports-first",
   "jest/consistent-test-it",
-  "jest/lowercase-name",
+  "jest/max-expects",
+  "jest/max-nested-describe",
   "jest/no-alias-methods",
+  "jest/no-conditional-in-test",
   "jest/no-duplicate-hooks",
-  "jest/no-expect-resolves",
   "jest/no-hooks",
   "jest/no-if",
   "jest/no-large-snapshots",
   "jest/no-restricted-matchers",
   "jest/no-test-return-statement",
-  "jest/no-truthy-falsy",
   "jest/prefer-called-with",
+  "jest/prefer-comparison-matcher",
+  "jest/prefer-equality-matcher",
   "jest/prefer-expect-assertions",
+  "jest/prefer-expect-resolves",
+  "jest/prefer-hooks-in-order",
   "jest/prefer-hooks-on-top",
-  "jest/prefer-inline-snapshots",
+  "jest/prefer-lowercase-title",
+  "jest/prefer-snapshot-hint",
   "jest/prefer-spy-on",
   "jest/prefer-strict-equal",
-  "jest/prefer-to-be-null",
-  "jest/prefer-to-be-undefined",
+  "jest/prefer-to-be",
   "jest/prefer-to-contain",
   "jest/prefer-to-have-length",
   "jest/prefer-todo",
+  "jest/require-hook",
   "jest/require-to-throw-message",
   "jest/require-top-level-describe",
 ]
@@ -6768,6 +6912,7 @@ Object {
     "SharedArrayBuffer": "readonly",
   },
   "ignorePatterns": Array [
+    "//**/node_modules/*",
     "node_modules/",
   ],
   "noInlineConfig": undefined,
@@ -6825,11 +6970,24 @@ Object {
     "@typescript-eslint/comma-spacing": Array [
       "off",
     ],
+    "@typescript-eslint/consistent-generic-constructors": Array [
+      "error",
+      "constructor",
+    ],
     "@typescript-eslint/consistent-type-assertions": Array [
       "error",
+      Object {
+        "assertionStyle": "never",
+      },
     ],
     "@typescript-eslint/consistent-type-definitions": Array [
       "error",
+    ],
+    "@typescript-eslint/consistent-type-exports": Array [
+      "error",
+      Object {
+        "fixMixedExportsWithInlineTypeSpecifier": true,
+      },
     ],
     "@typescript-eslint/consistent-type-imports": Array [
       "off",
@@ -6840,6 +6998,7 @@ Object {
     "@typescript-eslint/dot-notation": Array [
       "error",
       Object {
+        "allowIndexSignaturePropertyAccess": false,
         "allowKeywords": true,
         "allowPattern": "",
         "allowPrivateClassPropertyAccess": false,
@@ -6890,6 +7049,9 @@ Object {
       "error",
     ],
     "@typescript-eslint/no-dupe-class-members": Array [
+      "error",
+    ],
+    "@typescript-eslint/no-duplicate-enum-values": Array [
       "error",
     ],
     "@typescript-eslint/no-duplicate-imports": Array [
@@ -6952,6 +7114,9 @@ Object {
     ],
     "@typescript-eslint/no-loss-of-precision": Array [
       "off",
+    ],
+    "@typescript-eslint/no-meaningless-void-operator": Array [
+      "error",
     ],
     "@typescript-eslint/no-misused-new": Array [
       "error",
@@ -7033,12 +7198,6 @@ Object {
     ],
     "@typescript-eslint/no-unused-vars": Array [
       "error",
-    ],
-    "@typescript-eslint/no-unused-vars-experimental": Array [
-      "error",
-      Object {
-        "ignoreArgsIfArgsAfterAreUsed": true,
-      },
     ],
     "@typescript-eslint/no-use-before-define": Array [
       "error",
@@ -7127,6 +7286,9 @@ Object {
       "always",
     ],
     "@typescript-eslint/sort-type-union-intersection-members": Array [
+      "off",
+    ],
+    "@typescript-eslint/space-before-blocks": Array [
       "off",
     ],
     "@typescript-eslint/space-before-function-paren": Array [
@@ -7361,6 +7523,7 @@ Object {
           ],
         ],
         "newlines-between": "always",
+        "warnOnUnassignedImports": false,
       },
     ],
     "import/prefer-default-export": Array [
@@ -7417,13 +7580,10 @@ Object {
     "jest/no-test-prefixes": Array [
       "error",
     ],
-    "jest/no-try-expect": Array [
-      "error",
-    ],
     "jest/unbound-method": Array [
       "off",
     ],
-    "jest/valid-describe": Array [
+    "jest/valid-describe-callback": Array [
       "error",
     ],
     "jest/valid-expect": Array [
@@ -7859,6 +8019,7 @@ Object {
         "allowAfterThis": false,
         "allowAfterThisConstructor": false,
         "allowFunctionParams": true,
+        "enforceInClassFields": false,
         "enforceInMethodNames": false,
       },
     ],
@@ -7879,6 +8040,9 @@ Object {
     ],
     "no-unsafe-negation": Array [
       "off",
+    ],
+    "no-unsafe-optional-chaining": Array [
+      "error",
     ],
     "no-unused-expressions": Array [
       "off",
@@ -8239,6 +8403,9 @@ Object {
     "vue/operator-linebreak": Array [
       "off",
     ],
+    "vue/quote-props": Array [
+      "off",
+    ],
     "vue/script-indent": Array [
       "off",
     ],
@@ -8279,7 +8446,6 @@ Object {
     "import/extensions": Array [
       ".ts",
       ".tsx",
-      ".d.ts",
       ".js",
       ".jsx",
     ],
@@ -8294,7 +8460,6 @@ Object {
       "@typescript-eslint/parser": Array [
         ".ts",
         ".tsx",
-        ".d.ts",
       ],
     },
     "import/resolver": Object {
@@ -8302,7 +8467,6 @@ Object {
         "extensions": Array [
           ".ts",
           ".tsx",
-          ".d.ts",
           ".js",
           ".jsx",
         ],
@@ -8346,6 +8510,7 @@ Array [
   "no-await-in-loop",
   "no-bitwise",
   "no-catch-shadow",
+  "no-constant-binary-expression",
   "no-continue",
   "no-implicit-globals",
   "no-inline-comments",
@@ -8364,7 +8529,7 @@ Array [
   "no-restricted-syntax",
   "no-ternary",
   "no-unneeded-ternary",
-  "no-unsafe-optional-chaining",
+  "no-unused-private-class-members",
   "no-useless-constructor",
   "no-warning-comments",
   "one-var",
@@ -8372,6 +8537,7 @@ Array [
   "prefer-destructuring",
   "prefer-exponentiation-operator",
   "prefer-named-capture-group",
+  "prefer-object-has-own",
   "prefer-object-spread",
   "prefer-reflect",
   "require-await",
@@ -8386,8 +8552,15 @@ Array [
   "@typescript-eslint/init-declarations",
   "@typescript-eslint/no-invalid-this",
   "@typescript-eslint/no-magic-numbers",
+  "@typescript-eslint/no-non-null-asserted-nullish-coalescing",
   "@typescript-eslint/no-parameter-properties",
+  "@typescript-eslint/no-redundant-type-constituents",
+  "@typescript-eslint/no-restricted-imports",
+  "@typescript-eslint/no-useless-empty-export",
+  "@typescript-eslint/padding-line-between-statements",
+  "@typescript-eslint/parameter-properties",
   "@typescript-eslint/prefer-readonly-parameter-types",
+  "@typescript-eslint/prefer-return-this-type",
   "@typescript-eslint/require-array-sort-compare",
   "@typescript-eslint/strict-boolean-expressions",
   "@typescript-eslint/typedef",
@@ -8396,6 +8569,7 @@ Array [
   "import/no-restricted-paths",
   "import/no-internal-modules",
   "import/group-exports",
+  "import/no-relative-packages",
   "import/no-relative-parent-imports",
   "import/no-self-import",
   "import/no-named-default",
@@ -8415,31 +8589,37 @@ Array [
   "import/no-unassigned-import",
   "import/no-useless-path-segments",
   "import/dynamic-import-chunkname",
+  "import/no-import-module-exports",
   "import/exports-last",
   "import/no-deprecated",
   "import/imports-first",
   "jest/consistent-test-it",
-  "jest/lowercase-name",
+  "jest/max-expects",
+  "jest/max-nested-describe",
   "jest/no-alias-methods",
+  "jest/no-conditional-in-test",
   "jest/no-duplicate-hooks",
-  "jest/no-expect-resolves",
   "jest/no-hooks",
   "jest/no-if",
   "jest/no-large-snapshots",
   "jest/no-restricted-matchers",
   "jest/no-test-return-statement",
-  "jest/no-truthy-falsy",
   "jest/prefer-called-with",
+  "jest/prefer-comparison-matcher",
+  "jest/prefer-equality-matcher",
   "jest/prefer-expect-assertions",
+  "jest/prefer-expect-resolves",
+  "jest/prefer-hooks-in-order",
   "jest/prefer-hooks-on-top",
-  "jest/prefer-inline-snapshots",
+  "jest/prefer-lowercase-title",
+  "jest/prefer-snapshot-hint",
   "jest/prefer-spy-on",
   "jest/prefer-strict-equal",
-  "jest/prefer-to-be-null",
-  "jest/prefer-to-be-undefined",
+  "jest/prefer-to-be",
   "jest/prefer-to-contain",
   "jest/prefer-to-have-length",
   "jest/prefer-todo",
+  "jest/require-hook",
   "jest/require-to-throw-message",
   "jest/require-top-level-describe",
 ]
@@ -8457,6 +8637,7 @@ Object {
     "SharedArrayBuffer": "readonly",
   },
   "ignorePatterns": Array [
+    "//**/node_modules/*",
     "node_modules/",
   ],
   "noInlineConfig": undefined,
@@ -8514,11 +8695,24 @@ Object {
     "@typescript-eslint/comma-spacing": Array [
       "off",
     ],
+    "@typescript-eslint/consistent-generic-constructors": Array [
+      "error",
+      "constructor",
+    ],
     "@typescript-eslint/consistent-type-assertions": Array [
       "error",
+      Object {
+        "assertionStyle": "never",
+      },
     ],
     "@typescript-eslint/consistent-type-definitions": Array [
       "error",
+    ],
+    "@typescript-eslint/consistent-type-exports": Array [
+      "error",
+      Object {
+        "fixMixedExportsWithInlineTypeSpecifier": true,
+      },
     ],
     "@typescript-eslint/consistent-type-imports": Array [
       "off",
@@ -8529,6 +8723,7 @@ Object {
     "@typescript-eslint/dot-notation": Array [
       "error",
       Object {
+        "allowIndexSignaturePropertyAccess": false,
         "allowKeywords": true,
         "allowPattern": "",
         "allowPrivateClassPropertyAccess": false,
@@ -8579,6 +8774,9 @@ Object {
       "error",
     ],
     "@typescript-eslint/no-dupe-class-members": Array [
+      "error",
+    ],
+    "@typescript-eslint/no-duplicate-enum-values": Array [
       "error",
     ],
     "@typescript-eslint/no-duplicate-imports": Array [
@@ -8641,6 +8839,9 @@ Object {
     ],
     "@typescript-eslint/no-loss-of-precision": Array [
       "off",
+    ],
+    "@typescript-eslint/no-meaningless-void-operator": Array [
+      "error",
     ],
     "@typescript-eslint/no-misused-new": Array [
       "error",
@@ -8722,12 +8923,6 @@ Object {
     ],
     "@typescript-eslint/no-unused-vars": Array [
       "error",
-    ],
-    "@typescript-eslint/no-unused-vars-experimental": Array [
-      "error",
-      Object {
-        "ignoreArgsIfArgsAfterAreUsed": true,
-      },
     ],
     "@typescript-eslint/no-use-before-define": Array [
       "error",
@@ -8816,6 +9011,9 @@ Object {
       "always",
     ],
     "@typescript-eslint/sort-type-union-intersection-members": Array [
+      "off",
+    ],
+    "@typescript-eslint/space-before-blocks": Array [
       "off",
     ],
     "@typescript-eslint/space-before-function-paren": Array [
@@ -9050,6 +9248,7 @@ Object {
           ],
         ],
         "newlines-between": "always",
+        "warnOnUnassignedImports": false,
       },
     ],
     "import/prefer-default-export": Array [
@@ -9106,13 +9305,10 @@ Object {
     "jest/no-test-prefixes": Array [
       "error",
     ],
-    "jest/no-try-expect": Array [
-      "error",
-    ],
     "jest/unbound-method": Array [
       "off",
     ],
-    "jest/valid-describe": Array [
+    "jest/valid-describe-callback": Array [
       "error",
     ],
     "jest/valid-expect": Array [
@@ -9548,6 +9744,7 @@ Object {
         "allowAfterThis": false,
         "allowAfterThisConstructor": false,
         "allowFunctionParams": true,
+        "enforceInClassFields": false,
         "enforceInMethodNames": false,
       },
     ],
@@ -9568,6 +9765,9 @@ Object {
     ],
     "no-unsafe-negation": Array [
       "off",
+    ],
+    "no-unsafe-optional-chaining": Array [
+      "error",
     ],
     "no-unused-expressions": Array [
       "off",
@@ -9928,6 +10128,9 @@ Object {
     "vue/operator-linebreak": Array [
       "off",
     ],
+    "vue/quote-props": Array [
+      "off",
+    ],
     "vue/script-indent": Array [
       "off",
     ],
@@ -9968,7 +10171,6 @@ Object {
     "import/extensions": Array [
       ".ts",
       ".tsx",
-      ".d.ts",
       ".js",
       ".jsx",
     ],
@@ -9983,7 +10185,6 @@ Object {
       "@typescript-eslint/parser": Array [
         ".ts",
         ".tsx",
-        ".d.ts",
       ],
     },
     "import/resolver": Object {
@@ -9991,7 +10192,6 @@ Object {
         "extensions": Array [
           ".ts",
           ".tsx",
-          ".d.ts",
           ".js",
           ".jsx",
         ],
@@ -10035,6 +10235,7 @@ Array [
   "no-await-in-loop",
   "no-bitwise",
   "no-catch-shadow",
+  "no-constant-binary-expression",
   "no-continue",
   "no-implicit-globals",
   "no-inline-comments",
@@ -10053,7 +10254,7 @@ Array [
   "no-restricted-syntax",
   "no-ternary",
   "no-unneeded-ternary",
-  "no-unsafe-optional-chaining",
+  "no-unused-private-class-members",
   "no-useless-constructor",
   "no-warning-comments",
   "one-var",
@@ -10061,6 +10262,7 @@ Array [
   "prefer-destructuring",
   "prefer-exponentiation-operator",
   "prefer-named-capture-group",
+  "prefer-object-has-own",
   "prefer-object-spread",
   "prefer-reflect",
   "require-await",
@@ -10075,8 +10277,15 @@ Array [
   "@typescript-eslint/init-declarations",
   "@typescript-eslint/no-invalid-this",
   "@typescript-eslint/no-magic-numbers",
+  "@typescript-eslint/no-non-null-asserted-nullish-coalescing",
   "@typescript-eslint/no-parameter-properties",
+  "@typescript-eslint/no-redundant-type-constituents",
+  "@typescript-eslint/no-restricted-imports",
+  "@typescript-eslint/no-useless-empty-export",
+  "@typescript-eslint/padding-line-between-statements",
+  "@typescript-eslint/parameter-properties",
   "@typescript-eslint/prefer-readonly-parameter-types",
+  "@typescript-eslint/prefer-return-this-type",
   "@typescript-eslint/require-array-sort-compare",
   "@typescript-eslint/strict-boolean-expressions",
   "@typescript-eslint/typedef",
@@ -10085,6 +10294,7 @@ Array [
   "import/no-restricted-paths",
   "import/no-internal-modules",
   "import/group-exports",
+  "import/no-relative-packages",
   "import/no-relative-parent-imports",
   "import/no-self-import",
   "import/no-named-default",
@@ -10104,31 +10314,37 @@ Array [
   "import/no-unassigned-import",
   "import/no-useless-path-segments",
   "import/dynamic-import-chunkname",
+  "import/no-import-module-exports",
   "import/exports-last",
   "import/no-deprecated",
   "import/imports-first",
   "jest/consistent-test-it",
-  "jest/lowercase-name",
+  "jest/max-expects",
+  "jest/max-nested-describe",
   "jest/no-alias-methods",
+  "jest/no-conditional-in-test",
   "jest/no-duplicate-hooks",
-  "jest/no-expect-resolves",
   "jest/no-hooks",
   "jest/no-if",
   "jest/no-large-snapshots",
   "jest/no-restricted-matchers",
   "jest/no-test-return-statement",
-  "jest/no-truthy-falsy",
   "jest/prefer-called-with",
+  "jest/prefer-comparison-matcher",
+  "jest/prefer-equality-matcher",
   "jest/prefer-expect-assertions",
+  "jest/prefer-expect-resolves",
+  "jest/prefer-hooks-in-order",
   "jest/prefer-hooks-on-top",
-  "jest/prefer-inline-snapshots",
+  "jest/prefer-lowercase-title",
+  "jest/prefer-snapshot-hint",
   "jest/prefer-spy-on",
   "jest/prefer-strict-equal",
-  "jest/prefer-to-be-null",
-  "jest/prefer-to-be-undefined",
+  "jest/prefer-to-be",
   "jest/prefer-to-contain",
   "jest/prefer-to-have-length",
   "jest/prefer-todo",
+  "jest/require-hook",
   "jest/require-to-throw-message",
   "jest/require-top-level-describe",
 ]
