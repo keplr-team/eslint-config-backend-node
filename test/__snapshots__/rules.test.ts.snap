@@ -681,6 +681,9 @@ Object {
     "jest/no-test-prefixes": Array [
       "error",
     ],
+    "jest/prefer-mock-promise-shorthand": Array [
+      "error",
+    ],
     "jest/unbound-method": Array [
       "off",
     ],
@@ -2405,6 +2408,9 @@ Object {
       "error",
     ],
     "jest/no-test-prefixes": Array [
+      "error",
+    ],
+    "jest/prefer-mock-promise-shorthand": Array [
       "error",
     ],
     "jest/unbound-method": Array [
@@ -4133,6 +4139,9 @@ Object {
     "jest/no-test-prefixes": Array [
       "error",
     ],
+    "jest/prefer-mock-promise-shorthand": Array [
+      "error",
+    ],
     "jest/unbound-method": Array [
       "off",
     ],
@@ -5857,6 +5866,9 @@ Object {
       "error",
     ],
     "jest/no-test-prefixes": Array [
+      "error",
+    ],
+    "jest/prefer-mock-promise-shorthand": Array [
       "error",
     ],
     "jest/unbound-method": Array [
@@ -7585,6 +7597,9 @@ Object {
     "jest/no-test-prefixes": Array [
       "error",
     ],
+    "jest/prefer-mock-promise-shorthand": Array [
+      "error",
+    ],
     "jest/unbound-method": Array [
       "off",
     ],
@@ -9309,6 +9324,9 @@ Object {
       "error",
     ],
     "jest/no-test-prefixes": Array [
+      "error",
+    ],
+    "jest/prefer-mock-promise-shorthand": Array [
       "error",
     ],
     "jest/unbound-method": Array [

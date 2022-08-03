@@ -6,7 +6,7 @@
 
     - remove `prettier`
     - remove all the eslint rules packages
-    - keep `eslint`
+    - remove `eslint`
     - run  `npm install @keplr/eslint-config-backend-node`
 
 2. Add `"prettier": "@keplr/eslint-config-backend-node/prettierrc.json"` to package.json
