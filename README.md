@@ -87,7 +87,7 @@ json.forEach(({ filePath, messages, source }) => {
     // grouped ignores
     const ignore = `// eslint-disable-next-line ${messages
       .map(({ ruleId }) => ruleId)
-      .join(' ')}  -- auto-ignored when updating eslint`;
+      .join(', ')}  -- auto-ignored when updating eslint`;
     data.splice(line - offset, 0, ignore);
     offset--;
   });

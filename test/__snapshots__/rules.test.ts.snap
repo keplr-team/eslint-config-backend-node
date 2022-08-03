@@ -682,7 +682,7 @@ Object {
       "error",
     ],
     "jest/prefer-mock-promise-shorthand": Array [
-      "error",
+      "off",
     ],
     "jest/unbound-method": Array [
       "off",
@@ -2411,7 +2411,7 @@ Object {
       "error",
     ],
     "jest/prefer-mock-promise-shorthand": Array [
-      "error",
+      "off",
     ],
     "jest/unbound-method": Array [
       "off",
@@ -4140,7 +4140,7 @@ Object {
       "error",
     ],
     "jest/prefer-mock-promise-shorthand": Array [
-      "error",
+      "off",
     ],
     "jest/unbound-method": Array [
       "off",
@@ -5869,7 +5869,7 @@ Object {
       "error",
     ],
     "jest/prefer-mock-promise-shorthand": Array [
-      "error",
+      "off",
     ],
     "jest/unbound-method": Array [
       "off",
@@ -7598,7 +7598,7 @@ Object {
       "error",
     ],
     "jest/prefer-mock-promise-shorthand": Array [
-      "error",
+      "off",
     ],
     "jest/unbound-method": Array [
       "off",
@@ -9327,7 +9327,7 @@ Object {
       "error",
     ],
     "jest/prefer-mock-promise-shorthand": Array [
-      "error",
+      "off",
     ],
     "jest/unbound-method": Array [
       "off",
