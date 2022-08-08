@@ -1,0 +1,23 @@
+name: Test & Build on branch
+
+on:
+  push:
+    branches: '*'
+
+jobs:
+  build:
+    name: Build & Test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      
+      - name: Install Deps
+        run: npm ci
+
+      - name: Lint
+        run: npm run lint -- --no-fix
+      
+      - name: Build
+        run: npm run build
