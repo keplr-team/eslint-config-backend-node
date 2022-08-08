@@ -23,7 +23,7 @@ jobs:
           node-version: "16"
       
       - name: Install Deps
-        uses: ./.github/actions/deps
+        run: npm ci
       
       - name: Lint
         run: npm run lint -- --no-fix
