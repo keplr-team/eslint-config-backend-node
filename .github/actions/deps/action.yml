@@ -23,7 +23,7 @@ runs:
     - name: Install dependencies
       shell: bash
       run: |
-        echo "::group::INSTALL YARN DEPS"
+        echo "::group::INSTALL NPM DEPS"
         if [ "${{ steps.cache-node.outputs.cache-hit }}" != "true" ];  then
           echo "No cache : run npm install"
           npm install
