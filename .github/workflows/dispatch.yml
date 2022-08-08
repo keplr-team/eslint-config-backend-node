@@ -1,0 +1,87 @@
+name: Tagging
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        default: minor
+        required: true
+        description: "Version (major, minor, patch, ou au format 1.2.3)"
+
+jobs:
+# NPM version update 
+  Npm_version_update:
+    name: Update version package.json
+    runs-on: ubuntu-latest
+    outputs: 
+      NEW_VERSION: ${{ steps.NewVersion.outputs.NEW_VERSION }}
+    steps:
+
+      - name: Checkout code
+        uses: actions/checkout@v2
+      
+      - name: commit new version
+        id: NewVersion
+        shell: bash
+        run: |
+          git config --global user.email ${{ github.event.pusher.email }} || git config --global user.email alfred@gokepler.fr
+          git config --global user.name ${{ github.event.pusher.name }} || git config --global user.name alfredkeplr
+          git config --global color.ui true
+          npm version ${{ github.event.inputs.version }} --no-git-tag-version 
+          NEW_VERSION=$(jq -r .version package.json)
+          git commit -am "Update to version: $NEW_VERSION"
+          git push
+          echo "::notice title="npm version":: Updating the package.json on version v$NEW_VERSION "
+          echo "::set-output name=NEW_VERSION::$NEW_VERSION"
+
+
+  # Push a tag
+  tag:
+    name: Tag
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    needs: Npm_version_update
+    steps:
+      - name: app-puller token
+        id: app_puller
+        uses: getsentry/action-github-app-token@v1
+        with:
+          app_id: '218034'
+          private_key: ${{ secrets.GH_APP_PULLER }}
+
+      - uses: actions/checkout@v2
+        with:
+          token: ${{ steps.app_puller.outputs.token }}
+
+      # Git pull in case of npm version update before. To be sure to get the very last version of the source code
+      - name: Pull
+        shell: bash
+        run: git pull
+
+      - name: composite-puller token
+        id: composite_puller
+        uses: getsentry/action-github-app-token@v1
+        with:
+          app_id: '172918'
+          private_key: ${{ secrets.GH_COMPOSITE_PULLER }}
+
+      - name: Checkout Keplr Actions repo
+        uses: actions/checkout@v2
+        with:
+          repository: keplr-team/.github-private
+          token: ${{ steps.composite_puller.outputs.token }}
+          path: .github/composites
+
+      - name: Tag
+        uses: ./.github/composites/git/tag
+        with:
+          tag: ${{ needs.Npm_version_update.outputs.NEW_VERSION }}
+
+      - name: Push the tag
+        run: |
+          git push --follow-tags
+
+      - name: Notice
+        run: |
+          echo "::notice title="Tag creation":: Tag creation on version v${{ needs.Npm_version_update.outputs.NEW_VERSION }}"
+          
