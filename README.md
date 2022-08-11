@@ -4,10 +4,10 @@
 
 1. In the project's `devDependencies` in `package.json`:
 
-    - remove `prettier`
-    - remove all the eslint rules packages
-    - remove `eslint`
-    - run  `npm install @keplr/eslint-config-backend-node`
+   - remove `prettier`
+   - remove all the eslint rules packages
+   - remove `eslint`
+   - run `npm install @keplr/eslint-config-backend-node`
 
 2. Add `"prettier": "@keplr/eslint-config-backend-node/prettierrc.json"` to package.json
 
@@ -15,14 +15,15 @@
 
 4. Replace the .eslintrc file by :
 
-    ```json
-    {
-        "root": true,
-        "parserOptions": { "project": "./tsconfig.json" },
-        "extends": ["@keplr/eslint-config-backend-node"],
-        "rules": {}
-    }
-    ```
+   ```json
+   {
+     "root": true,
+     "parserOptions": { "project": "./tsconfig.json" },
+     "extends": ["@keplr/eslint-config-backend-node"],
+     "rules": {},
+     "reportUnusedDisableDirectives": true
+   }
+   ```
 
 ## Fix the problems
 
@@ -98,5 +99,4 @@ json.forEach(({ filePath, messages, source }) => {
     if (err) return console.log(err);
   });
 });
-
 ```
