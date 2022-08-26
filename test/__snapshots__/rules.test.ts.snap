@@ -381,6 +381,7 @@ Object {
     ],
     "@typescript-eslint/return-await": Array [
       "error",
+      "always",
     ],
     "@typescript-eslint/semi": Array [
       "error",
@@ -2110,6 +2111,7 @@ Object {
     ],
     "@typescript-eslint/return-await": Array [
       "error",
+      "always",
     ],
     "@typescript-eslint/semi": Array [
       "error",
@@ -3839,6 +3841,7 @@ Object {
     ],
     "@typescript-eslint/return-await": Array [
       "error",
+      "always",
     ],
     "@typescript-eslint/semi": Array [
       "error",
@@ -5568,6 +5571,7 @@ Object {
     ],
     "@typescript-eslint/return-await": Array [
       "error",
+      "always",
     ],
     "@typescript-eslint/semi": Array [
       "error",
@@ -7297,6 +7301,7 @@ Object {
     ],
     "@typescript-eslint/return-await": Array [
       "error",
+      "always",
     ],
     "@typescript-eslint/semi": Array [
       "error",
@@ -9026,6 +9031,7 @@ Object {
     ],
     "@typescript-eslint/return-await": Array [
       "error",
+      "always",
     ],
     "@typescript-eslint/semi": Array [
       "error",
