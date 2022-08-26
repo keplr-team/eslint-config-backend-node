@@ -1050,9 +1050,6 @@ Object {
     "no-return-assign": Array [
       "error",
     ],
-    "no-return-await": Array [
-      "error",
-    ],
     "no-script-url": Array [
       "error",
     ],
@@ -1632,6 +1629,7 @@ Array [
   "no-process-exit",
   "no-restricted-exports",
   "no-restricted-syntax",
+  "no-return-await",
   "no-ternary",
   "no-unneeded-ternary",
   "no-unused-private-class-members",
@@ -2780,9 +2778,6 @@ Object {
     "no-return-assign": Array [
       "error",
     ],
-    "no-return-await": Array [
-      "error",
-    ],
     "no-script-url": Array [
       "error",
     ],
@@ -3362,6 +3357,7 @@ Array [
   "no-process-exit",
   "no-restricted-exports",
   "no-restricted-syntax",
+  "no-return-await",
   "no-ternary",
   "no-unneeded-ternary",
   "no-unused-private-class-members",
@@ -4510,9 +4506,6 @@ Object {
     "no-return-assign": Array [
       "error",
     ],
-    "no-return-await": Array [
-      "error",
-    ],
     "no-script-url": Array [
       "error",
     ],
@@ -5092,6 +5085,7 @@ Array [
   "no-process-exit",
   "no-restricted-exports",
   "no-restricted-syntax",
+  "no-return-await",
   "no-ternary",
   "no-unneeded-ternary",
   "no-unused-private-class-members",
@@ -6240,9 +6234,6 @@ Object {
     "no-return-assign": Array [
       "error",
     ],
-    "no-return-await": Array [
-      "error",
-    ],
     "no-script-url": Array [
       "error",
     ],
@@ -6822,6 +6813,7 @@ Array [
   "no-process-exit",
   "no-restricted-exports",
   "no-restricted-syntax",
+  "no-return-await",
   "no-ternary",
   "no-unneeded-ternary",
   "no-unused-private-class-members",
@@ -7970,9 +7962,6 @@ Object {
     "no-return-assign": Array [
       "error",
     ],
-    "no-return-await": Array [
-      "error",
-    ],
     "no-script-url": Array [
       "error",
     ],
@@ -8552,6 +8541,7 @@ Array [
   "no-process-exit",
   "no-restricted-exports",
   "no-restricted-syntax",
+  "no-return-await",
   "no-ternary",
   "no-unneeded-ternary",
   "no-unused-private-class-members",
@@ -9700,9 +9690,6 @@ Object {
     "no-return-assign": Array [
       "error",
     ],
-    "no-return-await": Array [
-      "error",
-    ],
     "no-script-url": Array [
       "error",
     ],
@@ -10282,6 +10269,7 @@ Array [
   "no-process-exit",
   "no-restricted-exports",
   "no-restricted-syntax",
+  "no-return-await",
   "no-ternary",
   "no-unneeded-ternary",
   "no-unused-private-class-members",
