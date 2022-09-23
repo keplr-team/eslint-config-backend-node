@@ -1116,6 +1116,7 @@ Object {
         "allow": Array [
           "_id",
           "_source",
+          "__typename",
         ],
         "allowAfterSuper": false,
         "allowAfterThis": false,
@@ -2844,6 +2845,7 @@ Object {
         "allow": Array [
           "_id",
           "_source",
+          "__typename",
         ],
         "allowAfterSuper": false,
         "allowAfterThis": false,
@@ -4572,6 +4574,7 @@ Object {
         "allow": Array [
           "_id",
           "_source",
+          "__typename",
         ],
         "allowAfterSuper": false,
         "allowAfterThis": false,
@@ -6300,6 +6303,7 @@ Object {
         "allow": Array [
           "_id",
           "_source",
+          "__typename",
         ],
         "allowAfterSuper": false,
         "allowAfterThis": false,
@@ -8028,6 +8032,7 @@ Object {
         "allow": Array [
           "_id",
           "_source",
+          "__typename",
         ],
         "allowAfterSuper": false,
         "allowAfterThis": false,
@@ -9756,6 +9761,7 @@ Object {
         "allow": Array [
           "_id",
           "_source",
+          "__typename",
         ],
         "allowAfterSuper": false,
         "allowAfterThis": false,
