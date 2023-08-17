@@ -11,9 +11,4 @@ module.exports = {
   },
   coverageReporters: ['json', 'html'],
   testMatch: ['<rootDir>/test/**/*.test.ts'],
-  globals: {
-    'ts-jest': {
-      diagnostics: false,
-    },
-  },
 };
