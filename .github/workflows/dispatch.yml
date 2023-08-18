@@ -44,7 +44,7 @@ jobs:
     steps:
       - name: app-puller token
         id: app_puller
-        uses: getsentry/action-github-app-token@v1
+        uses: getsentry/action-github-app-token@v2
         with:
           app_id: '218034'
           private_key: ${{ secrets.GH_APP_PULLER }}
@@ -60,7 +60,7 @@ jobs:
 
       - name: composite-puller token
         id: composite_puller
-        uses: getsentry/action-github-app-token@v1
+        uses: getsentry/action-github-app-token@v2
         with:
           app_id: '172918'
           private_key: ${{ secrets.GH_COMPOSITE_PULLER }}
