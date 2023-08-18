@@ -18,7 +18,7 @@ jobs:
     steps:
 
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       
       - name: commit new version
         id: NewVersion
@@ -49,7 +49,7 @@ jobs:
           app_id: '218034'
           private_key: ${{ secrets.GH_APP_PULLER }}
 
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           token: ${{ steps.app_puller.outputs.token }}
 
@@ -66,7 +66,7 @@ jobs:
           private_key: ${{ secrets.GH_COMPOSITE_PULLER }}
 
       - name: Checkout Keplr Actions repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           repository: keplr-team/.github-private
           token: ${{ steps.composite_puller.outputs.token }}
