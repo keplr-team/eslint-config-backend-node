@@ -372,7 +372,11 @@ exports[`ESLint rules should match defined rules for e2e.js: Applied rules 1`] =
     "@typescript-eslint/restrict-template-expressions": [
       "error",
       {
+        "allowAny": true,
+        "allowBoolean": true,
+        "allowNullish": false,
         "allowNumber": true,
+        "allowRegExp": true,
       },
     ],
     "@typescript-eslint/return-await": [
@@ -2120,7 +2124,11 @@ exports[`ESLint rules should match defined rules for e2e.ts: Applied rules 1`] =
     "@typescript-eslint/restrict-template-expressions": [
       "error",
       {
+        "allowAny": true,
+        "allowBoolean": true,
+        "allowNullish": false,
         "allowNumber": true,
+        "allowRegExp": true,
       },
     ],
     "@typescript-eslint/return-await": [
@@ -3868,7 +3876,11 @@ exports[`ESLint rules should match defined rules for js: Applied rules 1`] = `
     "@typescript-eslint/restrict-template-expressions": [
       "error",
       {
+        "allowAny": true,
+        "allowBoolean": true,
+        "allowNullish": false,
         "allowNumber": true,
+        "allowRegExp": true,
       },
     ],
     "@typescript-eslint/return-await": [
@@ -5616,7 +5628,11 @@ exports[`ESLint rules should match defined rules for test.js: Applied rules 1`] 
     "@typescript-eslint/restrict-template-expressions": [
       "error",
       {
+        "allowAny": true,
+        "allowBoolean": true,
+        "allowNullish": false,
         "allowNumber": true,
+        "allowRegExp": true,
       },
     ],
     "@typescript-eslint/return-await": [
@@ -7364,7 +7380,11 @@ exports[`ESLint rules should match defined rules for test.ts: Applied rules 1`] 
     "@typescript-eslint/restrict-template-expressions": [
       "error",
       {
+        "allowAny": true,
+        "allowBoolean": true,
+        "allowNullish": false,
         "allowNumber": true,
+        "allowRegExp": true,
       },
     ],
     "@typescript-eslint/return-await": [
@@ -9112,7 +9132,11 @@ exports[`ESLint rules should match defined rules for ts: Applied rules 1`] = `
     "@typescript-eslint/restrict-template-expressions": [
       "error",
       {
+        "allowAny": true,
+        "allowBoolean": true,
+        "allowNullish": false,
         "allowNumber": true,
+        "allowRegExp": true,
       },
     ],
     "@typescript-eslint/return-await": [
