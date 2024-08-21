@@ -24,6 +24,7 @@ exports[`ESLint rules should match defined rules for e2e.js: Applied rules 1`] =
   "plugins": [
     "jest",
     "prettier",
+    "@stylistic/ts",
     "@typescript-eslint",
     "import",
   ],
@@ -34,6 +35,13 @@ exports[`ESLint rules should match defined rules for e2e.js: Applied rules 1`] =
     ],
     "@babel/semi": [
       "off",
+    ],
+    "@stylistic/ts/lines-between-class-members": [
+      "error",
+    ],
+    "@stylistic/ts/semi": [
+      "error",
+      "always",
     ],
     "@typescript-eslint/array-type": [
       "error",
@@ -49,9 +57,6 @@ exports[`ESLint rules should match defined rules for e2e.js: Applied rules 1`] =
       "off",
     ],
     "@typescript-eslint/ban-tslint-comment": [
-      "error",
-    ],
-    "@typescript-eslint/ban-types": [
       "error",
     ],
     "@typescript-eslint/block-spacing": [
@@ -125,9 +130,6 @@ exports[`ESLint rules should match defined rules for e2e.js: Applied rules 1`] =
     "@typescript-eslint/lines-around-comment": [
       0,
     ],
-    "@typescript-eslint/lines-between-class-members": [
-      "error",
-    ],
     "@typescript-eslint/member-delimiter-style": [
       "off",
     ],
@@ -171,6 +173,9 @@ exports[`ESLint rules should match defined rules for e2e.js: Applied rules 1`] =
           "methods",
         ],
       },
+    ],
+    "@typescript-eslint/no-empty-object-type": [
+      "error",
     ],
     "@typescript-eslint/no-explicit-any": [
       "error",
@@ -241,9 +246,6 @@ exports[`ESLint rules should match defined rules for e2e.js: Applied rules 1`] =
     "@typescript-eslint/no-this-alias": [
       "error",
     ],
-    "@typescript-eslint/no-throw-literal": [
-      "error",
-    ],
     "@typescript-eslint/no-type-alias": [
       "error",
       {
@@ -287,6 +289,9 @@ exports[`ESLint rules should match defined rules for e2e.js: Applied rules 1`] =
     "@typescript-eslint/no-unsafe-declaration-merging": [
       "error",
     ],
+    "@typescript-eslint/no-unsafe-function-type": [
+      "error",
+    ],
     "@typescript-eslint/no-unsafe-member-access": [
       "error",
     ],
@@ -309,7 +314,7 @@ exports[`ESLint rules should match defined rules for e2e.js: Applied rules 1`] =
     "@typescript-eslint/no-useless-constructor": [
       "error",
     ],
-    "@typescript-eslint/no-var-requires": [
+    "@typescript-eslint/no-wrapper-object-types": [
       "error",
     ],
     "@typescript-eslint/non-nullable-type-assertion-style": [
@@ -317,6 +322,9 @@ exports[`ESLint rules should match defined rules for e2e.js: Applied rules 1`] =
     ],
     "@typescript-eslint/object-curly-spacing": [
       "off",
+    ],
+    "@typescript-eslint/only-throw-error": [
+      "error",
     ],
     "@typescript-eslint/prefer-as-const": [
       "error",
@@ -334,6 +342,9 @@ exports[`ESLint rules should match defined rules for e2e.js: Applied rules 1`] =
       "error",
     ],
     "@typescript-eslint/prefer-literal-enum-member": [
+      "error",
+    ],
+    "@typescript-eslint/prefer-namespace-keyword": [
       "error",
     ],
     "@typescript-eslint/prefer-nullish-coalescing": [
@@ -384,8 +395,7 @@ exports[`ESLint rules should match defined rules for e2e.js: Applied rules 1`] =
       "always",
     ],
     "@typescript-eslint/semi": [
-      "error",
-      "always",
+      "off",
     ],
     "@typescript-eslint/sort-type-union-intersection-members": [
       "off",
@@ -424,6 +434,7 @@ exports[`ESLint rules should match defined rules for e2e.js: Applied rules 1`] =
       "error",
       {
         "allowImplicit": true,
+        "allowVoid": false,
         "checkForEach": false,
       },
     ],
@@ -1407,6 +1418,9 @@ exports[`ESLint rules should match defined rules for e2e.js: Applied rules 1`] =
     "unicorn/number-literal-case": [
       "off",
     ],
+    "unicorn/template-indent": [
+      0,
+    ],
     "use-isnan": [
       "error",
     ],
@@ -1554,6 +1568,8 @@ exports[`ESLint rules should match defined rules for e2e.js: Applied rules 1`] =
   "settings": {
     "import/extensions": [
       ".ts",
+      ".cts",
+      ".mts",
       ".tsx",
       ".js",
       ".jsx",
@@ -1568,6 +1584,8 @@ exports[`ESLint rules should match defined rules for e2e.js: Applied rules 1`] =
     "import/parsers": {
       "@typescript-eslint/parser": [
         ".ts",
+        ".cts",
+        ".mts",
         ".tsx",
       ],
     },
@@ -1575,6 +1593,8 @@ exports[`ESLint rules should match defined rules for e2e.js: Applied rules 1`] =
       "node": {
         "extensions": [
           ".ts",
+          ".cts",
+          ".mts",
           ".tsx",
           ".js",
           ".jsx",
@@ -1635,6 +1655,7 @@ exports[`ESLint rules should match defined rules for e2e.js: Ignored rules 1`] =
   "no-nested-ternary",
   "no-new-native-nonconstructor",
   "no-new-object",
+  "no-object-constructor",
   "no-plusplus",
   "no-process-exit",
   "no-restricted-exports",
@@ -1664,8 +1685,11 @@ exports[`ESLint rules should match defined rules for e2e.js: Ignored rules 1`] =
   "@typescript-eslint/adjacent-overload-signatures",
   "@typescript-eslint/class-methods-use-this",
   "@typescript-eslint/consistent-indexed-object-style",
+  "@typescript-eslint/consistent-return",
   "@typescript-eslint/explicit-member-accessibility",
   "@typescript-eslint/init-declarations",
+  "@typescript-eslint/max-params",
+  "@typescript-eslint/no-array-delete",
   "@typescript-eslint/no-duplicate-type-constituents",
   "@typescript-eslint/no-empty-interface",
   "@typescript-eslint/no-import-type-side-effects",
@@ -1676,17 +1700,25 @@ exports[`ESLint rules should match defined rules for e2e.js: Ignored rules 1`] =
   "@typescript-eslint/no-non-null-asserted-nullish-coalescing",
   "@typescript-eslint/no-redundant-type-constituents",
   "@typescript-eslint/no-restricted-imports",
+  "@typescript-eslint/no-restricted-types",
+  "@typescript-eslint/no-unnecessary-parameter-property-assignment",
+  "@typescript-eslint/no-unnecessary-template-expression",
+  "@typescript-eslint/no-unnecessary-type-parameters",
   "@typescript-eslint/no-unsafe-enum-comparison",
+  "@typescript-eslint/no-unsafe-unary-minus",
   "@typescript-eslint/no-useless-empty-export",
-  "@typescript-eslint/padding-line-between-statements",
+  "@typescript-eslint/no-var-requires",
   "@typescript-eslint/parameter-properties",
-  "@typescript-eslint/prefer-namespace-keyword",
+  "@typescript-eslint/prefer-destructuring",
+  "@typescript-eslint/prefer-find",
+  "@typescript-eslint/prefer-promise-reject-errors",
   "@typescript-eslint/prefer-readonly-parameter-types",
   "@typescript-eslint/prefer-return-this-type",
   "@typescript-eslint/require-array-sort-compare",
   "@typescript-eslint/sort-type-constituents",
   "@typescript-eslint/strict-boolean-expressions",
   "@typescript-eslint/typedef",
+  "@typescript-eslint/use-unknown-in-catch-callback-variable",
   "import/no-namespace",
   "import/extensions",
   "import/no-restricted-paths",
@@ -1722,14 +1754,22 @@ exports[`ESLint rules should match defined rules for e2e.js: Ignored rules 1`] =
   "jest/max-expects",
   "jest/max-nested-describe",
   "jest/no-conditional-in-test",
+  "jest/no-confusing-set-timeout",
   "jest/no-duplicate-hooks",
   "jest/no-hooks",
-  "jest/no-if",
   "jest/no-large-snapshots",
   "jest/no-restricted-jest-methods",
   "jest/no-restricted-matchers",
   "jest/no-test-return-statement",
   "jest/no-untyped-mock-factory",
+  "jest/padding-around-after-all-blocks",
+  "jest/padding-around-after-each-blocks",
+  "jest/padding-around-all",
+  "jest/padding-around-before-all-blocks",
+  "jest/padding-around-before-each-blocks",
+  "jest/padding-around-describe-blocks",
+  "jest/padding-around-expect-groups",
+  "jest/padding-around-test-blocks",
   "jest/prefer-called-with",
   "jest/prefer-comparison-matcher",
   "jest/prefer-each",
@@ -1738,6 +1778,8 @@ exports[`ESLint rules should match defined rules for e2e.js: Ignored rules 1`] =
   "jest/prefer-expect-resolves",
   "jest/prefer-hooks-in-order",
   "jest/prefer-hooks-on-top",
+  "jest/prefer-importing-jest-globals",
+  "jest/prefer-jest-mocked",
   "jest/prefer-lowercase-title",
   "jest/prefer-snapshot-hint",
   "jest/prefer-spy-on",
@@ -1776,6 +1818,7 @@ exports[`ESLint rules should match defined rules for e2e.ts: Applied rules 1`] =
   "plugins": [
     "jest",
     "prettier",
+    "@stylistic/ts",
     "@typescript-eslint",
     "import",
   ],
@@ -1786,6 +1829,13 @@ exports[`ESLint rules should match defined rules for e2e.ts: Applied rules 1`] =
     ],
     "@babel/semi": [
       "off",
+    ],
+    "@stylistic/ts/lines-between-class-members": [
+      "error",
+    ],
+    "@stylistic/ts/semi": [
+      "error",
+      "always",
     ],
     "@typescript-eslint/array-type": [
       "error",
@@ -1801,9 +1851,6 @@ exports[`ESLint rules should match defined rules for e2e.ts: Applied rules 1`] =
       "off",
     ],
     "@typescript-eslint/ban-tslint-comment": [
-      "error",
-    ],
-    "@typescript-eslint/ban-types": [
       "error",
     ],
     "@typescript-eslint/block-spacing": [
@@ -1877,9 +1924,6 @@ exports[`ESLint rules should match defined rules for e2e.ts: Applied rules 1`] =
     "@typescript-eslint/lines-around-comment": [
       0,
     ],
-    "@typescript-eslint/lines-between-class-members": [
-      "error",
-    ],
     "@typescript-eslint/member-delimiter-style": [
       "off",
     ],
@@ -1923,6 +1967,9 @@ exports[`ESLint rules should match defined rules for e2e.ts: Applied rules 1`] =
           "methods",
         ],
       },
+    ],
+    "@typescript-eslint/no-empty-object-type": [
+      "error",
     ],
     "@typescript-eslint/no-explicit-any": [
       "error",
@@ -1993,9 +2040,6 @@ exports[`ESLint rules should match defined rules for e2e.ts: Applied rules 1`] =
     "@typescript-eslint/no-this-alias": [
       "error",
     ],
-    "@typescript-eslint/no-throw-literal": [
-      "error",
-    ],
     "@typescript-eslint/no-type-alias": [
       "error",
       {
@@ -2039,6 +2083,9 @@ exports[`ESLint rules should match defined rules for e2e.ts: Applied rules 1`] =
     "@typescript-eslint/no-unsafe-declaration-merging": [
       "error",
     ],
+    "@typescript-eslint/no-unsafe-function-type": [
+      "error",
+    ],
     "@typescript-eslint/no-unsafe-member-access": [
       "error",
     ],
@@ -2061,7 +2108,7 @@ exports[`ESLint rules should match defined rules for e2e.ts: Applied rules 1`] =
     "@typescript-eslint/no-useless-constructor": [
       "error",
     ],
-    "@typescript-eslint/no-var-requires": [
+    "@typescript-eslint/no-wrapper-object-types": [
       "error",
     ],
     "@typescript-eslint/non-nullable-type-assertion-style": [
@@ -2069,6 +2116,9 @@ exports[`ESLint rules should match defined rules for e2e.ts: Applied rules 1`] =
     ],
     "@typescript-eslint/object-curly-spacing": [
       "off",
+    ],
+    "@typescript-eslint/only-throw-error": [
+      "error",
     ],
     "@typescript-eslint/prefer-as-const": [
       "error",
@@ -2086,6 +2136,9 @@ exports[`ESLint rules should match defined rules for e2e.ts: Applied rules 1`] =
       "error",
     ],
     "@typescript-eslint/prefer-literal-enum-member": [
+      "error",
+    ],
+    "@typescript-eslint/prefer-namespace-keyword": [
       "error",
     ],
     "@typescript-eslint/prefer-nullish-coalescing": [
@@ -2136,8 +2189,7 @@ exports[`ESLint rules should match defined rules for e2e.ts: Applied rules 1`] =
       "always",
     ],
     "@typescript-eslint/semi": [
-      "error",
-      "always",
+      "off",
     ],
     "@typescript-eslint/sort-type-union-intersection-members": [
       "off",
@@ -2176,6 +2228,7 @@ exports[`ESLint rules should match defined rules for e2e.ts: Applied rules 1`] =
       "error",
       {
         "allowImplicit": true,
+        "allowVoid": false,
         "checkForEach": false,
       },
     ],
@@ -2678,6 +2731,9 @@ exports[`ESLint rules should match defined rules for e2e.ts: Applied rules 1`] =
     "no-new-func": [
       "error",
     ],
+    "no-new-native-nonconstructor": [
+      "off",
+    ],
     "no-new-require": [
       "error",
     ],
@@ -3159,6 +3215,9 @@ exports[`ESLint rules should match defined rules for e2e.ts: Applied rules 1`] =
     "unicorn/number-literal-case": [
       "off",
     ],
+    "unicorn/template-indent": [
+      0,
+    ],
     "use-isnan": [
       "error",
     ],
@@ -3306,6 +3365,8 @@ exports[`ESLint rules should match defined rules for e2e.ts: Applied rules 1`] =
   "settings": {
     "import/extensions": [
       ".ts",
+      ".cts",
+      ".mts",
       ".tsx",
       ".js",
       ".jsx",
@@ -3320,6 +3381,8 @@ exports[`ESLint rules should match defined rules for e2e.ts: Applied rules 1`] =
     "import/parsers": {
       "@typescript-eslint/parser": [
         ".ts",
+        ".cts",
+        ".mts",
         ".tsx",
       ],
     },
@@ -3327,6 +3390,8 @@ exports[`ESLint rules should match defined rules for e2e.ts: Applied rules 1`] =
       "node": {
         "extensions": [
           ".ts",
+          ".cts",
+          ".mts",
           ".tsx",
           ".js",
           ".jsx",
@@ -3385,8 +3450,8 @@ exports[`ESLint rules should match defined rules for e2e.ts: Ignored rules 1`] =
   "no-negated-condition",
   "no-negated-in-lhs",
   "no-nested-ternary",
-  "no-new-native-nonconstructor",
   "no-new-object",
+  "no-object-constructor",
   "no-plusplus",
   "no-process-exit",
   "no-restricted-exports",
@@ -3416,8 +3481,11 @@ exports[`ESLint rules should match defined rules for e2e.ts: Ignored rules 1`] =
   "@typescript-eslint/adjacent-overload-signatures",
   "@typescript-eslint/class-methods-use-this",
   "@typescript-eslint/consistent-indexed-object-style",
+  "@typescript-eslint/consistent-return",
   "@typescript-eslint/explicit-member-accessibility",
   "@typescript-eslint/init-declarations",
+  "@typescript-eslint/max-params",
+  "@typescript-eslint/no-array-delete",
   "@typescript-eslint/no-duplicate-type-constituents",
   "@typescript-eslint/no-empty-interface",
   "@typescript-eslint/no-import-type-side-effects",
@@ -3428,17 +3496,25 @@ exports[`ESLint rules should match defined rules for e2e.ts: Ignored rules 1`] =
   "@typescript-eslint/no-non-null-asserted-nullish-coalescing",
   "@typescript-eslint/no-redundant-type-constituents",
   "@typescript-eslint/no-restricted-imports",
+  "@typescript-eslint/no-restricted-types",
+  "@typescript-eslint/no-unnecessary-parameter-property-assignment",
+  "@typescript-eslint/no-unnecessary-template-expression",
+  "@typescript-eslint/no-unnecessary-type-parameters",
   "@typescript-eslint/no-unsafe-enum-comparison",
+  "@typescript-eslint/no-unsafe-unary-minus",
   "@typescript-eslint/no-useless-empty-export",
-  "@typescript-eslint/padding-line-between-statements",
+  "@typescript-eslint/no-var-requires",
   "@typescript-eslint/parameter-properties",
-  "@typescript-eslint/prefer-namespace-keyword",
+  "@typescript-eslint/prefer-destructuring",
+  "@typescript-eslint/prefer-find",
+  "@typescript-eslint/prefer-promise-reject-errors",
   "@typescript-eslint/prefer-readonly-parameter-types",
   "@typescript-eslint/prefer-return-this-type",
   "@typescript-eslint/require-array-sort-compare",
   "@typescript-eslint/sort-type-constituents",
   "@typescript-eslint/strict-boolean-expressions",
   "@typescript-eslint/typedef",
+  "@typescript-eslint/use-unknown-in-catch-callback-variable",
   "import/no-namespace",
   "import/extensions",
   "import/no-restricted-paths",
@@ -3474,14 +3550,22 @@ exports[`ESLint rules should match defined rules for e2e.ts: Ignored rules 1`] =
   "jest/max-expects",
   "jest/max-nested-describe",
   "jest/no-conditional-in-test",
+  "jest/no-confusing-set-timeout",
   "jest/no-duplicate-hooks",
   "jest/no-hooks",
-  "jest/no-if",
   "jest/no-large-snapshots",
   "jest/no-restricted-jest-methods",
   "jest/no-restricted-matchers",
   "jest/no-test-return-statement",
   "jest/no-untyped-mock-factory",
+  "jest/padding-around-after-all-blocks",
+  "jest/padding-around-after-each-blocks",
+  "jest/padding-around-all",
+  "jest/padding-around-before-all-blocks",
+  "jest/padding-around-before-each-blocks",
+  "jest/padding-around-describe-blocks",
+  "jest/padding-around-expect-groups",
+  "jest/padding-around-test-blocks",
   "jest/prefer-called-with",
   "jest/prefer-comparison-matcher",
   "jest/prefer-each",
@@ -3490,6 +3574,8 @@ exports[`ESLint rules should match defined rules for e2e.ts: Ignored rules 1`] =
   "jest/prefer-expect-resolves",
   "jest/prefer-hooks-in-order",
   "jest/prefer-hooks-on-top",
+  "jest/prefer-importing-jest-globals",
+  "jest/prefer-jest-mocked",
   "jest/prefer-lowercase-title",
   "jest/prefer-snapshot-hint",
   "jest/prefer-spy-on",
@@ -3528,6 +3614,7 @@ exports[`ESLint rules should match defined rules for js: Applied rules 1`] = `
   "plugins": [
     "jest",
     "prettier",
+    "@stylistic/ts",
     "@typescript-eslint",
     "import",
   ],
@@ -3538,6 +3625,13 @@ exports[`ESLint rules should match defined rules for js: Applied rules 1`] = `
     ],
     "@babel/semi": [
       "off",
+    ],
+    "@stylistic/ts/lines-between-class-members": [
+      "error",
+    ],
+    "@stylistic/ts/semi": [
+      "error",
+      "always",
     ],
     "@typescript-eslint/array-type": [
       "error",
@@ -3553,9 +3647,6 @@ exports[`ESLint rules should match defined rules for js: Applied rules 1`] = `
       "error",
     ],
     "@typescript-eslint/ban-tslint-comment": [
-      "error",
-    ],
-    "@typescript-eslint/ban-types": [
       "error",
     ],
     "@typescript-eslint/block-spacing": [
@@ -3629,9 +3720,6 @@ exports[`ESLint rules should match defined rules for js: Applied rules 1`] = `
     "@typescript-eslint/lines-around-comment": [
       0,
     ],
-    "@typescript-eslint/lines-between-class-members": [
-      "error",
-    ],
     "@typescript-eslint/member-delimiter-style": [
       "off",
     ],
@@ -3675,6 +3763,9 @@ exports[`ESLint rules should match defined rules for js: Applied rules 1`] = `
           "methods",
         ],
       },
+    ],
+    "@typescript-eslint/no-empty-object-type": [
+      "error",
     ],
     "@typescript-eslint/no-explicit-any": [
       "error",
@@ -3745,9 +3836,6 @@ exports[`ESLint rules should match defined rules for js: Applied rules 1`] = `
     "@typescript-eslint/no-this-alias": [
       "error",
     ],
-    "@typescript-eslint/no-throw-literal": [
-      "error",
-    ],
     "@typescript-eslint/no-type-alias": [
       "error",
       {
@@ -3791,6 +3879,9 @@ exports[`ESLint rules should match defined rules for js: Applied rules 1`] = `
     "@typescript-eslint/no-unsafe-declaration-merging": [
       "error",
     ],
+    "@typescript-eslint/no-unsafe-function-type": [
+      "error",
+    ],
     "@typescript-eslint/no-unsafe-member-access": [
       "error",
     ],
@@ -3813,7 +3904,7 @@ exports[`ESLint rules should match defined rules for js: Applied rules 1`] = `
     "@typescript-eslint/no-useless-constructor": [
       "error",
     ],
-    "@typescript-eslint/no-var-requires": [
+    "@typescript-eslint/no-wrapper-object-types": [
       "error",
     ],
     "@typescript-eslint/non-nullable-type-assertion-style": [
@@ -3821,6 +3912,9 @@ exports[`ESLint rules should match defined rules for js: Applied rules 1`] = `
     ],
     "@typescript-eslint/object-curly-spacing": [
       "off",
+    ],
+    "@typescript-eslint/only-throw-error": [
+      "error",
     ],
     "@typescript-eslint/prefer-as-const": [
       "error",
@@ -3838,6 +3932,9 @@ exports[`ESLint rules should match defined rules for js: Applied rules 1`] = `
       "error",
     ],
     "@typescript-eslint/prefer-literal-enum-member": [
+      "error",
+    ],
+    "@typescript-eslint/prefer-namespace-keyword": [
       "error",
     ],
     "@typescript-eslint/prefer-nullish-coalescing": [
@@ -3888,8 +3985,7 @@ exports[`ESLint rules should match defined rules for js: Applied rules 1`] = `
       "always",
     ],
     "@typescript-eslint/semi": [
-      "error",
-      "always",
+      "off",
     ],
     "@typescript-eslint/sort-type-union-intersection-members": [
       "off",
@@ -3928,6 +4024,7 @@ exports[`ESLint rules should match defined rules for js: Applied rules 1`] = `
       "error",
       {
         "allowImplicit": true,
+        "allowVoid": false,
         "checkForEach": false,
       },
     ],
@@ -4911,6 +5008,9 @@ exports[`ESLint rules should match defined rules for js: Applied rules 1`] = `
     "unicorn/number-literal-case": [
       "off",
     ],
+    "unicorn/template-indent": [
+      0,
+    ],
     "use-isnan": [
       "error",
     ],
@@ -5058,6 +5158,8 @@ exports[`ESLint rules should match defined rules for js: Applied rules 1`] = `
   "settings": {
     "import/extensions": [
       ".ts",
+      ".cts",
+      ".mts",
       ".tsx",
       ".js",
       ".jsx",
@@ -5072,6 +5174,8 @@ exports[`ESLint rules should match defined rules for js: Applied rules 1`] = `
     "import/parsers": {
       "@typescript-eslint/parser": [
         ".ts",
+        ".cts",
+        ".mts",
         ".tsx",
       ],
     },
@@ -5079,6 +5183,8 @@ exports[`ESLint rules should match defined rules for js: Applied rules 1`] = `
       "node": {
         "extensions": [
           ".ts",
+          ".cts",
+          ".mts",
           ".tsx",
           ".js",
           ".jsx",
@@ -5139,6 +5245,7 @@ exports[`ESLint rules should match defined rules for js: Ignored rules 1`] = `
   "no-nested-ternary",
   "no-new-native-nonconstructor",
   "no-new-object",
+  "no-object-constructor",
   "no-plusplus",
   "no-process-exit",
   "no-restricted-exports",
@@ -5168,8 +5275,11 @@ exports[`ESLint rules should match defined rules for js: Ignored rules 1`] = `
   "@typescript-eslint/adjacent-overload-signatures",
   "@typescript-eslint/class-methods-use-this",
   "@typescript-eslint/consistent-indexed-object-style",
+  "@typescript-eslint/consistent-return",
   "@typescript-eslint/explicit-member-accessibility",
   "@typescript-eslint/init-declarations",
+  "@typescript-eslint/max-params",
+  "@typescript-eslint/no-array-delete",
   "@typescript-eslint/no-duplicate-type-constituents",
   "@typescript-eslint/no-empty-interface",
   "@typescript-eslint/no-import-type-side-effects",
@@ -5180,17 +5290,25 @@ exports[`ESLint rules should match defined rules for js: Ignored rules 1`] = `
   "@typescript-eslint/no-non-null-asserted-nullish-coalescing",
   "@typescript-eslint/no-redundant-type-constituents",
   "@typescript-eslint/no-restricted-imports",
+  "@typescript-eslint/no-restricted-types",
+  "@typescript-eslint/no-unnecessary-parameter-property-assignment",
+  "@typescript-eslint/no-unnecessary-template-expression",
+  "@typescript-eslint/no-unnecessary-type-parameters",
   "@typescript-eslint/no-unsafe-enum-comparison",
+  "@typescript-eslint/no-unsafe-unary-minus",
   "@typescript-eslint/no-useless-empty-export",
-  "@typescript-eslint/padding-line-between-statements",
+  "@typescript-eslint/no-var-requires",
   "@typescript-eslint/parameter-properties",
-  "@typescript-eslint/prefer-namespace-keyword",
+  "@typescript-eslint/prefer-destructuring",
+  "@typescript-eslint/prefer-find",
+  "@typescript-eslint/prefer-promise-reject-errors",
   "@typescript-eslint/prefer-readonly-parameter-types",
   "@typescript-eslint/prefer-return-this-type",
   "@typescript-eslint/require-array-sort-compare",
   "@typescript-eslint/sort-type-constituents",
   "@typescript-eslint/strict-boolean-expressions",
   "@typescript-eslint/typedef",
+  "@typescript-eslint/use-unknown-in-catch-callback-variable",
   "import/no-namespace",
   "import/extensions",
   "import/no-restricted-paths",
@@ -5226,14 +5344,22 @@ exports[`ESLint rules should match defined rules for js: Ignored rules 1`] = `
   "jest/max-expects",
   "jest/max-nested-describe",
   "jest/no-conditional-in-test",
+  "jest/no-confusing-set-timeout",
   "jest/no-duplicate-hooks",
   "jest/no-hooks",
-  "jest/no-if",
   "jest/no-large-snapshots",
   "jest/no-restricted-jest-methods",
   "jest/no-restricted-matchers",
   "jest/no-test-return-statement",
   "jest/no-untyped-mock-factory",
+  "jest/padding-around-after-all-blocks",
+  "jest/padding-around-after-each-blocks",
+  "jest/padding-around-all",
+  "jest/padding-around-before-all-blocks",
+  "jest/padding-around-before-each-blocks",
+  "jest/padding-around-describe-blocks",
+  "jest/padding-around-expect-groups",
+  "jest/padding-around-test-blocks",
   "jest/prefer-called-with",
   "jest/prefer-comparison-matcher",
   "jest/prefer-each",
@@ -5242,6 +5368,8 @@ exports[`ESLint rules should match defined rules for js: Ignored rules 1`] = `
   "jest/prefer-expect-resolves",
   "jest/prefer-hooks-in-order",
   "jest/prefer-hooks-on-top",
+  "jest/prefer-importing-jest-globals",
+  "jest/prefer-jest-mocked",
   "jest/prefer-lowercase-title",
   "jest/prefer-snapshot-hint",
   "jest/prefer-spy-on",
@@ -5280,6 +5408,7 @@ exports[`ESLint rules should match defined rules for test.js: Applied rules 1`] 
   "plugins": [
     "jest",
     "prettier",
+    "@stylistic/ts",
     "@typescript-eslint",
     "import",
   ],
@@ -5290,6 +5419,13 @@ exports[`ESLint rules should match defined rules for test.js: Applied rules 1`] 
     ],
     "@babel/semi": [
       "off",
+    ],
+    "@stylistic/ts/lines-between-class-members": [
+      "error",
+    ],
+    "@stylistic/ts/semi": [
+      "error",
+      "always",
     ],
     "@typescript-eslint/array-type": [
       "error",
@@ -5305,9 +5441,6 @@ exports[`ESLint rules should match defined rules for test.js: Applied rules 1`] 
       "off",
     ],
     "@typescript-eslint/ban-tslint-comment": [
-      "error",
-    ],
-    "@typescript-eslint/ban-types": [
       "error",
     ],
     "@typescript-eslint/block-spacing": [
@@ -5381,9 +5514,6 @@ exports[`ESLint rules should match defined rules for test.js: Applied rules 1`] 
     "@typescript-eslint/lines-around-comment": [
       0,
     ],
-    "@typescript-eslint/lines-between-class-members": [
-      "error",
-    ],
     "@typescript-eslint/member-delimiter-style": [
       "off",
     ],
@@ -5427,6 +5557,9 @@ exports[`ESLint rules should match defined rules for test.js: Applied rules 1`] 
           "methods",
         ],
       },
+    ],
+    "@typescript-eslint/no-empty-object-type": [
+      "error",
     ],
     "@typescript-eslint/no-explicit-any": [
       "error",
@@ -5497,9 +5630,6 @@ exports[`ESLint rules should match defined rules for test.js: Applied rules 1`] 
     "@typescript-eslint/no-this-alias": [
       "error",
     ],
-    "@typescript-eslint/no-throw-literal": [
-      "error",
-    ],
     "@typescript-eslint/no-type-alias": [
       "error",
       {
@@ -5543,6 +5673,9 @@ exports[`ESLint rules should match defined rules for test.js: Applied rules 1`] 
     "@typescript-eslint/no-unsafe-declaration-merging": [
       "error",
     ],
+    "@typescript-eslint/no-unsafe-function-type": [
+      "error",
+    ],
     "@typescript-eslint/no-unsafe-member-access": [
       "error",
     ],
@@ -5565,7 +5698,7 @@ exports[`ESLint rules should match defined rules for test.js: Applied rules 1`] 
     "@typescript-eslint/no-useless-constructor": [
       "error",
     ],
-    "@typescript-eslint/no-var-requires": [
+    "@typescript-eslint/no-wrapper-object-types": [
       "error",
     ],
     "@typescript-eslint/non-nullable-type-assertion-style": [
@@ -5573,6 +5706,9 @@ exports[`ESLint rules should match defined rules for test.js: Applied rules 1`] 
     ],
     "@typescript-eslint/object-curly-spacing": [
       "off",
+    ],
+    "@typescript-eslint/only-throw-error": [
+      "error",
     ],
     "@typescript-eslint/prefer-as-const": [
       "error",
@@ -5590,6 +5726,9 @@ exports[`ESLint rules should match defined rules for test.js: Applied rules 1`] 
       "error",
     ],
     "@typescript-eslint/prefer-literal-enum-member": [
+      "error",
+    ],
+    "@typescript-eslint/prefer-namespace-keyword": [
       "error",
     ],
     "@typescript-eslint/prefer-nullish-coalescing": [
@@ -5640,8 +5779,7 @@ exports[`ESLint rules should match defined rules for test.js: Applied rules 1`] 
       "always",
     ],
     "@typescript-eslint/semi": [
-      "error",
-      "always",
+      "off",
     ],
     "@typescript-eslint/sort-type-union-intersection-members": [
       "off",
@@ -5680,6 +5818,7 @@ exports[`ESLint rules should match defined rules for test.js: Applied rules 1`] 
       "error",
       {
         "allowImplicit": true,
+        "allowVoid": false,
         "checkForEach": false,
       },
     ],
@@ -6663,6 +6802,9 @@ exports[`ESLint rules should match defined rules for test.js: Applied rules 1`] 
     "unicorn/number-literal-case": [
       "off",
     ],
+    "unicorn/template-indent": [
+      0,
+    ],
     "use-isnan": [
       "error",
     ],
@@ -6810,6 +6952,8 @@ exports[`ESLint rules should match defined rules for test.js: Applied rules 1`] 
   "settings": {
     "import/extensions": [
       ".ts",
+      ".cts",
+      ".mts",
       ".tsx",
       ".js",
       ".jsx",
@@ -6824,6 +6968,8 @@ exports[`ESLint rules should match defined rules for test.js: Applied rules 1`] 
     "import/parsers": {
       "@typescript-eslint/parser": [
         ".ts",
+        ".cts",
+        ".mts",
         ".tsx",
       ],
     },
@@ -6831,6 +6977,8 @@ exports[`ESLint rules should match defined rules for test.js: Applied rules 1`] 
       "node": {
         "extensions": [
           ".ts",
+          ".cts",
+          ".mts",
           ".tsx",
           ".js",
           ".jsx",
@@ -6891,6 +7039,7 @@ exports[`ESLint rules should match defined rules for test.js: Ignored rules 1`] 
   "no-nested-ternary",
   "no-new-native-nonconstructor",
   "no-new-object",
+  "no-object-constructor",
   "no-plusplus",
   "no-process-exit",
   "no-restricted-exports",
@@ -6920,8 +7069,11 @@ exports[`ESLint rules should match defined rules for test.js: Ignored rules 1`] 
   "@typescript-eslint/adjacent-overload-signatures",
   "@typescript-eslint/class-methods-use-this",
   "@typescript-eslint/consistent-indexed-object-style",
+  "@typescript-eslint/consistent-return",
   "@typescript-eslint/explicit-member-accessibility",
   "@typescript-eslint/init-declarations",
+  "@typescript-eslint/max-params",
+  "@typescript-eslint/no-array-delete",
   "@typescript-eslint/no-duplicate-type-constituents",
   "@typescript-eslint/no-empty-interface",
   "@typescript-eslint/no-import-type-side-effects",
@@ -6932,17 +7084,25 @@ exports[`ESLint rules should match defined rules for test.js: Ignored rules 1`] 
   "@typescript-eslint/no-non-null-asserted-nullish-coalescing",
   "@typescript-eslint/no-redundant-type-constituents",
   "@typescript-eslint/no-restricted-imports",
+  "@typescript-eslint/no-restricted-types",
+  "@typescript-eslint/no-unnecessary-parameter-property-assignment",
+  "@typescript-eslint/no-unnecessary-template-expression",
+  "@typescript-eslint/no-unnecessary-type-parameters",
   "@typescript-eslint/no-unsafe-enum-comparison",
+  "@typescript-eslint/no-unsafe-unary-minus",
   "@typescript-eslint/no-useless-empty-export",
-  "@typescript-eslint/padding-line-between-statements",
+  "@typescript-eslint/no-var-requires",
   "@typescript-eslint/parameter-properties",
-  "@typescript-eslint/prefer-namespace-keyword",
+  "@typescript-eslint/prefer-destructuring",
+  "@typescript-eslint/prefer-find",
+  "@typescript-eslint/prefer-promise-reject-errors",
   "@typescript-eslint/prefer-readonly-parameter-types",
   "@typescript-eslint/prefer-return-this-type",
   "@typescript-eslint/require-array-sort-compare",
   "@typescript-eslint/sort-type-constituents",
   "@typescript-eslint/strict-boolean-expressions",
   "@typescript-eslint/typedef",
+  "@typescript-eslint/use-unknown-in-catch-callback-variable",
   "import/no-namespace",
   "import/extensions",
   "import/no-restricted-paths",
@@ -6978,14 +7138,22 @@ exports[`ESLint rules should match defined rules for test.js: Ignored rules 1`] 
   "jest/max-expects",
   "jest/max-nested-describe",
   "jest/no-conditional-in-test",
+  "jest/no-confusing-set-timeout",
   "jest/no-duplicate-hooks",
   "jest/no-hooks",
-  "jest/no-if",
   "jest/no-large-snapshots",
   "jest/no-restricted-jest-methods",
   "jest/no-restricted-matchers",
   "jest/no-test-return-statement",
   "jest/no-untyped-mock-factory",
+  "jest/padding-around-after-all-blocks",
+  "jest/padding-around-after-each-blocks",
+  "jest/padding-around-all",
+  "jest/padding-around-before-all-blocks",
+  "jest/padding-around-before-each-blocks",
+  "jest/padding-around-describe-blocks",
+  "jest/padding-around-expect-groups",
+  "jest/padding-around-test-blocks",
   "jest/prefer-called-with",
   "jest/prefer-comparison-matcher",
   "jest/prefer-each",
@@ -6994,6 +7162,8 @@ exports[`ESLint rules should match defined rules for test.js: Ignored rules 1`] 
   "jest/prefer-expect-resolves",
   "jest/prefer-hooks-in-order",
   "jest/prefer-hooks-on-top",
+  "jest/prefer-importing-jest-globals",
+  "jest/prefer-jest-mocked",
   "jest/prefer-lowercase-title",
   "jest/prefer-snapshot-hint",
   "jest/prefer-spy-on",
@@ -7032,6 +7202,7 @@ exports[`ESLint rules should match defined rules for test.ts: Applied rules 1`] 
   "plugins": [
     "jest",
     "prettier",
+    "@stylistic/ts",
     "@typescript-eslint",
     "import",
   ],
@@ -7042,6 +7213,13 @@ exports[`ESLint rules should match defined rules for test.ts: Applied rules 1`] 
     ],
     "@babel/semi": [
       "off",
+    ],
+    "@stylistic/ts/lines-between-class-members": [
+      "error",
+    ],
+    "@stylistic/ts/semi": [
+      "error",
+      "always",
     ],
     "@typescript-eslint/array-type": [
       "error",
@@ -7057,9 +7235,6 @@ exports[`ESLint rules should match defined rules for test.ts: Applied rules 1`] 
       "off",
     ],
     "@typescript-eslint/ban-tslint-comment": [
-      "error",
-    ],
-    "@typescript-eslint/ban-types": [
       "error",
     ],
     "@typescript-eslint/block-spacing": [
@@ -7133,9 +7308,6 @@ exports[`ESLint rules should match defined rules for test.ts: Applied rules 1`] 
     "@typescript-eslint/lines-around-comment": [
       0,
     ],
-    "@typescript-eslint/lines-between-class-members": [
-      "error",
-    ],
     "@typescript-eslint/member-delimiter-style": [
       "off",
     ],
@@ -7179,6 +7351,9 @@ exports[`ESLint rules should match defined rules for test.ts: Applied rules 1`] 
           "methods",
         ],
       },
+    ],
+    "@typescript-eslint/no-empty-object-type": [
+      "error",
     ],
     "@typescript-eslint/no-explicit-any": [
       "error",
@@ -7249,9 +7424,6 @@ exports[`ESLint rules should match defined rules for test.ts: Applied rules 1`] 
     "@typescript-eslint/no-this-alias": [
       "error",
     ],
-    "@typescript-eslint/no-throw-literal": [
-      "error",
-    ],
     "@typescript-eslint/no-type-alias": [
       "error",
       {
@@ -7295,6 +7467,9 @@ exports[`ESLint rules should match defined rules for test.ts: Applied rules 1`] 
     "@typescript-eslint/no-unsafe-declaration-merging": [
       "error",
     ],
+    "@typescript-eslint/no-unsafe-function-type": [
+      "error",
+    ],
     "@typescript-eslint/no-unsafe-member-access": [
       "error",
     ],
@@ -7317,7 +7492,7 @@ exports[`ESLint rules should match defined rules for test.ts: Applied rules 1`] 
     "@typescript-eslint/no-useless-constructor": [
       "error",
     ],
-    "@typescript-eslint/no-var-requires": [
+    "@typescript-eslint/no-wrapper-object-types": [
       "error",
     ],
     "@typescript-eslint/non-nullable-type-assertion-style": [
@@ -7325,6 +7500,9 @@ exports[`ESLint rules should match defined rules for test.ts: Applied rules 1`] 
     ],
     "@typescript-eslint/object-curly-spacing": [
       "off",
+    ],
+    "@typescript-eslint/only-throw-error": [
+      "error",
     ],
     "@typescript-eslint/prefer-as-const": [
       "error",
@@ -7342,6 +7520,9 @@ exports[`ESLint rules should match defined rules for test.ts: Applied rules 1`] 
       "error",
     ],
     "@typescript-eslint/prefer-literal-enum-member": [
+      "error",
+    ],
+    "@typescript-eslint/prefer-namespace-keyword": [
       "error",
     ],
     "@typescript-eslint/prefer-nullish-coalescing": [
@@ -7392,8 +7573,7 @@ exports[`ESLint rules should match defined rules for test.ts: Applied rules 1`] 
       "always",
     ],
     "@typescript-eslint/semi": [
-      "error",
-      "always",
+      "off",
     ],
     "@typescript-eslint/sort-type-union-intersection-members": [
       "off",
@@ -7432,6 +7612,7 @@ exports[`ESLint rules should match defined rules for test.ts: Applied rules 1`] 
       "error",
       {
         "allowImplicit": true,
+        "allowVoid": false,
         "checkForEach": false,
       },
     ],
@@ -7934,6 +8115,9 @@ exports[`ESLint rules should match defined rules for test.ts: Applied rules 1`] 
     "no-new-func": [
       "error",
     ],
+    "no-new-native-nonconstructor": [
+      "off",
+    ],
     "no-new-require": [
       "error",
     ],
@@ -8415,6 +8599,9 @@ exports[`ESLint rules should match defined rules for test.ts: Applied rules 1`] 
     "unicorn/number-literal-case": [
       "off",
     ],
+    "unicorn/template-indent": [
+      0,
+    ],
     "use-isnan": [
       "error",
     ],
@@ -8562,6 +8749,8 @@ exports[`ESLint rules should match defined rules for test.ts: Applied rules 1`] 
   "settings": {
     "import/extensions": [
       ".ts",
+      ".cts",
+      ".mts",
       ".tsx",
       ".js",
       ".jsx",
@@ -8576,6 +8765,8 @@ exports[`ESLint rules should match defined rules for test.ts: Applied rules 1`] 
     "import/parsers": {
       "@typescript-eslint/parser": [
         ".ts",
+        ".cts",
+        ".mts",
         ".tsx",
       ],
     },
@@ -8583,6 +8774,8 @@ exports[`ESLint rules should match defined rules for test.ts: Applied rules 1`] 
       "node": {
         "extensions": [
           ".ts",
+          ".cts",
+          ".mts",
           ".tsx",
           ".js",
           ".jsx",
@@ -8641,8 +8834,8 @@ exports[`ESLint rules should match defined rules for test.ts: Ignored rules 1`] 
   "no-negated-condition",
   "no-negated-in-lhs",
   "no-nested-ternary",
-  "no-new-native-nonconstructor",
   "no-new-object",
+  "no-object-constructor",
   "no-plusplus",
   "no-process-exit",
   "no-restricted-exports",
@@ -8672,8 +8865,11 @@ exports[`ESLint rules should match defined rules for test.ts: Ignored rules 1`] 
   "@typescript-eslint/adjacent-overload-signatures",
   "@typescript-eslint/class-methods-use-this",
   "@typescript-eslint/consistent-indexed-object-style",
+  "@typescript-eslint/consistent-return",
   "@typescript-eslint/explicit-member-accessibility",
   "@typescript-eslint/init-declarations",
+  "@typescript-eslint/max-params",
+  "@typescript-eslint/no-array-delete",
   "@typescript-eslint/no-duplicate-type-constituents",
   "@typescript-eslint/no-empty-interface",
   "@typescript-eslint/no-import-type-side-effects",
@@ -8684,17 +8880,25 @@ exports[`ESLint rules should match defined rules for test.ts: Ignored rules 1`] 
   "@typescript-eslint/no-non-null-asserted-nullish-coalescing",
   "@typescript-eslint/no-redundant-type-constituents",
   "@typescript-eslint/no-restricted-imports",
+  "@typescript-eslint/no-restricted-types",
+  "@typescript-eslint/no-unnecessary-parameter-property-assignment",
+  "@typescript-eslint/no-unnecessary-template-expression",
+  "@typescript-eslint/no-unnecessary-type-parameters",
   "@typescript-eslint/no-unsafe-enum-comparison",
+  "@typescript-eslint/no-unsafe-unary-minus",
   "@typescript-eslint/no-useless-empty-export",
-  "@typescript-eslint/padding-line-between-statements",
+  "@typescript-eslint/no-var-requires",
   "@typescript-eslint/parameter-properties",
-  "@typescript-eslint/prefer-namespace-keyword",
+  "@typescript-eslint/prefer-destructuring",
+  "@typescript-eslint/prefer-find",
+  "@typescript-eslint/prefer-promise-reject-errors",
   "@typescript-eslint/prefer-readonly-parameter-types",
   "@typescript-eslint/prefer-return-this-type",
   "@typescript-eslint/require-array-sort-compare",
   "@typescript-eslint/sort-type-constituents",
   "@typescript-eslint/strict-boolean-expressions",
   "@typescript-eslint/typedef",
+  "@typescript-eslint/use-unknown-in-catch-callback-variable",
   "import/no-namespace",
   "import/extensions",
   "import/no-restricted-paths",
@@ -8730,14 +8934,22 @@ exports[`ESLint rules should match defined rules for test.ts: Ignored rules 1`] 
   "jest/max-expects",
   "jest/max-nested-describe",
   "jest/no-conditional-in-test",
+  "jest/no-confusing-set-timeout",
   "jest/no-duplicate-hooks",
   "jest/no-hooks",
-  "jest/no-if",
   "jest/no-large-snapshots",
   "jest/no-restricted-jest-methods",
   "jest/no-restricted-matchers",
   "jest/no-test-return-statement",
   "jest/no-untyped-mock-factory",
+  "jest/padding-around-after-all-blocks",
+  "jest/padding-around-after-each-blocks",
+  "jest/padding-around-all",
+  "jest/padding-around-before-all-blocks",
+  "jest/padding-around-before-each-blocks",
+  "jest/padding-around-describe-blocks",
+  "jest/padding-around-expect-groups",
+  "jest/padding-around-test-blocks",
   "jest/prefer-called-with",
   "jest/prefer-comparison-matcher",
   "jest/prefer-each",
@@ -8746,6 +8958,8 @@ exports[`ESLint rules should match defined rules for test.ts: Ignored rules 1`] 
   "jest/prefer-expect-resolves",
   "jest/prefer-hooks-in-order",
   "jest/prefer-hooks-on-top",
+  "jest/prefer-importing-jest-globals",
+  "jest/prefer-jest-mocked",
   "jest/prefer-lowercase-title",
   "jest/prefer-snapshot-hint",
   "jest/prefer-spy-on",
@@ -8784,6 +8998,7 @@ exports[`ESLint rules should match defined rules for ts: Applied rules 1`] = `
   "plugins": [
     "jest",
     "prettier",
+    "@stylistic/ts",
     "@typescript-eslint",
     "import",
   ],
@@ -8794,6 +9009,13 @@ exports[`ESLint rules should match defined rules for ts: Applied rules 1`] = `
     ],
     "@babel/semi": [
       "off",
+    ],
+    "@stylistic/ts/lines-between-class-members": [
+      "error",
+    ],
+    "@stylistic/ts/semi": [
+      "error",
+      "always",
     ],
     "@typescript-eslint/array-type": [
       "error",
@@ -8809,9 +9031,6 @@ exports[`ESLint rules should match defined rules for ts: Applied rules 1`] = `
       "error",
     ],
     "@typescript-eslint/ban-tslint-comment": [
-      "error",
-    ],
-    "@typescript-eslint/ban-types": [
       "error",
     ],
     "@typescript-eslint/block-spacing": [
@@ -8885,9 +9104,6 @@ exports[`ESLint rules should match defined rules for ts: Applied rules 1`] = `
     "@typescript-eslint/lines-around-comment": [
       0,
     ],
-    "@typescript-eslint/lines-between-class-members": [
-      "error",
-    ],
     "@typescript-eslint/member-delimiter-style": [
       "off",
     ],
@@ -8931,6 +9147,9 @@ exports[`ESLint rules should match defined rules for ts: Applied rules 1`] = `
           "methods",
         ],
       },
+    ],
+    "@typescript-eslint/no-empty-object-type": [
+      "error",
     ],
     "@typescript-eslint/no-explicit-any": [
       "error",
@@ -9001,9 +9220,6 @@ exports[`ESLint rules should match defined rules for ts: Applied rules 1`] = `
     "@typescript-eslint/no-this-alias": [
       "error",
     ],
-    "@typescript-eslint/no-throw-literal": [
-      "error",
-    ],
     "@typescript-eslint/no-type-alias": [
       "error",
       {
@@ -9047,6 +9263,9 @@ exports[`ESLint rules should match defined rules for ts: Applied rules 1`] = `
     "@typescript-eslint/no-unsafe-declaration-merging": [
       "error",
     ],
+    "@typescript-eslint/no-unsafe-function-type": [
+      "error",
+    ],
     "@typescript-eslint/no-unsafe-member-access": [
       "error",
     ],
@@ -9069,7 +9288,7 @@ exports[`ESLint rules should match defined rules for ts: Applied rules 1`] = `
     "@typescript-eslint/no-useless-constructor": [
       "error",
     ],
-    "@typescript-eslint/no-var-requires": [
+    "@typescript-eslint/no-wrapper-object-types": [
       "error",
     ],
     "@typescript-eslint/non-nullable-type-assertion-style": [
@@ -9077,6 +9296,9 @@ exports[`ESLint rules should match defined rules for ts: Applied rules 1`] = `
     ],
     "@typescript-eslint/object-curly-spacing": [
       "off",
+    ],
+    "@typescript-eslint/only-throw-error": [
+      "error",
     ],
     "@typescript-eslint/prefer-as-const": [
       "error",
@@ -9094,6 +9316,9 @@ exports[`ESLint rules should match defined rules for ts: Applied rules 1`] = `
       "error",
     ],
     "@typescript-eslint/prefer-literal-enum-member": [
+      "error",
+    ],
+    "@typescript-eslint/prefer-namespace-keyword": [
       "error",
     ],
     "@typescript-eslint/prefer-nullish-coalescing": [
@@ -9144,8 +9369,7 @@ exports[`ESLint rules should match defined rules for ts: Applied rules 1`] = `
       "always",
     ],
     "@typescript-eslint/semi": [
-      "error",
-      "always",
+      "off",
     ],
     "@typescript-eslint/sort-type-union-intersection-members": [
       "off",
@@ -9184,6 +9408,7 @@ exports[`ESLint rules should match defined rules for ts: Applied rules 1`] = `
       "error",
       {
         "allowImplicit": true,
+        "allowVoid": false,
         "checkForEach": false,
       },
     ],
@@ -9686,6 +9911,9 @@ exports[`ESLint rules should match defined rules for ts: Applied rules 1`] = `
     "no-new-func": [
       "error",
     ],
+    "no-new-native-nonconstructor": [
+      "off",
+    ],
     "no-new-require": [
       "error",
     ],
@@ -10167,6 +10395,9 @@ exports[`ESLint rules should match defined rules for ts: Applied rules 1`] = `
     "unicorn/number-literal-case": [
       "off",
     ],
+    "unicorn/template-indent": [
+      0,
+    ],
     "use-isnan": [
       "error",
     ],
@@ -10314,6 +10545,8 @@ exports[`ESLint rules should match defined rules for ts: Applied rules 1`] = `
   "settings": {
     "import/extensions": [
       ".ts",
+      ".cts",
+      ".mts",
       ".tsx",
       ".js",
       ".jsx",
@@ -10328,6 +10561,8 @@ exports[`ESLint rules should match defined rules for ts: Applied rules 1`] = `
     "import/parsers": {
       "@typescript-eslint/parser": [
         ".ts",
+        ".cts",
+        ".mts",
         ".tsx",
       ],
     },
@@ -10335,6 +10570,8 @@ exports[`ESLint rules should match defined rules for ts: Applied rules 1`] = `
       "node": {
         "extensions": [
           ".ts",
+          ".cts",
+          ".mts",
           ".tsx",
           ".js",
           ".jsx",
@@ -10393,8 +10630,8 @@ exports[`ESLint rules should match defined rules for ts: Ignored rules 1`] = `
   "no-negated-condition",
   "no-negated-in-lhs",
   "no-nested-ternary",
-  "no-new-native-nonconstructor",
   "no-new-object",
+  "no-object-constructor",
   "no-plusplus",
   "no-process-exit",
   "no-restricted-exports",
@@ -10424,8 +10661,11 @@ exports[`ESLint rules should match defined rules for ts: Ignored rules 1`] = `
   "@typescript-eslint/adjacent-overload-signatures",
   "@typescript-eslint/class-methods-use-this",
   "@typescript-eslint/consistent-indexed-object-style",
+  "@typescript-eslint/consistent-return",
   "@typescript-eslint/explicit-member-accessibility",
   "@typescript-eslint/init-declarations",
+  "@typescript-eslint/max-params",
+  "@typescript-eslint/no-array-delete",
   "@typescript-eslint/no-duplicate-type-constituents",
   "@typescript-eslint/no-empty-interface",
   "@typescript-eslint/no-import-type-side-effects",
@@ -10436,17 +10676,25 @@ exports[`ESLint rules should match defined rules for ts: Ignored rules 1`] = `
   "@typescript-eslint/no-non-null-asserted-nullish-coalescing",
   "@typescript-eslint/no-redundant-type-constituents",
   "@typescript-eslint/no-restricted-imports",
+  "@typescript-eslint/no-restricted-types",
+  "@typescript-eslint/no-unnecessary-parameter-property-assignment",
+  "@typescript-eslint/no-unnecessary-template-expression",
+  "@typescript-eslint/no-unnecessary-type-parameters",
   "@typescript-eslint/no-unsafe-enum-comparison",
+  "@typescript-eslint/no-unsafe-unary-minus",
   "@typescript-eslint/no-useless-empty-export",
-  "@typescript-eslint/padding-line-between-statements",
+  "@typescript-eslint/no-var-requires",
   "@typescript-eslint/parameter-properties",
-  "@typescript-eslint/prefer-namespace-keyword",
+  "@typescript-eslint/prefer-destructuring",
+  "@typescript-eslint/prefer-find",
+  "@typescript-eslint/prefer-promise-reject-errors",
   "@typescript-eslint/prefer-readonly-parameter-types",
   "@typescript-eslint/prefer-return-this-type",
   "@typescript-eslint/require-array-sort-compare",
   "@typescript-eslint/sort-type-constituents",
   "@typescript-eslint/strict-boolean-expressions",
   "@typescript-eslint/typedef",
+  "@typescript-eslint/use-unknown-in-catch-callback-variable",
   "import/no-namespace",
   "import/extensions",
   "import/no-restricted-paths",
@@ -10482,14 +10730,22 @@ exports[`ESLint rules should match defined rules for ts: Ignored rules 1`] = `
   "jest/max-expects",
   "jest/max-nested-describe",
   "jest/no-conditional-in-test",
+  "jest/no-confusing-set-timeout",
   "jest/no-duplicate-hooks",
   "jest/no-hooks",
-  "jest/no-if",
   "jest/no-large-snapshots",
   "jest/no-restricted-jest-methods",
   "jest/no-restricted-matchers",
   "jest/no-test-return-statement",
   "jest/no-untyped-mock-factory",
+  "jest/padding-around-after-all-blocks",
+  "jest/padding-around-after-each-blocks",
+  "jest/padding-around-all",
+  "jest/padding-around-before-all-blocks",
+  "jest/padding-around-before-each-blocks",
+  "jest/padding-around-describe-blocks",
+  "jest/padding-around-expect-groups",
+  "jest/padding-around-test-blocks",
   "jest/prefer-called-with",
   "jest/prefer-comparison-matcher",
   "jest/prefer-each",
@@ -10498,6 +10754,8 @@ exports[`ESLint rules should match defined rules for ts: Ignored rules 1`] = `
   "jest/prefer-expect-resolves",
   "jest/prefer-hooks-in-order",
   "jest/prefer-hooks-on-top",
+  "jest/prefer-importing-jest-globals",
+  "jest/prefer-jest-mocked",
   "jest/prefer-lowercase-title",
   "jest/prefer-snapshot-hint",
   "jest/prefer-spy-on",
