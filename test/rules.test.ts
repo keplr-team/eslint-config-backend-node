@@ -31,7 +31,7 @@ describe('ESLint rules', () => {
 
       expect(
         // eslint-disable-next-line @typescript-eslint/no-unsafe-argument, @typescript-eslint/no-unsafe-member-access
-        _.difference(rulesList, Object.keys(fileConfig.rules!)),
+        _.difference(rulesList, Object.keys(fileConfig.rules)),
       ).toMatchSnapshot('Ignored rules');
     },
   );
