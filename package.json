@@ -12,7 +12,7 @@
   ],
   "scripts": {
     "build": "tsc",
-    "lint": "eslint . --cache --fix --ext js,ts",
+    "lint": "eslint . --cache --fix",
     "test": "jest",
     "coverage": "jest --coverage"
   },
